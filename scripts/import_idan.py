@@ -13,6 +13,39 @@ from pathlib import Path
 from typing import Optional, Dict, List, Tuple
 
 
+def parse_word_parts(word: str) -> Dict[str, str]:
+    """
+    Parsear una palabra en sus partes: raíz, afijos, terminación.
+    
+    Ejemplo: abad.in.o -> raíz='abad', afijos=['in'], terminación='o'
+    """
+    parts = word.split('.')
+    
+    if len(parts) == 1:
+        # Palabra sin puntos (puede ser partícula, conjunción, etc.)
+        return {'root': word, 'affixes': [], 'ending': ''}
+    
+    # La raíz es la primera parte
+    root = parts[0]
+    
+    # La terminación es la última parte (si es una sola letra generalmente)
+    ending = ''
+    affixes = []
+    
+    if len(parts[-1]) <= 2 and parts[-1] in ['o', 'a', 'e', 'i', 'ar', 'ir', 'as', 'is', 'os', 'us']:
+        ending = parts[-1]
+        affixes = parts[1:-1]
+    else:
+        # Toda la palabra excepto la raíz son afijos
+        affixes = parts[1:]
+    
+    return {
+        'root': root,
+        'affixes': affixes,
+        'ending': ending
+    }
+
+
 class IdanImporter:
     """Importador del diccionario Ido-Inglés."""
     
@@ -25,6 +58,7 @@ class IdanImporter:
             'derived': 0,
             'categories': 0,
             'obsolete': 0,
+            'skipped': 0,
             'errors': 0
         }
         
@@ -39,88 +73,134 @@ class IdanImporter:
             self.conn.commit()
             self.conn.close()
             
+    def is_valid_word_line(self, line: str) -> bool:
+        """
+        Verificar si una línea es una palabra válida.
+        
+        Una línea válida debe:
+        - Empezar con una palabra (o con espacios para derivadas)
+        - Tener al menos un espacio/tab seguido de definición
+        - No ser una continuación de línea anterior (que no empieza con palabra)
+        """
+        stripped = line.strip()
+        
+        # Líneas vacías o separadores
+        if not stripped or stripped.startswith('---'):
+            return False
+        
+        # Si empieza con espacios, es derivada - válida
+        if line.startswith('        '):
+            return True
+            
+        # Verificar que empiece con una palabra válida
+        # Palabras válidas: pueden empezar con letra, -, [, o mayúscula
+        if not (stripped[0].isalpha() or stripped[0] in ['-', '[']):
+            return False
+            
+        # Debe tener al menos 2 espacios o un tab como separador
+        if not re.search(r'\s\s+|\t', line):
+            return False
+            
+        return True
+            
     def parse_word_line(self, line: str) -> Optional[Dict]:
-        """
-        Parsear una línea del diccionario.
+        """Parsear una línea del diccionario."""
         
-        Formato:
-        palabra.tipo {tipo_palabra}  traducción; más info
-        
-        Palabras derivadas tienen espacios al inicio (normalmente 8).
-        Obsoletas tienen bracket: [palabra (obs.) > nueva_palabra
-        """
-        # Saltar líneas vacías o separadores
-        if not line.strip() or line.strip().startswith('---'):
+        if not self.is_valid_word_line(line):
             return None
             
-        # Detectar si es derivada (comienza con 8 espacios)
-        is_derived = line.startswith('        ')  # 8 espacios exactos
+        # Detectar si es derivada (8 espacios exactos al inicio)
+        is_derived = line.startswith('        ')
         clean_line = line.strip()
         
-        if not clean_line:
-            return None
-            
-        # Detectar obsoletas: [palabra (obs.)
+        # Detectar obsoletas: [palabra (obs.) > nueva_palabra
         obsolete = False
         replaced_by = None
         if clean_line.startswith('['):
             obsolete = True
-            # Buscar la palabra de reemplazo después de >
             if '>' in clean_line:
                 parts = clean_line.split('>')
                 replaced_by = parts[1].strip() if len(parts) > 1 else None
             clean_line = clean_line.lstrip('[')
             
-        # Patrón: palabra.sufijo {tipo} (categoria) traducción
-        # Usar doble espacio o tab como separador
+        # Separar palabra de definición usando doble espacio o tab
         parts = re.split(r'\s\s+|\t', clean_line, 1)
         if len(parts) < 2:
-            # Intentar con espacio simple si no hay doble
-            parts = clean_line.split(' ', 1)
-            if len(parts) < 2:
-                return None
+            return None
             
-        word = parts[0].strip()
+        word_part = parts[0].strip()
         rest = parts[1].strip()
         
-        # Extraer tipo de palabra entre llaves: {tr}, {intr}, {adv.}, etc.
-        word_type = None
-        type_match = re.search(r'\{([^}]+)\}', rest)
-        if type_match:
-            word_type = type_match.group(1)
-            rest = rest.replace(type_match.group(0), '').strip()
-            
-        # Extraer subcategoría entre paréntesis: (rel.), (anat.), etc.
-        subcategory = None
-        subcat_match = re.search(r'\(([^)]+)\)', rest)
-        if subcat_match:
-            potential_subcat = subcat_match.group(1)
-            # Solo si parece abreviatura (termina en . o es una sola palabra)
-            if '.' in potential_subcat or len(potential_subcat.split()) == 1:
-                subcategory = potential_subcat
-                rest = rest.replace(subcat_match.group(0), '').strip()
-                
-        # Extraer información gramatical entre corchetes: [de], [ad], etc.
+        # PRIMERO: extraer metadatos que vienen después de la palabra
+        # Extraer información gramatical: "palabra [info]"
         grammatical_info = None
-        gram_match = re.search(r'\[([^\]]+)\]', rest)
-        if gram_match:
-            grammatical_info = gram_match.group(1)
-            # No eliminar de rest, puede ser parte de la definición
+        word_gram_match = re.search(r'\s*\[([^\]]+)\]', word_part)
+        if word_gram_match:
+            grammatical_info = word_gram_match.group(1)
+            word_part = word_part.replace(word_gram_match.group(0), '').strip()
+        
+        # Extraer tipo de palabra: "palabra {tipo}"
+        word_type = None
+        word_type_match = re.search(r'\s*\{([^}]+)\}', word_part)
+        if word_type_match:
+            word_type = word_type_match.group(1)
+            word_part = word_part.replace(word_type_match.group(0), '').strip()
+        
+        # Extraer subcategoría si está en la palabra: "palabra (cat.)"
+        subcategory = None
+        word_subcat_match = re.search(r'\s*\(([^)]+?\.)\)', word_part)
+        if word_subcat_match:
+            subcategory = word_subcat_match.group(1)
+            word_part = word_part.replace(word_subcat_match.group(0), '').strip()
+        
+        # Ahora word_part debe ser solo la palabra limpia
+        word = word_part
+        
+        # Extraer tipo de palabra de rest si no se encontró antes
+        if not word_type:
+            type_match = re.search(r'\{([^}]+)\}', rest)
+            if type_match:
+                word_type = type_match.group(1)
+                rest = rest.replace(type_match.group(0), '').strip()
             
-        # Buscar antónimo: Ant: palabra
+        # Extraer subcategoría entre paréntesis si no se encontró antes: (rel.), (anat.), etc.
+        # Solo la primera aparición
+        if not subcategory:
+            subcat_match = re.search(r'\(([^)]+?\.)\)', rest)
+            if subcat_match:
+                subcategory = subcat_match.group(1)
+                rest = rest.replace(subcat_match.group(0), '', 1).strip()
+        
+        # Extraer información gramatical entre corchetes si no se encontró antes: [de], [ad], etc.
+        if not grammatical_info:
+            gram_match = re.search(r'\[([^\]]+)\]', rest)
+            if gram_match:
+                # Solo si es corto (probablemente gramatical, no parte de definición)
+                if len(gram_match.group(1)) <= 20:
+                    grammatical_info = gram_match.group(1)
+                    rest = rest.replace(gram_match.group(0), '').strip()
+                    
+        # Buscar antónimo: "Ant: palabra" al final de la línea
         antonym = None
-        ant_match = re.search(r'Ant:\s*(\S+)', rest)
+        ant_match = re.search(r'\.\s+Ant:\s*(\S+)\s*$', rest)
         if ant_match:
             antonym = ant_match.group(1)
+            rest = rest[:ant_match.start()] + '.'  # Remover el antónimo de la definición
             
         # El resto es la traducción/definición
         translation = rest.strip()
         
+        # Parsear partes de la palabra
+        word_parts = parse_word_parts(word)
+        
         # Categorizar palabra
-        category = self._determine_category(word, word_type, subcategory)
+        category = self._determine_category(word, word_type, word_parts['ending'])
         
         return {
             'word': word,
+            'root': word_parts['root'],
+            'affixes': '.'.join(word_parts['affixes']) if word_parts['affixes'] else None,
+            'ending': word_parts['ending'] if word_parts['ending'] else None,
             'word_type': word_type,
             'translation': translation,
             'category': category,
@@ -133,10 +213,10 @@ class IdanImporter:
         }
         
     def _determine_category(self, word: str, word_type: Optional[str], 
-                           subcategory: Optional[str]) -> str:
+                           ending: Optional[str]) -> str:
         """Determinar categoría gramatical de la palabra."""
         
-        # Basado en tipo de palabra
+        # Basado en tipo de palabra explícito
         if word_type:
             if word_type in ['tr', 'intr', 'tr/intr', 'imp']:
                 return 'VERB'
@@ -154,24 +234,23 @@ class IdanImporter:
                 return 'SUFFIX'
                 
         # Basado en terminación
-        if word.endswith('.o'):
-            return 'NOUN'
-        elif word.endswith('.a'):
-            return 'ADJECTIVE'
-        elif word.endswith('.e'):
-            return 'ADVERB'
-        elif word.endswith('.ar'):
-            return 'VERB'
-        elif word.startswith('-') or word.endswith('-'):
-            if '{pref.}' in str(subcategory) or word.startswith('-'):
-                return 'PREFIX'
-            elif '{suf.}' in str(subcategory) or word.endswith('-'):
-                return 'SUFFIX'
+        if ending:
+            if ending == 'o':
+                return 'NOUN'
+            elif ending == 'a':
+                return 'ADJECTIVE'
+            elif ending == 'e':
+                return 'ADVERB'
+            elif ending in ['ar', 'ir']:
+                return 'VERB'
+        
+        # Basado en estructura
+        if word.startswith('-') and word.endswith('-'):
             return 'GRAMMAR'
-            
-        # Si tiene marcador gramatical
-        if subcategory == 'gram.':
-            return 'GRAMMAR'
+        elif word.startswith('-'):
+            return 'SUFFIX'
+        elif word.endswith('-'):
+            return 'PREFIX'
             
         return 'PARTICLE'
         
@@ -179,6 +258,7 @@ class IdanImporter:
         """Importar la sección de abreviaturas."""
         print(f"\nImportando abreviaturas desde línea {start_line}...")
         
+        count = 0
         for line in lines[start_line:]:
             line = line.strip()
             if not line or line.startswith('#'):
@@ -203,9 +283,12 @@ class IdanImporter:
                         (abbreviation, ido_name, english_name, category_type)
                         VALUES (?, ?, ?, ?)
                     """, (abbr, ido_name, english_name, cat_type))
-                    self.stats['categories'] += 1
+                    count += 1
                 except sqlite3.Error as e:
                     print(f"Error insertando categoría {abbr}: {e}")
+                    
+        self.stats['categories'] = count
+        print(f"  Importadas {count} categorías")
                     
     def import_words(self, lines: List[str], end_line: int):
         """Importar palabras del diccionario."""
@@ -217,11 +300,11 @@ class IdanImporter:
         for line in lines[:end_line]:
             line_num += 1
             
-            # Saltar header y secciones especiales
+            # Saltar header
             if line_num < 47:
                 continue
                 
-            # Saltar títulos de letras
+            # Saltar títulos de letras (líneas que solo tienen una letra)
             if re.match(r'^\s*[A-Z]\s*$', line):
                 continue
                 
@@ -235,12 +318,15 @@ class IdanImporter:
             try:
                 self.cursor.execute("""
                     INSERT OR REPLACE INTO words 
-                    (word, word_type, translation, category, subcategory, 
-                     grammatical_info, antonym, obsolete, replaced_by, 
+                    (word, root, affixes, ending, word_type, translation, category, 
+                     subcategory, grammatical_info, antonym, obsolete, replaced_by, 
                      parent_word_id, source)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """, (
                     word_data['word'],
+                    word_data['root'],
+                    word_data['affixes'],
+                    word_data['ending'],
                     word_data['word_type'],
                     word_data['translation'],
                     word_data['category'],
@@ -295,19 +381,18 @@ class IdanImporter:
             
         print(f"Total de líneas: {len(lines)}")
         
-        # Buscar inicio de abreviaturas (línea ~14666)
+        # Buscar inicio de abreviaturas
         abbr_start = None
         for i, line in enumerate(lines):
             if 'Abreviuri en Ido' in line or 'Abbreviations in Ido' in line:
-                abbr_start = i + 2  # Saltar título
+                abbr_start = i + 2
                 break
                 
         if not abbr_start:
-            print("No se encontró sección de abreviaturas, usando línea 14668")
             abbr_start = 14668
             
         # Importar
-        self.import_words(lines, abbr_start - 10)  # Antes de abreviaturas
+        self.import_words(lines, abbr_start - 10)
         self.import_abbreviations(lines, abbr_start)
         
         self.conn.commit()

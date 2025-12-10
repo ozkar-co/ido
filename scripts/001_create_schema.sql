@@ -6,6 +6,9 @@
 CREATE TABLE IF NOT EXISTS words (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     word TEXT NOT NULL UNIQUE,
+    root TEXT,  -- Raíz morfológica (abad en abad.ey.o)
+    affixes TEXT,  -- Afijos intermedios separados por puntos (ey en abad.ey.o)
+    ending TEXT,  -- Terminación gramatical (o, a, e, ar, ir, etc.)
     word_type TEXT,  -- adv., konj., interj., prep., pref., suf., tr, intr, tr/intr, imp
     translation TEXT NOT NULL,
     definition TEXT,  -- Definición completa
