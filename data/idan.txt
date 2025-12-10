@@ -604,7 +604,7 @@ aloy.ar {tr}  to alloy; combine metals by fusion
 Alp.i (mont.)  (the) Alps
 alp.o  alpine pasture
 alpak.o (mamif.)  alpaca (animal; wool)
-«alpari» (financ.)  at par
+alpari (financ.)  at par
 alt.a  high (dimension, sound or pressure); tall.  Ant: basa
         alt.es.o  height (quality)
         alt.ig.ist.o (financ.)  bull (operator)
@@ -685,7 +685,7 @@ ameb.o (animalo)  amoeba, (US) ameba
 amebocit.o (biol.)  amoebocyte, (US) amebocyte
 ameboid.a (biol.)  amoeboid, (US) ameboid
 amelior.ar {tr}  improve, ameliorate
-«amen»  amen
+amen  amen
 amend.o  fine, penalty
 ament.o (bot.)  catkin, amentum, ament
 americi.o (elem.)  americium
@@ -830,7 +830,7 @@ anevrism.o (morbo)  aneurysm, aneurism
 anex.ar {tr}  to annex
 angel.o  fish hook
 angelik.o (pl.)  angelica
-«angelus» (rel.)  angelus
+angelus (rel.)  angelus
 angin.o (morbo)  angina (quinsy, croup or similar inflammatory ailment)
 angiom.o (patol.)  angioma
 angiopati.o (morbo)  angiopathy
@@ -1028,7 +1028,7 @@ apoge.o (astron.)  apogee.  Ant: perigeo
 apokalips.o (rel.)  apocalypse
 apokrif.a  apocryphal
 apokromat.a (opt.)  apochromatic
-«Apollon» (mitol.)  Apollo
+Apollon (mitol.)  Apollo
 apolog.o  apologue, moral fable
 apologi.ar {tr}  to defend or justify (in speech or writing)
         apologi.o  justification, apologia, defence
@@ -1167,7 +1167,7 @@ argon.o (elem.)  argon
 argonaut.o  Argonaut; argonaut, paper nautilus
 Argovi.a (lando)  Aargau
 argument.ar {intr} [pri]  to argue (a case), try to prove something
-«argus» (mitol.)  Argus; (fig.) guardian, spy
+argus (mitol.)  Argus; (fig.) guardian, spy
 ari.o (muz.)  tune, air
 -ari- {suf.}  (suffix indicating the object of an action, the recipient of an action, or one
 upon whom a right, especially legal, is conferred)
@@ -1447,7 +1447,7 @@ atak.ar {tr} [per, ye]  to attack
         atak.o  attack (also med.)
         kontre-atak.o  counter-attack
 ataraxi.o (filoz.)  ataraxia, ataraxy
-atashe.o  attaché
+atashe.o  attach
 atavism.o  atavism
 ataxi.o (patol.)  ataxia, ataxy
 ateism.o  atheism
@@ -1461,7 +1461,7 @@ atenc.ar {tr}  to pay attention to; apply the mind to, heed
 atene.o  athenaeum, (US) atheneum (temple; literary institution)
 atent.ar {tr} (judic.)  to make a criminal attempt or assault on (someone or something)
         atent.o  attempt (to commit an offence or crime); assault (unlawful attempt)
-        atent.o kontre la majest.o  lese-majesty, leze-majesty, lese-majesté
+        atent.o kontre la majest.o  lese-majesty, leze-majesty, lese-majest
         atent.o kontre la pudor.o  indecent assault
         atent.ar la viv.o di ulu  to make an attempt on someone's life
         atent.ar la honor.o di ulu  to assail someone's honour
@@ -1559,7 +1559,7 @@ auto- {pref.}  auto-, self- (in scientific & technical words)
 autobiografi.o  autobiography
 autoblast.o (bot.)  autoblast
 autobus.o (veturo)  bus (vehicle)
-«autodafe» (hist.)  auto-da-fé
+autodafe (hist.)  auto-da-f
 autodidakt.a  self-taught (of a person), autodidactic
         autodidakt.o  autodidact, self-taught person
 autogam.a (biol.)  autogamous, autogamic
@@ -1650,7 +1650,7 @@ practical nature, such as opening hours, an order or prohibition)
 aviz.o  notification, notice
 avocet.o (ucelo)  avocet
 avokad.o (frukto)  avocado
-«avoué»  "avoué" (a type of judicial official in France)
+avou  "avou" (a type of judicial official in France)
 ax.o  axis; axle
         ax.al.a  axial
         ax-arbor.o (mek.)  horizontal shaft
@@ -1684,9 +1684,9 @@ azur.o  azure, sky blue (colour); smalt (pigment)
 
 b (muz.)  te, ti (seventh note of musical scale)
 ba [!] {interj.}  bah!, pshaw!
-«baba»  baba (small cake of leavened dough)
-«Babel»  Babel (lit. & fig.)
-«Babel»-turm.o  tower of Babel
+baba  baba (small cake of leavened dough)
+Babel  Babel (lit. & fig.)
+Babel-turm.o  tower of Babel
 babil.ar {intr} [kun ulu, pri ulo]  to gossip, tattle, prate, babble, prattle, chatter (also as
 of a magpie)
         babil.ach.ar  to blather, blether
@@ -1842,7 +1842,7 @@ barbot.ar {intr}  to dabble, paddle, splash about (in water or mud)
 barbuli.ar {intr}  to speak too fast and therefore unclearly, splutter, sputter
 bard.o  bard (poet)
 bardan.o (pl.)  burdock
-barej.o (stofo)  barege, barège (fabric)
+barej.o (stofo)  barege, barge (fabric)
         barej.o silk.a (stofo)  grenadine (fabric)
 barel.o  cask, barrel (wooden container made of staves)
         barel.o de bir.o  barrel of beer
@@ -1966,7 +1966,7 @@ bed.o  bed (of plants)
 bedel.o  person whose task it is to lead or follow processions (generally religious), beadle
 (mace-bearer)
 Beduin.o  Bedouin
-begin.o (rel.)  beguine, béguine, Beguine (member of a Christian sisterhood)
+begin.o (rel.)  beguine, bguine, Beguine (member of a Christian sisterhood)
         begin.o-kofi.o (vesto)  beguine's bonnet or cap
 begoni.o (pl.)  begonia
 bej.a  beige
@@ -1999,7 +1999,7 @@ hair)
         bord.o-bend.o (arkit.)  piping, welt (of cloth)
         plat-bend.o (arkit.)  platband
         bend.o-seg.il.o (arkit.)  band-saw
-«benedicite» (rel.)  grace (prayer before a meal)
+benedicite (rel.)  grace (prayer before a meal)
 benedik.ar {tr} (rel.)  to bless, pronounce a benediction on
 benediktan.o (rel.)  Benedictine (monk or nun)
 benefic.ar {tr}  to benefit by, benefit from (something granted)
@@ -2200,8 +2200,8 @@ blasfem.ar {tr/intr} (rel.)  to blaspheme (tr., intr.), swear (intr.)
         blasfem.o  blasphemy
 blastem.o (biol.)  blastema
 blat.o (insekto)  cockroach, (US) roach (insect)
-blaz.ar {tr} [ulu, pri ulo]  to cloy, pall, blunt, dull (from excess), make blasé
-        blaz.es.ar [pri]  to be palled, surfeited, made blasé
+blaz.ar {tr} [ulu, pri ulo]  to cloy, pall, blunt, dull (from excess), make blas
+        blaz.es.ar [pri]  to be palled, surfeited, made blas
 blazon.o  coat of arms, armorial bearing, blazon
         blazon.al.a  heraldic
         blazon-art.o  heraldry
@@ -2253,7 +2253,7 @@ bok.o  mouth; opening, entrance (of a utensil, volcano, harbour, etc.)
 bokal.o  glass jar (cylindrical, with a wide mouth)
 bol.o  bowl
         bol.ed.o  bowlful
-«bolero» (danso)  bolero (dance)
+bolero (danso)  bolero (dance)
 bolet.o (fungo)  boletus
         bolet.o manj.ebl.a  esculent boletus, edible boletus
 boli.ar {intr}  to boil, be boiling
@@ -2624,8 +2624,8 @@ cent  hundred
         cent.esm.a aniversari.o  centenary (hundredth anniversary), (US) centennial (n.)
         tri po cent.o  three per cent
         yar.cent.o  century
-«cent»  cent (unit of money)
-«cent-i»  cents
+cent  cent (unit of money)
+cent-i  cents
 centaur.o  centaur (myth., astr.)
 centaure.o (pl.)  centaurea (plant of a family including the cornflower and knapweed), centaury
 centauri.o (pl.)  common centaury, centaury
@@ -2693,7 +2693,7 @@ ceruz.o (kem.)  ceruse, white lead (pigment)
 cerv.o (mamif.)  deer
         cerv.in.o  hind, roe
         cerv.ul.o  stag, hart
-«ces» (muz.)  C flat (music)
+ces (muz.)  C flat (music)
 ces.ar {tr/intr} [ulo, per]  to cease, stop, discontinue
         ces.o  cessation
         ig.ar  to put a stop to, cause to discontinue
@@ -3009,9 +3009,9 @@ cizel.o  chisel
         [cizel.il.o (obs.) > cizelo]
 co (= ico)  this (thing)
 co es.as (c.e.)  i.e.
-«coenobium» (biol.)  coenobium (biol.), colony of unicellular organisms
-«conquistador»  conquistador
-«corpus juris» (leg.)  corpus juris, body of the law
+coenobium (biol.)  coenobium (biol.), colony of unicellular organisms
+conquistador  conquistador
+corpus juris (leg.)  corpus juris, body of the law
 
                                                D
 
@@ -3210,8 +3210,8 @@ compass needle: intr.)
 dekokt.ar {tr}  to decoct (extract the useful substance of by boiling)
 dekolt.ar {tr}  to cut (a garment) low (so the wearer's neck is fully visible); to bare the
 neck (and shoulders)
-        dekolt.it.a  décolleté (low-cut)
-        dekolt.ur.o  décolletage
+        dekolt.it.a  dcollet (low-cut)
+        dekolt.ur.o  dcolletage
 dekor.ar {tr}  to decorate (a house, etc.)
 dekrement.o (fizk.)  decrement (phys.)
 dekremetr.o  decremeter
@@ -3301,7 +3301,7 @@ denunc.ar {tr} [ulu, ulo]  to denounce (inform against)
 deontologi.o (filoz.)  deontology
 depart.ar {intr} [ad, de, ek]  to depart (intr., also fig.).  Ant: arivar
         depart.o  departure
-department.o (polit.)  administrative region, department (territorial), département (France)
+department.o (polit.)  administrative region, department (territorial), dpartement (France)
 depend.ar {intr} [de ulu, de ulo]  to depend (be conditioned; be contingent; be sustained, rely
 for support)
         ne-depend.ant.e  independently
@@ -3340,7 +3340,7 @@ derog.ar {intr} [de ulo] (yuro)  to depart (from, or curtail the application of,
 regulation or convention), ~derogate (but intr.)
 dervish.o (rel.)  dervish
 des (muz.)  D flat (music)
-«des» (muz.)  D flat (music)
+des (muz.)  D flat (music)
 des- {pref.}  (prefix demoting the direct opposite of the idea)
 des.afabl.a  churlish, surly, uncivil
         des.agnosk.ar {tr}  to disown, disavow
@@ -3723,7 +3723,7 @@ diplas.ar {tr}  to displace (move from the usual location), change the place of;
 out of place
         diplas.ar su  to change one's place or residence
         diplas.o-pez.o  displacement (of a ship or immersed body)
-diplo.o (anat.)  diploë, diploe
+diplo.o (anat.)  diplo, diploe
 diploid.a (biol.)  diploid
 diplom.o  diploma
         diplom.iz.ar  to confer a diploma on (someone)
@@ -3746,7 +3746,7 @@ interruption)
         diret.a tren.o  through train
         ne-diret.a  indirect (way, method, speech, etc.)
         diret.e  directly, straight (adv.)
-«dis» (muz.)  (mus.) D sharp
+dis (muz.)  (mus.) D sharp
 dis- {pref.}  (prefix denoting separation or dispersion), apart, asunder
         dis.don.ar {tr}  to give out (to various people), deal out (cards, etc.), distribute
 (hand out)
@@ -3863,10 +3863,10 @@ divorc.ar {intr} [de]  to become divorced
 divulg.ar {tr} [ulo]  to divulge, reveal, make known (a secret, news, etc.)
 dizastr.o  disaster
 dizign.ar {tr}  to design (make drawings and plans for the construction or production of)
-«djin»  jinni, jinnee, djinni, djinny, genie (plural: djinn, jinn, ginn)
+djin  jinni, jinnee, djinni, djinny, genie (plural: djinn, jinn, ginn)
 do {konj.}  therefore, so, consequently
 do (muz.)  doh, do (first note of diatonic scale)
-«do» (muz.)  doh, do (first note of diatonic scale)
+do (muz.)  doh, do (first note of diatonic scale)
 doari.o (financ.)  jointure, dower (jointure, not dowry)
 doc.ar {tr} [ulo ad ulu]  to teach (something, not someone)
         doc.aj.o  something taught
@@ -3997,7 +3997,7 @@ dracen.o (arb.)  dragon-tree
 drag.ar {tr} [ulo]  to dredge (out) (a river, etc.), explore with a drag
 dragoman.o  dragoman
 dragon.o (milit.)  dragoon (mil.)
-draje.o  dragée (sugared almond or similar)
+draje.o  drage (sugared almond or similar)
 drak.o (mitol.)  dragon (myth., astr.)
 drakm.o  drachma (money); dram (weight)
 drakon.al.a  Draconian, Draconic, very harsh, extremely severe
@@ -4152,7 +4152,7 @@ eciz.ar {tr} (kir.)  to excise, cut out (in surgery)
 ed (= e) {konj.}  and
 -ed- {suf.}  (suffix: contents of), -ful (e.g. glas-ed-o: glassful; manu-ed-o: handful;
 pinch-ed-o: pinch, nip)
-«Edelweiss» (pl.)  edelweiss
+Edelweiss (pl.)  edelweiss
 edem.o (patol.)  oedema, (US) edema (med.)
 eden.o (rel.)  Eden
 eder.o (ucelo)  eider (duck)
@@ -4163,7 +4163,7 @@ edifik.ar {tr} [ulu]  to edify, instruct and improve morally
 edikt.ar {tr} [ulo]  to order by edict
         edikt.o  edict
 edil.o  aedile, edile
-«Edipus»  Oedipus; (fig.) riddle-solver
+Edipus  Oedipus; (fig.) riddle-solver
 edit.ar {tr} [ulo]  to publish (print or get printed, usually for sale: book, magazine,
 newspaper, etc.)
         edit.ant.o  publisher
@@ -4229,7 +4229,7 @@ egorj.ar {tr}  to slay by cutting the throat
 egotism.o  egotism
 egotist.o  egotist
 eis (muz.)  E sharp (music)
-«eis» (muz.)  E sharp (music)
+eis (muz.)  E sharp (music)
 ejekt.ar {tr} (tekn.)  to eject, expel, cast out, discharge (tech.)
 ek {prep.}  out of (motion from; made or extracted from; fractional part of), out from, (US)
 out (forth from), of (made of)
@@ -4264,7 +4264,7 @@ ek.fal.aj.o  (radioactive) fallout
         ek.vok.ar {tr}  to call out to (someone)
 ek.o (akustiko)  echo
         ek.ig.ar {tr}  to echo
-«ekarte» (lud.)  écarté (card game)
+ekarte (lud.)  cart (card game)
 ekidn.o (mamif.)  spiny anteater, echidna
 ekimos.o (patol.)  ecchymosis
 ekin.o (animalo)  sea urchin, echinus (animal)
@@ -4362,7 +4362,7 @@ elimin.ar {tr} [ulo, de, ek]  to eliminate, remove, take out, omit from consider
 tech.)
 elips.o  ellipse; ellipsis
 elipsoid.o (geom.)  ellipsoid
-elit.o  élite, elite; (also mil.) choice troops, best men
+elit.o  lite, elite; (also mil.) choice troops, best men
 elitr.o (zool.)  elytron, elytrum
 elixir.o (medic.)  elixir (medicinal)
 Elizabet  Elizabeth, Elisabeth
@@ -4374,14 +4374,14 @@ elongacion.o  elongation (angle: tech., astron.)
 eloquent.a  eloquent; (fig.) vividly expressive
 elud.ar {tr} [ulo]  to elude, evade (cleverly or cunningly)
         elud.em.a  elusive, evasive
-«Elzevir» (tipog.)  Elzevir (printing type)
+Elzevir (tipog.)  Elzevir (printing type)
 em.o  target (also fig.)
 -em- {suf.}  (suffix joined especially to verbal roots to signify a person inclined to ...;
 e.g. atak-em-a: agressive; labor-em-a: industrious; parol-em-a: talkative)
 emaci.ar {tr}  to emaciate
 emali.o (subs.)  enamel
         emali.iz.ar  to enamel
-        emali.o pariet.oz.a  cloisonné (enamel)
+        emali.o pariet.oz.a  cloisonn (enamel)
 eman.ar {intr} [de, ek]  to emanate
 emancip.ar {tr} [ulu, de]  to emancipate (also fig., of the mind)
 emaskul.ar {tr}  to emasculate (deprive of virile vigour)
@@ -4578,7 +4578,7 @@ entraten.ar {tr} [ulu]  to supply with the needs of life and comfort
         entraten.o  maintenance, livelihood
 entrav.ar {tr} [ulu, ulo]  to shackle, fetter (also fig.)
         entrav.il.o  shackle, fetter
-entre.o  entrée (dish served before the main course)
+entre.o  entre (dish served before the main course)
 entrechat.o (danso)  entrechat, cross-caper
 entremes.o  entremets (a light dish served between main course and dessert)
 entren.ar {tr} [pri, por, per]  to train (for racing, sport, etc.)
@@ -4789,7 +4789,7 @@ astray
         eskart.it.a  set aside
 eskatologi.o (filoz.)  eschatology
 Eskimo.o  Eskimo
-eskombr.o  rubble (fragments of rock or ruined buildings), debris, débris (rocky fragments)
+eskombr.o  rubble (fragments of rock or ruined buildings), debris, dbris (rocky fragments)
 eskopet.o (armo)  shotgun, fowling-piece; blunderbuss (gun)
 eskort.o  escort, accompanying guard; (nav.) convoy
 eskot.o (nav.)  sheet (sail rope)
@@ -4979,7 +4979,7 @@ evolucion.ar {intr}  to evolve; (milit.) to perform evolutions
         evolucion.ism.o  evolutionism
         evolucion.ist.o  evolutionist
 ex- {pref.}  ex-, late, former, retired (prefix indicating one who formerly held a position)
-«ex-libris»  ex-libris
+ex-libris  ex-libris
 ex. [(abreviuro) = exemplo]  for example
 exajer.ar {tr} [ulo]  to exaggerate
 exakt.a  accurate (of a representation), exact (correct, faithful to the facts), faithful (of a
@@ -5005,7 +5005,7 @@ exempl.o  example
         exempl.a  exemplary
         exempl.e  for example, for instance
 exempler.o  copy (of a book, paper, engraving, etc.)
-«exequatur» (yuro)  exequatur
+exequatur (yuro)  exequatur
 exerc.ar {tr} [ulu, su, ad, pri, kontre]  to exercise, exert (legs, body, one's senses,
 strength, memory, eloquence, mind, etc.); (milit.) drill
         exerc.o  exercise, exertion; (milit.) drill
@@ -5148,7 +5148,7 @@ fac.ar {tr}  to make (an object); do (an act)
 facet.o  facet
 faci.o  front part or view (of anything).  Ant: dorso; reverso
         mi-faci.o  pose between face and profile (photog.)
-«facies»  facies
+facies  facies
 facil.a  easy (to do)
 facin.ar {tr}  to fascinate
 facion.ar {intr}  to stand guard, be on sentry duty
@@ -5169,7 +5169,7 @@ fakt.o (filoz.)  fact
 faktor.o  factor (math. and generally)
 faktori.o  trading agency
 faktorial.o  factorial
-«faktotum»  factotum
+faktotum  factotum
 faktur.o  invoice, bill
 fakultat.o  faculty (power of doing anything; university's)
 fakultativ.a  optional
@@ -5225,8 +5225,8 @@ sum)
 farmaci.o (cienco)  pharmacy (science), pharmaceutics
 farmakope.o  pharmacopoeia
 fars.o  farce, forcemeat; farce (theatrical & fig.)
-fasad.o (arkit.)  façade
-«fascia» (anat.)  fascia (connective tissue enclosing a muscle or other organ)
+fasad.o (arkit.)  faade
+fascia (anat.)  fascia (connective tissue enclosing a muscle or other organ)
 fashin.o  fascine
 fasiac.ar {tr/intr}  to fasciate (anat., bot.)
 fask.o  sheaf, bundle (as of sticks), bunch; pencil (of light rays)
@@ -5241,7 +5241,7 @@ faun.o (mitol.)  faun
 fav.o (morbo)  favus (a fungal skin disease), ringworm (of scalp)
 favor.ar {tr}  to favour, treat or regard kindly
 fay.o (stofo)  faille
-fayenc.o  faïence, crockery ware
+fayenc.o  faence, crockery ware
 faz.o  phase (astron. & gen.)
 fazan.o (ucelo)  pheasant
 fazeol.o (pl.)  French bean, kidney bean, haricot bean, string bean, frijol, frijole (plant)
@@ -5295,7 +5295,7 @@ feroc.a  ferocious
 feromon.o (subs.)  pheromone
 fertil.a  fertile, productive (of the ground; also fig.)
 fervor.ar {intr}  to be fervent, be eager
-«fes» (muz.)  F flat
+fes (muz.)  F flat
 fest.ar {tr/intr}  to observe a feast day or holy day; celebrate with festivities
         fest.o  religious festival
         fest.o dil Krist.o-korp.o  Corpus Christi
@@ -5382,7 +5382,7 @@ fint.ar {intr}  to feint (milit., boxing, fencing, etc.)
 fioritur.o (muz.)  flourish, ornamental embellishment (in music), grace-notes
 firm.o  firm (commercial)
 firmament.o  firmament (lit. & fig.)
-«fis» (muz.)  F sharp
+fis (muz.)  F sharp
 fish.o (zool.)  fish
 Fish.i (astron.)  Pisces
 fisil.a (fizk.)  fissile
@@ -5422,7 +5422,7 @@ flatu.ar {intr}  to break wind
 flatulent.a (medic.)  flatulent
 flav.a  yellow
 flebit.o (morbo)  phlebitis
-flech.o  arrow; spire, flèche
+flech.o  arrow; spire, flche
 fleg.ar {tr}  to nurse, care for (a child, a sick person)
 flegm.o  (med.) phlegm; (fig.) phlegm, stolidity, imperturbability
 flegmon.o (patol.)  phlegmon
@@ -5825,7 +5825,7 @@ ge- {pref.}  (prefix emphasising that both sexes are present; e.g. ge-fil-i: son
 daughters; ge-kuz-i: cousins of both sexes; ge-bov-i: bulls and cows)
 gebl.o (arkit.)  gable
 gehen.o (biblo)  Gehenna; (fig.) hell
-«geisha»  geisha
+geisha  geisha
 gek.o (rept.)  gecko
 gelatin.o (subs.)  gelatine
 Geldri.o (lando)  Gelderland, Guelderland, Guelders
@@ -5878,11 +5878,11 @@ Germani.a (lando)  Germany
 germani.o (elem.)  germanium
 gerontologi.o (cienco)  gerontology
 gerundi.o  gerund
-«ges» (muz.)  G flat
+ges (muz.)  G flat
 gest.ar {intr}  to gesticulate
 getr.o (vesto)  gaiter, spat
-«geyser» (geol.)  geyser
-«ghetto»  ghetto
+geyser (geol.)  geyser
+ghetto  ghetto
 gib.o  hump, rounded protuberance, boss
 gibelin.o  Ghibelline
 gibon.o (mamif.)  gibbon
@@ -6168,7 +6168,7 @@ hashish.o (subs.)  hashish
 hast.ar {intr}  to hurry, hasten
 hau.o  hoe
 haul.ar {tr}  to tow (as in 'towpath')
-«haustorium»  haustorium
+haustorium  haustorium
 hav.ar {tr}  to have (something)
 Havayi (lando)  Hawaii
 hazard.o  chance occurrence, (hap)hazard
@@ -6219,7 +6219,7 @@ heliostat.o (aparato)  heliostat
 heliotrop.a (bot.)  heliotropic
 heliotrop.o (pl.)  heliotrope
 helix.o  helix (anat.)
-«heller» (pek.)  heller
+heller (pek.)  heller
 helm.o (antiq.)  helmet (mediaeval and heraldic)
 helmint.o (animalo)  helminth
 helmintologi.o  helminthology
@@ -6292,7 +6292,7 @@ hibern.ar {intr} (zool.)  to hibernate (pass winter in a dormant state)
 hibisk.o (pl.)  hibiscus
 hibrid.a (biol.)  hybrid
 hid.o (elem.)  hydrogen
-«hidalgo»  hidalgo
+hidalgo  hidalgo
 hidatod.o (biol.)  hydathode
 hidr.o  Hydra (myth.; astr.); hydra (zool.); hydro- (hydrogen, water)
 hidrant.o  hydrant
@@ -6564,7 +6564,7 @@ iktiokol.o (subs.)  isinglass
 iktiologi.o (cienco)  ichthyology
 iktiosaur.o  ichthyosaur
 iktus.o (patol.)  ictus (med.: beat of the pulse)
-«iktus»  ictus (rhythmical accent)
+iktus  ictus (rhythmical accent)
 il (= ilu)  he, him
 -il- {suf.}  (suffix used with a verbal root to denote an instrument, tool or means of
 performing an action: e.g. bros-il-o: brush; bar-il-o: barrier; kont-il-o: counter; skrib-il-o:
@@ -6640,7 +6640,7 @@ inaugur.ar {tr}  to inaugurate
 incendi.ar {tr}  to set on fire
 incens.o (subs.)  incense
 incest.ar {intr} [kun]  to commit incest
-«inch»  inch
+inch  inch
 incid.ar {tr}  to impinge upon
 incident.a  incidental, casual (law, grammar)
 incident.o  incident (minor, subsidiary or related)
@@ -6685,7 +6685,7 @@ inert.a  inert; (fig.) sluggish
 infalibl.a  unfailing, certain (to happen)
 infam.a  infamous
 infant.o  infant (child under 7 years of age)
-«infante»  infanta, infante
+infante  infanta, infante
 infantri.o (milit.)  infantry
 infarkt.o (patol.)  infarct
 infekt.ar {tr}  to infect, taint
@@ -6832,7 +6832,7 @@ intrig.ar {intr}  to conspire, plot, intrigue
 intrik.ar {tr}  to entangle
 intrinsek.a  intrinsic.  Ant: extrinseka
 introdukt.ar {tr}  to introduce (someone or something)
-«introitus» (rel.)  introit
+introitus (rel.)  introit
 introvert.o  introvert.  Ant: extraverto
 intruz.ar {intr} [en ulo]  to intrude, meddle, tamper; (geol.) to enter, or cause to enter, by
 force
@@ -6871,7 +6871,7 @@ Ioni.a (lando)  Ionia
          Ioni.an.o  Ionian (native)
 ionik.a (arkit.)  Ionic (of architecture)
 Ioseph  Joseph
-«iota»  iota; (fig.) jot, tittle
+iota  iota; (fig.) jot, tittle
 ips.a  selfsame, myself, yourself, himself, herself, itself, ourselves, yourselves, themselves
 (used for emphasis immediately after a pronoun)
         ips.e  self, one's self (adv.)
@@ -6879,7 +6879,7 @@ ir.ar {tr/intr}  to go (be on one's way); go (a particular way)
 irac.ar {intr} [kontre]  to be angry
         irac.o  anger, ire
         irac.ig.ar  to anger
-«irade» (polit.)  irade, decree of Sultan
+irade (polit.)  irade, decree of Sultan
 iradi.ar {tr} (fizk.)  (tr.) to irradiate
 Irak (lando)  Iraq
 Iran (lando)  Iran
@@ -6976,7 +6976,7 @@ januar.o  January
 Japoni.a (lando)  Japan
         Japoni.an.o  Japanese (person)
 jar.o  jar (container)
-jardinier.o  jardinière (stand for flowers; mixed vegetables)
+jardinier.o  jardinire (stand for flowers; mixed vegetables)
 jargon.ar {intr}  to talk incomprehensibly (due to bad grammar, pronunciation, vocaulary)
         jargon.o  jargon
 jasmin.o (pl.)  jasmine
@@ -7153,7 +7153,7 @@ kalorimetr.o (instr.)  calorimeter
 kalorimetri.ar {tr} (fizk.)  to measure with a calorimeter
         kalorimetri.o (fizk.)  calorimetry
 kalot.o  skullcap; segment of a sphere divided by a plane
-«kalpak» (vesto)  calpack
+kalpak (vesto)  calpack
 kalqu.ar {tr}  to trace (design etc)
 kalson.o (vesto)  (pair of) drawers, underpants
 kalumni.ar {tr}  to accuse falsely, defame, slander, calumniate
@@ -7391,7 +7391,7 @@ kartamin.o (biokem.)  carthamine
 kartav.ar {intr}  to pronounce the letter 'r' guturally
 kartel.o  letter of defiance or challenge (as to a duel), cartel (obs.)
 karter.o (mek.)  crankcase
-kartezian.a  Cartesian (of René Descartes)
+kartezian.a  Cartesian (of Ren Descartes)
 kartilag.o (anat.)  cartilage, gristle
 kartografi.o (cienco)  cartography
 kartomanci.ar {intr}  to practise cartomancy
@@ -7536,8 +7536,8 @@ kern.o (bot.)  kernel (also fig.); stone, pit (of a fruit)
 kerozen.o (subs.)  paraffin (oil), kerosene
 kerub.o (rel.)  cherub
 kest.o  packing case, box, chest (of tea, soap, etc), case (of wine, etc)
-«khan»  khan (title; caravanserai)
-«khedive»  khedive
+khan  khan (title; caravanserai)
+khedive  khedive
 Khiv.a (lando)  Khiva
 kidnap.ar {tr}  to kidnap
 kik.ar {intr}  (of a horse etc.) to kick
@@ -7566,7 +7566,7 @@ kiropter.o  bat (animal), cheiropteran
 kirsh.o (drnkj.)  Kirsch
 kirurgi.o  surgery (science, work of a surgeon)
 kis.ar {tr}  to kiss
-«kismet»  kismet: fate, destiny
+kismet  kismet: fate, destiny
 kist.o (patol.)  cyst
 kizelgur.o  kieselguhr
 klad.o  rough draft (of a text)
@@ -8175,7 +8175,7 @@ kremon.o (mek.)  espagnolette (bolt) (vertical window fastening)
 krenel.o (arkit.)  crenel(le)
 kreol.o  Creole, creole
 kreozot.o (kem.)  creosote
-krep.o (stofo)  crape, crepe, crêpe (fabric)
+krep.o (stofo)  crape, crepe, crpe (fabric)
 krepis.ar {tr}  to plaster (a wall)
 krepit.ar {intr}  to crackle (sound)
 krepon.o (stofo)  thick crape, ~seersucker
@@ -8307,7 +8307,7 @@ kulbut.ar {intr}  to turn upside down (intr.), somersault; capsize
         kulbut.ig.ar  to turn upside down (tr.)
 kulc.o (insekto)  gnat, midge
 kulebrin.o (armo)  culverin (type of cannon)
-«kuli»  coolie, cooly
+kuli  coolie, cooly
 kulier.o  spoon
         kulier.ed.o  spoonful
 kulis.o  runner (groove or guide); wing (of theatre)
@@ -8320,7 +8320,7 @@ kultel.o  knife
 kultiv.ar {tr}  to cultivate (soil, plants, the mind, the arts, etc.), till
 kultur.o  culture (ethical, intellectual, social, etc)
 kumin.o (pl.)  cumin, cummin
-«kumis» (drnkj.)  kumiss, koumiss
+kumis (drnkj.)  kumiss, koumiss
 kumpres.o  compress
 kumul.ar {tr} (yuro)  to hold a plurality of offices
 kumulus.o (meteor.)  cumulus
@@ -8349,7 +8349,7 @@ kupr.o (elem.)  copper
 kupul.o (bot.)  cupule (of acorn)
 kur.ar {intr}  to run
 kurac.ar {tr} (medic.)  to treat (medically)
-kuraca.o (drnkj.)  curaçoa
+kuraca.o (drnkj.)  curaoa
 kuraj.ar {tr/intr}  to be courageous, have the courage for
         kuraj.o  courage
 kurar.o (biokem.)  curare, curari (resin)
@@ -8407,7 +8407,7 @@ kuz.o  cousin
 l' (= la)  the (alternative to 'la' when preceding a vowel; e.g. l'infanto)
 la {artiklo.}  the
 la (muz.)  la (sixth note of the diatonic scale)
-«la» (muz.)  la (sixth note of the diatonic scale)
+la (muz.)  la (sixth note of the diatonic scale)
 labar.o (hist.)  labarum (Roman standard)
 labi.o (anat.)  lip (anat. & fig.)
 labirint.o  labyrinth; (fig.) maze
@@ -8459,11 +8459,11 @@ lanc.o (armo)  lance, spear
         lanc.et.o  small spear; (surg.) lancet
 lancin.ar {intr}  to shoot, dart (of pain)
 land.o  (a) country, (a) land
-«landau» (veturo)  landau
-«landaulet» (veturo)  landaulet, landaulette
+landau (veturo)  landau
+landaulet (veturo)  landaulet, landaulette
 landgrav.o  landgrave
-«landsturm»  Landsturm
-«landwehr»  Landwehr
+landsturm  Landsturm
+landwehr  Landwehr
 lang.o  tongue (anat. & tech.)
 langor.ar {intr}  to languish
 langust.o (animalo)  spiny lobster, rock lobster, langouste (#), crayfish (#)
@@ -8687,7 +8687,7 @@ liquid.a  liquid
 liquidac.ar {tr}  to wind up (a business, etc.)
 liquor.o (drnkj.)  (alcoholic) spirit, liquor
 lir.o  lyre; lyrebird; Lyra (astr.)
-«lira» (pek.)  lira (monetary unit)
+lira (pek.)  lira (monetary unit)
 lirik.a  lyric, lyrical
 list.o  list
 lit.o (moblo)  bed (for sleeping; also fig. of a river etc)
@@ -8762,7 +8762,7 @@ longitud.o (geog.)  longitude
 lor {prep.}  at the time of (an event), at the same time as
         lor.e  then, at that time
         lor.e ... lor.e  now ... then
-«lord»  Lord
+lord  Lord
 lorn.o  monocular (n.), spyglass
         lorn.et.o  lorgnette, small spy-glass
         bi-lorn.o (aparato)  binocular (n.), "(pair of) binoculars", (double) field glass
@@ -8829,10 +8829,10 @@ luzern.o (pl.)  alfalfa, lucerne
 
 ma {konj.}  but
 Macedoni.a (lando)  Macedonia
-macedoni.o (koquo)  macédoine; (fig.) medley, hodgepodge
+macedoni.o (koquo)  macdoine; (fig.) medley, hodgepodge
         Macedoni.an.o  Macedonian (person)
 macer.ar {tr/intr}  to macerate
-«mackintosh» (vesto)  mackintosh, macintosh (coat)
+mackintosh (vesto)  mackintosh, macintosh (coat)
 Madagaskar (lando)  Madagascar
 Madeir.a (lando)  Madeira
 madelen.o  madeleine
@@ -9007,7 +9007,7 @@ marin.ar {tr/intr} (koquo)  to marinate
 marionet.o  puppet, marionette
 marjin.o  margin (of a page); (fig.) border
 mark.o  mark, token; (postage) stamp
-«mark»  mark (weight; money)
+mark  mark (weight; money)
 markez.o  marquis
 markot.ar {tr} (bot.)  to layer (propagate by layering)
         markot.aj.o (bot.)  layered branch or shoot
@@ -9062,7 +9062,7 @@ mastr.o  master
 masturb.ar  to masturbate
 mat.o  mat, matting
 matador.o  matador
-mate.o  maté, mate (tree; drink)
+mate.o  mat, mate (tree; drink)
 matematik.o (cienco)  mathematics
 materi.o  material, matter, stuff (also fig.)
         materi.o prim.a (tekn.)  raw material
@@ -9204,7 +9204,7 @@ meskalin.o (kem.)  mescaline
 meskin.a  mean, stingy
 meson.ar {tr}  to cut and harvest, reap (cereals)
 mestic.o  half-caste, mestizo
-mestier.o  trade, craft, occupation (manual), métier
+mestier.o  trade, craft, occupation (manual), mtier
 met.ar {tr}  to put on, don (clothing etc)
 metaboli.o (biol.)  metabolism
 metacentr.o (fizk.)  metacentre, (US) metacenter
@@ -9261,7 +9261,7 @@ mezotint.o (arto)  mezzotint (print)
 mezur.ar {tr} [per]  to measure; (land) survey
         mezur.o  measure, measurement; time, measure (mus.); bar (mus.)
 mi (muz.)  mi (third note of the diatonic scale)
-«mi» (muz.)  mi (third note of the diatonic scale)
+mi (muz.)  mi (third note of the diatonic scale)
 mi- {pref.}  semi-, hemi-, demi-
         mi-faci.o  pose between face and profile (portrait)
         mi-farm.ad.o  metayage
@@ -9387,7 +9387,7 @@ mis-kompren-ar: to misunderstand; mis-pronunc-ar: to mispronounce; mis-uz-o: mis
 mision.o  mission (religious or scientific group)
 mispel.o (frukto)  medlar (fruit)
         mispel.ier.o (arb.)  medlar tree
-«Miss»  miss
+Miss  miss
 mistel.o (pl.)  mistletoe
 misteri.o  mystery
 mistik.a  mystic, mystical
@@ -9429,7 +9429,7 @@ a more durable sculpture
 modul.o  modulus (math., phys.), module (arch.)
 modulac.ar {tr}  to modulate
 mofet.o (mamif.)  skunk
-«mogul»  mogul
+mogul  mogul
 Mohamed.an.o (rel.)  Muslim, Mohammedan, Mahommedan, Mahometan, Muhammedan
 moher.o (stofo)  mohair (fabric)
 mok.ar {tr} [pro, pri]  to mock, laugh at
@@ -9563,8 +9563,8 @@ muev.o (ucelo)  gull, sea gull
 muf.o  muff; cylindrical casing (tech.)
 mufl.o  muffle (chem.)
 muflon.o (mamif.)  mouflon, moufflon
-«mufti» (rel.)  Mufti (expounder of Muslim law)
-«muid» (mez.)  hogshead
+mufti (rel.)  Mufti (expounder of Muslim law)
+muid (mez.)  hogshead
 muj.ar {intr}  to roar (of wind, waves)
 muk.o (biol.)  mucus
         muk.oz.o (anat.)  mucous membrane
@@ -9762,7 +9762,7 @@ nev.o  nephew; neice; (-ulo) nephew; (-ino) niece
         nev.in.o  niece
         nev.ul.o  nephew
         pos-nev.o  greatnephew, grandnephew; greatniece, grandniece
-neve.o (geog.)  névé, firn, glacial snow
+neve.o (geog.)  nv, firn, glacial snow
 nevralgi.o (morbo)  neuralgia
 nevrit.o (morbo)  neuritis
 nevrologi.o  neurology
@@ -9790,7 +9790,7 @@ nilgav.o (mamif.)  nilgai, nilghau, nilgau, nylghau
 nilon.o (subs.)  nylon
 nimb.o (meteor.)  nimbus (cloud)
 nimf.o (mitol.)  nymph
-«nirvana» (filoz.)  nirvana, Nirvana
+nirvana (filoz.)  nirvana, Nirvana
 nitr.o (elem.)  nitrogen
 nitrat.o (kem.)  nitrate
 nitrid.o (kem.)  nitride
@@ -9949,7 +9949,7 @@ od (= o) {konj.}  or
 od ... od (= o ... o) {konj.}  either ... or
 od.o  ode
 odalisk.o  odalisque, odalisk, odalique
-«odeon»  odeon (ancient Greek musical theatre), odeum (Roman odeon)
+odeon  odeon (ancient Greek musical theatre), odeum (Roman odeon)
 odi.ar {tr}  to hate
 odise.o  odyssey
 odontoblast.o (biol.)  odontoblast
@@ -9976,7 +9976,7 @@ oftalmoskop.o (instr.)  ophthalmoscope
 ogiv.o (arkit.)  ogive
 ogl.ar {tr}  to ogle
 ogr.o  ogre
-«ohm»  ohm
+ohm  ohm
 -oid- {suf.}  -oid (scientific suffix)
 ok  eight
 okapi.o (mamif.)  okapi
@@ -10097,7 +10097,7 @@ oread.o (mitol.)  oread, mountain nymph
 orel.o (anat.)  ear
         orel.um.o  ear-covering, ear-flap
 orelion.o (morbo)  mumps
-«oremus» (litur.)  orison, prayer
+oremus (litur.)  orison, prayer
 orfan.o  orphan
 organ.o  organ (of an organised body); (fig.) instrument, means
         organ.iz.ar {tr}  to organise (furnish with organs)
@@ -10204,7 +10204,7 @@ Pacifik.a (mar.)  Pacific (adj.)
         Pacifik.o (mar.)  Pacific (ocean)
 pad.o  pad, padding
 padel.o  frying pan
-«padishah»  padishah
+padishah  padishah
 padlok.o  padlock
 paf.ar {tr/intr}  to shoot (a bullet etc., with a firearm)
         paf.ilo (armo)  firearm, gun
@@ -10311,7 +10311,7 @@ papay.o (frukto)  papaya, pawpaw (fruit; papaya, not papaw)
         papay.ier.o (arb.)  papaya tree
 paper.o  paper
         paper-korn.o  paper cone
-        paper-past.o  papier-mâché, paper-mâché
+        paper-past.o  papier-mch, paper-mch
 papil.o  papilla (anat., bot.)
 papilion.o (insekto)  butterfly; moth
 papir.o  papyrus (paper-reed; writing material)
@@ -10371,7 +10371,7 @@ parezi.o (medic.)  paresis
 parfum.o (subs.)  perfume
 parheli.o (astron.)  parhelion
 pari.ar {tr} [pri, por, kontre] (pek.)  to bet
-«paria»  pariah, outcast
+paria  pariah, outcast
 pariet.o  (dividing) wall, partition; septum (anat., bot.)
         pariet-al.a ost.o, -al.o (anat.)  parietal bone
 parietari.o (pl.)  wall pellitory
@@ -10421,7 +10421,7 @@ pasabl.a  passable, fair, middling, mediocre
 pasaj.ar {intr}  to be a passenger (on a ship)
 pasaman.o (arkit.)  handrail
 paser.o (ucelo)  sparrow
-«pasha»  pasha
+pasha  pasha
 pasiflor.o (pl.)  passionflower
 pasion.o  passion
 pasiv.a  passive.  Ant: aktiva
@@ -10485,7 +10485,7 @@ paz.ar {intr}  to step, stride
 pazigrafi.o  pasigraphy
 pean.o (kanto)  paean (hymn or song), (US) pean
 pec.o  piece; lump (e.g. of sugar)
-«peccavi» (rel.)  peccavi
+peccavi (rel.)  peccavi
 pech.o (subs.)  pitch (substance)
 ped.o  foot (anat. & fig.); paw; foot (of verse)
         bi-ped.a  biped, bipedal
@@ -10647,7 +10647,7 @@ peruk.o (vesto)  wig
 pervers.a  perverse
 pervink.o (pl.)  periwinkle
 pesari.o (kir.)  pessary (surg.)
-«peseta» (pek.)  peseta
+peseta (pek.)  peseta
 pesimism.o  pessimism
 pesimist.o  pessimist
 pesk.ar {tr/intr}  to fish, angle (also fig.); take out (fish, coral, pearl)
@@ -10670,8 +10670,8 @@ petul.ar {intr}  to be boisterous
 petuni.o (pl.)  petunia
 pez.ar {intr}  to weigh (have a certain weight)
         pez.o  weight
-«pfennig» (pek.)  pfennig
-«pfund» (mez.)  "Pfund" (German pound weight)
+pfennig (pek.)  pfennig
+pfund (mez.)  "Pfund" (German pound weight)
 pi.a  pious, devout
 piaf.ar {intr}  to piaffe, perform a piaffer
 piamatr.o (anat.)  pia mater
@@ -10694,7 +10694,7 @@ pijam.o (vesto)  pyjamas, (US) pajamas
 pik.ar {tr}  to prick, prod (with something pointed)
 pikador.o  picador
 Pikardi.a (lando)  Picardy
-pike.o (stofo)  piqué (fabric)
+pike.o (stofo)  piqu (fabric)
 piket.o  picket (of soldiers); piquet (card game)
 pikl.o  pickle, something preserved in spice and/or vinegar
 piknik.ar {intr}  to picnic
@@ -11060,7 +11060,7 @@ potencial.o  potential (all senses)
 potenciometr.o  potentiometer
 potent.a  powerful, potent, mighty
         potent.o  potentate
-«pound»  pound (sterling)
+pound  pound (sterling)
 pov.ar {tr/intr}  to be able (to do something)
         pov.as  can (v.)
         pov.o  power, ability
@@ -11312,14 +11312,14 @@ protist.o (biol.)  protist
 protogin.a (bot.)  protogynous.  Ant: protandra
 protokol.o  written minutes
 proton.o (fizk.)  proton
-«protonema»  protonema
+protonema  protonema
 protoplasm.o (biol.)  protoplasm
 protoplast.o (biol.)  protoplast (biol.)
 prototip.o  prototype
 protozo.o (zool.)  protozoan
 protuberanc.o  protuberance (anat., astr., & general), prominence (projecting part)
 Provenc.o (lando)  Provence
-        Provenc.an.o  Provençal (person)
+        Provenc.an.o  Provenal (person)
 proverb.o  proverb
 providenc.o  Providence; providence
 provinc.o (polit.)  province; (fig.) shire, rural region or district outside a capital city
@@ -11378,7 +11378,7 @@ publik.a  public
         publik.o  (fig.) (the) public, (the) people (generally)
 pudel.o (mamif.)  poodle (dog)
 puding.o (geol.)  pudding-stone, conglomerate (geol.)
-«puding»  pudding
+puding  pudding
 pudl.ar {tr} (tekn.)  to puddle (convert pig-iron into wrought-iron)
 pudor.ar {intr}  to feel a natural modesty (esp. of women)
         pudor.o  native bashfulness, modesty, shamefacedness, pudicity
@@ -11421,7 +11421,7 @@ pupe.o (lud.)  doll, puppet
 pupil.o (anat.)  pupil (of the eye)
 pupitr.o (moblo)  desk (for writing or reading)
 pur.a  pure
-pure.o  purée
+pure.o  pure
 purg.ar {tr}  to purge (lit. or fig.)
 purgatori.o (rel.)  purgatory
 puritan.o (rel.)  puritan
@@ -11721,7 +11721,7 @@ regard.ar {tr}  to regard (look at attentively)
 regat.o (nav.)  regatta
 regener.ar {tr}  to regenerate
 regent.o (polit.)  regent
-regi.o  régie, direct administration or management (of government properties); government
+regi.o  rgie, direct administration or management (of government properties); government
 monopoly
 regiment.o (milit.)  regiment
 region.o  region (all senses)
@@ -11799,7 +11799,7 @@ remors.ar {intr} [pri, pro]  to feel remorse
 rempar.o (fortif.)  rampart, bulwark
 remplas.ar {tr}  to replace (take or be in the place of)
         remplas.ig.ar {tr}  to replace (one thing with another)
-remulad.o  remoulade, rémoulade
+remulad.o  remoulade, rmoulade
 ren.o (anat.)  kidney
 renatur.ar {tr}  to renaturate
 rendevu.ar {intr}  to rendezvous
@@ -11892,7 +11892,7 @@ retro- {pref.}  retro-, re- (prefix used with a verbal root to indicate: back, b
 inverse action, return. E.g. retro-ir-ar: to go back(wards); retro-tir-ar: to draw back)
 retush.ar {tr}  to retouch
 reumatism.o (morbo)  rheumatism
-Reunion (lando)  Réunion (island)
+Reunion (lando)  Runion (island)
 rev.ar {intr} [pri]  to day-dream
 revanch.ar {intr} [pri]  to requite; retaliate, get even
 revel.ar {tr} [per, pri, ad]  to reveal
@@ -11941,7 +11941,7 @@ rib.o (frukto)  currant (fruit: redcurrant, blackcurrant, etc., not small black 
 riboflavin.o (kem.)  riboflavin(e)
 rich.a [de]  rich (lit. & fig.).  Ant: povra
 ricin.o (pl.)  castor-oil plant
-«rictus»  rictus (unnatural wide gaping of the mouth, revealing the teeth)
+rictus  rictus (unnatural wide gaping of the mouth, revealing the teeth)
 rid.ar {intr} [pri, pro, de]  to laugh
         rid.et.ar {intr}  to smile
 ridel.o (tekn.)  slatted side (of a vehicle), side pole, rack, sideboard (of a cart), cart-rack
@@ -12002,7 +12002,7 @@ rok.o  (a) rock, boulder
 Rok.oz.a Mont.i (mont.)  Rocky Mountains
 rokambol.o (pl.)  rocambole
 rokok.o  rococo
-rol.o  role, rôle (theat. & gen.), part, character
+rol.o  role, rle (theat. & gen.), part, character
 roler.o (mek.)  roller (cylindrical)
 Rom.a  Rome
         Rom.an.o  Roman
@@ -12083,7 +12083,7 @@ rumor.o  rumour
 rump.o (anat.)  rump (anat.)
 rumstek.o  rumpsteak
 run.o  rune (letter)
-«rupie» (pek.)  rupee
+rupie (pek.)  rupee
 rupt.ar {tr}  to break (by force), snap, rupture (tr.)
         rupt.es.ar  to break, snap, rupture (intr.)
 rur.o  country (as opposed to town)
@@ -12249,7 +12249,7 @@ satir.o  satire
 satirus.o  satyr (myth., fig.)
 satisfac.ar {tr} [per]  to fulfil or satisfy (a duty, expectation, promise); discharge (an
 obligation)
-«satisfecit»  certificate of satisfaction or good conduct (such as given to a pupil)
+satisfecit  certificate of satisfaction or good conduct (such as given to a pupil)
 satrap.o (polit.)  satrap
 satur.ar {tr} [ye]  to satiate, saturate
 saturdi.o  Saturday
@@ -12307,7 +12307,7 @@ sel.o  saddle
 selakt.o  whey
 selekt.ar {tr}  to choose, select
 selenografi.o (astron.)  selenography
-«selfmademan»  self-made man
+selfmademan  self-made man
 Sem  Shem
 Sem.id.o  Semite
 Sem.id.al.a  Semitic
@@ -12385,7 +12385,7 @@ Serbi.a (lando)  Serbia
 serch.ar {tr}  to seek, look for, search for
 seren.a  serene, placid
 serenad.o (muz.)  serenade
-«serenissimus»  His Serene Highness (title)
+serenissimus  His Serene Highness (title)
 serf.o  serf
 seri.o  series, row, file, queue
 serin.o (ucelo)  serin (type of finch)
@@ -12435,7 +12435,7 @@ sferoid.o (geom.)  spheroid
 sferometr.o (instr.)  spherometer
 sfinter.o (anat.)  sphincter
 sfinx.o  sphinx (also fig.)
-«sha»  shah
+sha  shah
 shablon.o  pattern (outline for making something)
 shabrak.o (milit.)  shabrack, shabracque, saddle-cloth
 shaft.o  shaft, staff, long handle
@@ -12470,11 +12470,11 @@ shifon.o  rag
 shikan.ar {tr} [pri, pro]  to use tricks and artifice; quibble, wrangle, pettifog
         shikan.o  chicanery, sharp practice; quibbling, wrangling
 shild.o (milit.)  shield (for protection)
-«shilling»  shilling
+shilling  shilling
 shindol.o  shingle (wooden tile)
 shink.o  ham
 shirm.ar {tr} [de]  to shelter, shield
-«shirting»  shirting
+shirting  shirting
 shok.ar {tr}  to strike against; shock (mentally)
         shok.o  shock (physical or mental), impact
 shov.ar {tr}  to push along, shove
@@ -12491,7 +12491,7 @@ shultr.o (anat.)  shoulder
 shunt.o (elek.)  shunt (elec.)
 shutr.o  blind, shutter
 si (muz.)  te, ti, si (seventh note of the diatonic scale)
-«si» (muz.)  si, seventh note of diatonic scale
+si (muz.)  si, seventh note of diatonic scale
 Siam (lando)  Siam
         Siam.an.o  Siamese (native of Siam)
 sibarit.a  sybarite (adj.), sybaritic
@@ -12676,7 +12676,7 @@ skarlat.a (koloro)  scarlet (adj.)
 skarlatin.o (morbo)  scarlet fever, scarlatina
 skarmuch.ar {intr} (milit.)  to (engage in a) skirmish
 skars.a  scarce
-«skat» (lud.)  skat (card game)
+skat (lud.)  skat (card game)
 skelet.o (anat.)  skeleton
 skem.o  schema, schematic (n.), chart, diagram
 sken.o  hank, skein
@@ -12783,7 +12783,7 @@ sofit.o (arkit.)  soffit
 sok.o  sock (ploughshare, US: plowshare)
 sokl.o (arkit.)  socle, plinth
 sokurs.ar {tr}  to come to the aid of when in danger, succour, (US) succur
-«sol» (muz.)  sol, so, soh (fifth note of the diatonic scale)
+sol (muz.)  sol, so, soh (fifth note of the diatonic scale)
 sol.a  alone, sithout comapny, sole, only (adj.)
         sol.es.o  solitude
         sol.o (muz.)  solo (music)
@@ -12853,14 +12853,14 @@ sorgum.o (pl.)  sorghum, Indian millet
 sorit.o (log.)  sorites (logic)
 sort.o  sort, kind
 sospir.ar {intr}  to sigh
-«sou»  sou: twentieth part of a franc
+sou  sou: twentieth part of a franc
 sovaj.a  wild, savage (untamed); (fig.) fierce
 Soviet-Union.o (lando)  Soviet Union
 sozi.o  double, counterpart (someone extremely alike in appearance to another)
 spac.o  space
 spad.o  spade
 spadic.o (bot.)  spadix
-«spahi»  spahi, spahee
+spahi  spahi, spahee
 span.o  chip (of wood, etc.)
 spaniel.o (mamif.)  spaniel
 spant.o (nav.)  timber, rib (in the frame of a ship)
@@ -12956,7 +12956,7 @@ squadr.o  set-square
 squal.o (fisho)  shark of the genus Squalus
 squam.o (zool.)  scale (of a fish, etc.)
 squat.ar {intr}  to squat
-«squatter»  squatter (on land)
+squatter  squatter (on land)
 squil.o (pl.)  squill, sea squill
 st [!]  hush!, sh!, hist!
 stab.o (milit.)  staff (military)
@@ -12989,7 +12989,7 @@ stapeli.o (pl.)  stapelia
 stapl.o  distributing point for goods such as a seaport or large inland city, staple-mart,
 entrepot
 starch.ar {tr}  to (stiffen with) starch; (fig.) stiffen
-«starost»  starosta
+starost  starosta
 start.ar {tr/intr}  to start, set going (a car, train, etc.)
 starter.o  starter (of a race)
 stat.o (polit.)  state (political)
@@ -13199,7 +13199,7 @@ Suedi.a (lando)  Sweden
 sufic.ar {} [ad, por, pri]  to suffice, be sufficient
 sufix.o (gram.)  suffix
 sufl.ar {tr/intr}  to blow, blow upon; prompt (theatre); huff (draughts, checkers)
-sufle.o  soufflé
+sufle.o  souffl
 sufok.ar {tr/intr}  to suffocate, stifle
 sufr.ar {tr/intr} [ulo; de, pro]  to suffer, be afflicted; suffer from, be afflicted with
 sufragan.o (rel.)  suffragan (bishop)
@@ -13309,8 +13309,8 @@ suzeren.o (polit.)  suzerain
 swabr.o  swab (for cleaning decks, floors)
 swich.ar {tr} (elek.)  to switch (a machine, light etc. on or off; en-swichar: switch on;
 ek-swichar: switch off; swichilo: switch)
-«synapsis» (biol.)  synapsis (biol.)
-«syncytium» (biol.)  syncytium (multinucleate cell)
+synapsis (biol.)  synapsis (biol.)
+syncytium (biol.)  syncytium (multinucleate cell)
 
                                                T
 
@@ -13447,7 +13447,7 @@ taxidermi.o  taxidermy
 taximetr.o (aparato)  taximeter
 taxus.o (arb.)  yew (tree)
 tay.o (anat.)  waist
-«Te Deum» (rel.)  Te Deum
+Te Deum (rel.)  Te Deum
 te.o  tea (leaves; infusion)
         te.ier.o (pl.)  tea bush
         te-kruch.o  teapot
@@ -13632,7 +13632,7 @@ tiktak.ar {intr}  to go tic-tac, tick (as a clock)
 til {prep.}  until, till (in time); to, up to, as far as (in space)
 til ke  until (conj.)
 til ri.vid.o  until we meet again, goodbye for now, 'au revoir'
-«tilburi» (veturo)  tilbury
+tilburi (veturo)  tilbury
 tild.o  tilde
 tili.o (arb.)  linden, lime (tree), (US) basswood
 tim.ar {tr}  to fear (for a reason), be apprehensive
@@ -13677,12 +13677,12 @@ toal.o  towel
 tof.o (min.)  tufa; tuff
 tog.o (vesto)  toga
 Togo (lando)  Togo
-«toise» (mez.)  toise: French lineal measure
+toise (mez.)  toise: French lineal measure
 tok.o (vesto)  toque (brimless close-fitting hat)
 tol.o (tekn.)  sheet-metal
 told.o  awning
 toler.ar {tr}  to tolerate, put up with, endure
-«tolle»  outcry, hue and cry
+tolle  outcry, hue and cry
 tom.o  volume, tome
 tomat.o (frukto)  tomato
         tomat.ier.o (pl.)  tomato (plant)
@@ -13703,13 +13703,13 @@ Tonga (lando)  Tonga
 tonik.a  tonic (in music, language)
 Tonkin (lando)  Tonkin, Tongking
         Tonkin.an.o  native of Tonkin
-«tonneau»  tonneau (rear seat)
+tonneau  tonneau (rear seat)
 tonoplast.o (biol.)  tonoplast
 tonsil.o (anat.)  tonsil
 tonsilit.o (morbo)  tonsilitis
 tonsur.o (rel.)  tonsure
 tontin.o (financ.)  tontine
-«tonus»  tonicity, tonus
+tonus  tonicity, tonus
 top.o (nav.)  top (small platform atop the lower mast)
 topaz.o (min.)  topaz
 topik.a (medic.)  topical (medicine or treatment)
@@ -13747,7 +13747,7 @@ tost.ar {intr} [ad]  to give a toast
 tot.a  whole, entire
 totalizator.o (aparato)  totalisator, totalizator (apparatus that gives the total of a series
 of operations)
-«totem»  totem
+totem  totem
 toxik.o  poison (med.)
 toxikologi.o  toxicology
 toxin.o (subs.)  toxin
@@ -13897,7 +13897,7 @@ tribut.ar {intr} [ad]  to pay tribute
         tribut.o  tribute (act)
 triceps.o (anat.)  triceps
 tricikl.o (veturo)  tricycle
-«triduum»  triduum (prayers)
+triduum  triduum (prayers)
 trifoli.o (pl.)  trefoil, clover
 triftong.o (ling.)  triphthong
 triglif.o (arkit.)  triglyph
@@ -13946,7 +13946,7 @@ tro {adv.}  too (followed by an adjective or adverb), over (too), (US) overly
 trofe.o  trophy
 trog.o  trough (for animals); hod
 troglodit.o  wren; troglodyte
-«troika» (veturo)  troika (vehicle)
+troika (veturo)  troika (vehicle)
 trokanter.o (anat.)  trochanter (anat.)
 trokar.o  trocar (perforator)
 troke.o (poez.)  trochee
@@ -13987,7 +13987,7 @@ trup.o  band (company of people having a common purpose), troup; herd, flock
 trus.ar {tr}  to tuck up, put a tuck in; turn up, pin up, tie up
 trust.o (komerco)  trust, cartel
 trut.o (fisho)  trout
-truver.o  trouvère, trouveur
+truver.o  trouvre, trouveur
 tu {pron.}  thou, you (familiar form of 'you', like French 'tu', German 'du')
         tu.a  thy, thine, your (see 'tu')
 tualet.ar {intr}  to wash & dress
@@ -14012,7 +14012,7 @@ tumul.o  tumulus, barrow, burial mound
 tumult.ar {intr}  to riot
 tun.o (mez.)  ton; metric ton, tonne
 tundr.o (geog.)  tundra
-«tundra» (geog.)  tundra
+tundra (geog.)  tundra
 tunel.o  tunnel
 tunik.o  tunic (antique undergarment); coat, film, tunic (anat.); wall (of the stomach); coat,
 integument (bot.)
@@ -14028,7 +14028,7 @@ turb.o  crowd, throng
 turban.o (vesto)  turban
 turbin.o (aparato)  turbine
 turbot.o (fisho)  turbot
-«turco» (milit.)  Turco
+turco (milit.)  Turco
 turd.o (ucelo)  thrush (bird)
 turgec.ar {intr} (patol.)  to be turgescent
         turgec.ant.a  turgescent
@@ -14056,7 +14056,7 @@ tutu.o (vesto)  tutu
 tuv.ar {tr} (nav.)  to warp (a vessel using ropes)
         tuv.o-kabl.o  stream-line, warping hawser
 tuy.o (arb.)  thuja, thuya
-tuyer.o (tekn.)  twyer, twyere, tweer, twier, twire, tuyère
+tuyer.o (tekn.)  twyer, twyere, tweer, twier, twire, tuyre
 
                                                U
 
@@ -14209,7 +14209,7 @@ vacini.o (pl.)  plant of the type "Vaccinium" (such as bilberry; (red) whortlebe
 huckleberry; blaeberry, cranberry, cowberry)
 vad.ar {intr} [tra]  to wade (through water)
         vad.ey.o  ford (place)
-«vade-mecum»  vade mecum
+vade-mecum  vade mecum
 vafl.o  waffle (type of pancake)
 vag.ar {intr}  to wander, roam, stray
 vagin.o (anat.)  vagina
@@ -14303,7 +14303,7 @@ velur.o (stofo)  velvet
 ven.ar {intr}  to come
 vend.ar {tr}  to sell
 vendemi.ar {tr}  to harvest (grapes for wine-making), ~vindemiate
-«vendetta»  vendetta
+vendetta  vendetta
 venen.o  poison, venom (also fig.)
         venen.ag.ar  to poison (a living creature), attack with poison
         venen.iz.ar  to poison (add a poison to (something))
@@ -14433,7 +14433,7 @@ vilaj.o  village
 vilanel.o (kanto)  villanelle (ballad or dance)
 vild.o  game (hunted wild animals)
 vilej.ar {intr}  to be in the country(side) (for a while), to sojourn in the country(side)
-«villa»  villa
+villa  villa
 vilozit.o (anat.)  villus (of intestines)
 vimpl.o (vesto)  wimple (as of nuns)
 vin.o (drnkj.)  wine
@@ -14503,7 +14503,7 @@ vokal.o (ling.)  vowel
 vokaliz.ar {intr} (muz.)  to vocalise (sing a vowel sound without uttering words)
 vokativ.o (gram.)  vocative (case)
 vol.ar {tr}  to want (to), have a will (to)
-«Volapük» (ling.)  Volapük
+Volapk (ling.)  Volapk
 volatil.a  volatile (of a substance)
 volf.o (mamif.)  wolf
         volf.o-hom.o (mitol.)  werewolf
@@ -14550,7 +14550,7 @@ vund.ar {tr} (medic.)  to wound
 Wals (lando)  Wales
         Wals.an.a  Welsh
         Wals.an.o  Welsh person, Welshman
-«wampum»  wampum
+wampum  wampum
 warant.o (komerco)  warrant (receipt for goods deposited)
 warf.o  wharf, jetty
 warp.o  warp (of cloth)
@@ -14562,8 +14562,8 @@ wigwam.o  wigwam
 wiski.o (drnkj.)  whisky, whiskey
 wist.o (lud.)  whist
 wistiti.o (mamif.)  marmoset
-Wurtemberg (lando)  Württemberg
-        Wurtemberg.an.o  Württemberger
+Wurtemberg (lando)  Wrttemberg
+        Wurtemberg.an.o  Wrttemberger
 
                                                X
 
