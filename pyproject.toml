@@ -1,0 +1,74 @@
+[project]
+name = "ido"
+version = "0.1.0"
+description = "Traductor y Diccionario Interactivo para un Idioma Artificial"
+authors = [{name = "Tu Nombre", email = "tu@email.com"}]
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+keywords = ["translation", "dictionary", "language", "nlp", "conlang"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Topic :: Text Processing :: Linguistic",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "lark>=1.1.0",
+    "click>=8.1.0",
+    "rich>=13.0.0",
+    "sqlalchemy>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5.0",
+]
+
+[project.scripts]
+ido = "ido.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/ozkar-co/ido"
+Documentation = "https://github.com/ozkar-co/ido/tree/main/docs"
+Repository = "https://github.com/ozkar-co/ido"
+Issues = "https://github.com/ozkar-co/ido/issues"
+
+[build-system]
+requires = ["setuptools>=68.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["ido"]
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+include = '\.pyi?$'
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "N", "W", "UP"]
+ignore = []
+fixable = ["ALL"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --cov=ido --cov-report=html --cov-report=term"
