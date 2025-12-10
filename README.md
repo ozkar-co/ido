@@ -35,6 +35,24 @@ source venv/bin/activate
 pip install -e ".[dev]"
 ```
 
+## Configuración Inicial
+
+Crear base de datos e importar diccionario:
+
+```bash
+# Importar diccionario Ido-Inglés (crea el esquema automáticamente)
+python scripts/import_idan.py
+
+# Resultado: ~14,400 palabras + 93 categorías
+```
+
+Verificar datos:
+
+```bash
+sqlite3 dictionary.db "SELECT COUNT(*) FROM words;"
+sqlite3 dictionary.db "SELECT word, translation FROM words LIMIT 10;"
+```
+
 ## Uso
 
 ```bash

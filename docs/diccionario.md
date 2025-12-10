@@ -1,37 +1,69 @@
 # Esquema del Diccionario
 
-Base de datos SQLite para almacenamiento léxico.
+Base de datos SQLite para almacenamiento léxico basado en el diccionario Ido-Inglés.
 
 ## Tablas
 
 ### words
 
-Palabras completas con traducción.
+Palabras completas con toda su información léxica.
 
 ```sql
 CREATE TABLE words (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     word TEXT NOT NULL UNIQUE,
+    word_type TEXT,  -- adv., konj., interj., prep., pref., suf., tr, intr, tr/intr, imp
     translation TEXT NOT NULL,
-    category TEXT NOT NULL CHECK (category IN (
+    definition TEXT,  -- Definición completa en inglés
+    category TEXT CHECK (category IN (
         'NOUN', 'ADJECTIVE', 'ADVERB', 'VERB', 
         'PREPOSITION', 'CONJUNCTION', 'PRONOUN', 
-        'ARTICLE', 'INTERJECTION', 'PARTICLE'
+        'ARTICLE', 'INTERJECTION', 'PARTICLE',
+        'PREFIX', 'SUFFIX', 'GRAMMAR'
     )),
+    subcategory TEXT,  -- anat., bot., kem., etc. (ver tabla categories)
+    grammatical_info TEXT,  -- [de], {tr}, {intr}, etc.
+    antonym TEXT,  -- Palabra antónima
+    obsolete BOOLEAN DEFAULT 0,
+    replaced_by TEXT,  -- Si es obsoleta, palabra que la reemplazó
+    parent_word_id INTEGER,  -- Para palabras derivadas (con indentación)
     root_id INTEGER,
-    definition TEXT,
-    examples TEXT,  -- JSON array
+    examples TEXT,  -- JSON array de ejemplos
     notes TEXT,
     frequency INTEGER DEFAULT 0,
+    source TEXT DEFAULT 'idan.txt',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (root_id) REFERENCES roots(id) ON DELETE SET NULL
+    FOREIGN KEY (root_id) REFERENCES roots(id) ON DELETE SET NULL,
+    FOREIGN KEY (parent_word_id) REFERENCES words(id) ON DELETE CASCADE
 );
 
 CREATE INDEX idx_words_word ON words(word);
 CREATE INDEX idx_words_category ON words(category);
+CREATE INDEX idx_words_subcategory ON words(subcategory);
 CREATE INDEX idx_words_root_id ON words(root_id);
+CREATE INDEX idx_words_parent ON words(parent_word_id);
+CREATE INDEX idx_words_obsolete ON words(obsolete);
 ```
+
+### categories
+
+Categorías y subcategorías del diccionario (abreviaturas).
+
+```sql
+CREATE TABLE categories (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    abbreviation TEXT NOT NULL UNIQUE,
+    ido_name TEXT,
+    english_name TEXT NOT NULL,
+    category_type TEXT CHECK (category_type IN ('FIELD', 'GRAMMAR', 'OTHER')),
+    description TEXT
+);
+
+CREATE INDEX idx_categories_abbr ON categories(abbreviation);
+```
+
+Ejemplos: `anat.` (anatomy), `bot.` (botany), `kem.` (chemistry), `tr` (transitive), etc.
 
 ### roots
 
