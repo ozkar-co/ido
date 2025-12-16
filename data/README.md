@@ -6,6 +6,17 @@ Esta carpeta contiene archivos de datos para poblar, evaluar y entrenar la aplic
 
 **idan.txt**: Diccionario Ido-Inglés completo con ~14,000 entradas y abreviaturas.
 
+## Gramática
+
+**quick_gramm.txt**: Guía rápida de gramática Ido que cubre:
+- Terminaciones verbales (infinitivos, tiempos, participios)
+- Terminaciones gramaticales (-o, -i, -a, -e)
+- Derivación directa (verbo↔sustantivo, adjetivo↔adverbio)
+- Pronombres personales y posesivos
+- Prefijos y sufijos productivos
+- Correlativos (sistema de palabras interrogativas/demostrativas)
+- Comparación de adjetivos y adverbios
+
 ## Corpus
 
 (Por agregar)
@@ -21,6 +32,8 @@ Si algún archivo infringe derechos de autor, por favor contactar para su remoci
 ## Fuentes Conocidas
 
 - **idan.txt**: Lexiko Ido-Angla / Ido-English Vocabulary (fuente original desconocida, comunidad Ido)
+
+- **quick_gramm.txt**: Quick Grammar Guide, James Chandler 1997, http://interlanguages.net/Grammar.html
 
 ## Uso
 

@@ -1,0 +1,175 @@
+Verb Endings
+
+The verb endings in Ido are:
+
+-ar present infinitive, -ir past infinitive, -or future infinitive
+
+-as present tense, -is past tense, -os future tense
+
+-us conditional present tense
+
+-ez imperative
+
+-ab- suffix used in conjunction with past, future and conditional endings to form perfect tenses (eg. had gone, will have gone, would have gone). In 1947 it was decided that -ab- may also be used with the present to form a perfect tense: me vidabas - I have seen.
+
+-ant- present active participle: eg. seeing
+-int- past active participle: eg. having seen
+-ont- future active participle: eg. going to see
+-at- present passive participle: eg. being seen
+-it- past passive participle: eg. having been seen
+-ot- future active participle: eg. going to be seen
+
+The participles are most commonly found with the adjective ending -a, but also sometimes with -e (adverb) or -o/-i (noun).
+
+Grammatical Endings
+
+The endings indicating parts of speech are:
+
+-o singular noun
+-i plural noun
+-a adjective
+-e adverb
+
+in addition to the verb endings above.
+
+Direct Derivation
+
+These are the four methods of direct derivation in Ido:
+
+Verb to noun: By replacing the -ar of an infinitive with -o, we form the noun meaning the simple action or state implied by the verb: brosar - to brush, broso - a brushing. The continuous or frequent action is indicated by -ad-: brosado - brushing.
+
+Adjective to noun: By replacing the -a of an adjective with -o, we form the person or thing having that property: bona - good, bono - good one, good man.
+
+Noun to adjective: By replacing the -o of a noun with -a, we describe something as made of the substance indicated by the noun: oro - gold, ora - made of gold.
+
+Adjective to adverb: By replacing the -a of an adjective with an -e, we describe something as happening in the manner indicated by the adjective: bela - beautiful, bele - beautifully.
+
+Personal Pronouns
+
+The following table gives the personal pronouns in Ido and their corresponding possessive adjectives.
+
+me	I, me	mea	my, mine
+vu (tu)	you (singular)	vua (tua) 	your, yours (sing.)
+il(u)	he, him	ilua	his
+el(u)	she, her	elua	her, hers
+ol(u)	it	olua	its
+lu	he or she/him or her	lua	his or her(s)
+ni	we, us	nia	our, ours
+vi	you (plural)	via	your, yours (pl.)
+(i/e/o)li	they, them	(i/e/o)lia 	their, theirs
+su	him/her/it/one(self), them(selves)	sua	his/her/its/their (own)
+on(u)	one, "you", people	onua 	one's, "your(s)", etc.
+
+Note: ili, eli, oli etc. may be used to indicate male, female and neuter respectively, when the sense requires it.
+
+Prefixes
+
+These are placed before a word (often with a hyphen) in order to change its meaning.
+
+arki- pre-eminence: arki-episkopo archbishop
+bo- related by marriage: bo-patro father-in-law
+centi- hundredth part, centi-: centi-litro centilitre
+des- contrary: des-facila difficult
+dis- separation: dis-sendar to distribute
+equi- equality, equi-: equi-distanta equidistant
+ex- former: ex-oficiro ex-officer
+ge- both sexes together: ge-frati brother(s) and sister(s) (note: in 1929 genitori replaced ge-patri for "parents".)
+hiper- over-, excessively, hyper-: hiper-agiva hyperactive
+hipo- under, insufficiently, hypo-: hipo-pela hypodermic
+ho- "in which one is living": ho-die today
+mi- half: mi-horo a half-hour
+mis- wrongly: mis-komprenar to misunderstand
+ne- negation: ne-utila useless
+par- completely: par-lektar to read through
+para- warding off: para-suno parasol
+poli- many (more than one), poly-: poli-silaba having more than one syllable, polysyllabic
+pre- before: pre-dicar to predict
+prim- primitive: prim-avi forefathers
+retro- back: retro-venar to return, come back
+ri- again: ri-dicar to say again
+sen- without: sen-viva lifeless
+
+Suffixes
+
+These are placed at the end of a word, but before the grammatical ending, in order to change its meaning. Hyphens are not used.
+
+-ach- pejorative, giving an unfavourable meaning: populacho populace
+-ad- frequency, repetition: dansado dancing
+-aj- material substance: manjajo food; act, process etc.: amikalajo act of friendship; that which: rezultajo something which results, a result
+-al- relating to: nacionala national
+-an- member of: senatano senator
+-ar- collection: homaro mankind
+-ari- receiver: legacario legatee
+-atr- like: sponjatra spongy
+-e- coloured: rozea rose-coloured
+-ebl- possibility: videbla visible
+-ed- quantity held by: manuedo handful
+-eg- largeness: pluvego downpour
+-em- inclined to: laborema industrious
+-end- something to be done: solvenda which must be solved
+-er- amateur: fotografero (amateur) photographer
+-eri- establishment: distilierio distillery
+-es- to be: amesar to be loved
+-esk- to begin to: dormeskar to fall asleep
+-estr- head, chief: urbestro mayor
+-et- smallness: rivereto stream
+-ey- place for: kavaleyo stable
+-i- domain: komtio parish
+-id- offspring: Izraelido Israelite
+-ier- holder: sigariero cigar-holder
+-if- to produce: florifar to bloom
+-ig- to cause to be or do: beligar to beautify
+-ik- sick: alkoholiko an alcoholic
+-il- tool: brosilo a brush
+-in- feminine: fratino sister
+-ind- worthy of: aminda lovable
+-ism- system, doctrine: socialismo socialism
+-ist- professional, adherent: artisto artist
+-iv- that can: instruktiva instructive
+-ivor- indicates what something eats: karnivora meat-eating, carnivorous
+-iz- to supply or cover with: armizar to arm
+-oid- having the form of, -oid: cirkloida in the form of a circle
+-oz- full of: poroza porous
+-ul- masculine: katulo tom-cat
+-um- all-purpose suffix with indeterminate meaning: foliumar to flick through, leaf through (a book etc.)
+-ur- result of action: pikturo picture
+-yun- young of: bovyuno calf
+-uy- container: inkuyo inkpot
+
+Numeral Suffixes
+
+These are only used with numbers.
+
+-esm- ordinals: unesma first
+-im- fraction: duimo a half
+-op- distributive: quarope four at a time
+-opl- mutiplying: triopla triple
+
+"Correlatives"
+
+The following table gives the "correlatives" that exist in Ido. It should be read first along the top, then down the left, eg. what place=where=ube.
+
+
+	WHAT 	THAT 	SOME 	ANY 	NO 	EVERY
+PERSON 	qua/i 	(i)ta/i 	ulu/i 	irgu/i 	nulu/i 	omnu/i
+THING 	quo/i 	(i)to/i 	ulo/i 	irgo/i 	nulo/i 	omno/i
+PLACE 	ube 	ibe 	ulaloke 	irgaloke 	nulaloke 	omnaloke
+TIME 	kande 	lore 	ulatempe 	irgatempe 	nulatempe 	sempre
+WAY 	quale 	tale 	ule 	irge 	nule 	omne
+QUANTITY 	quanto 	tanto 	ulaquanto 	irgaquanto 	nulaquanto 	omnaquanto
+
+Please note:
+
+    The to/ito forms etc. are intended to aid euphony, so that to is generally used after a vowel, and ito after a consonant. Similarly for co/ico.
+    For lore, ube etc. it is perfectly permissible to use the regularly formed tatempe, qualoke, but mostly the more natural and convenient forms are preferred.
+    Esperantists should note that the equivalents of their remaining "correlatives" may be formed more in accordance with national languages, eg. qua sorto de ... ? (or quala ?) = "what sort of ... ?".
+    It is permissible to drop the adjectival -a in words such as "nulatempe" where euphony permits.
+    A hyphen may be inserted between the adjectival prefix and the substantival suffix in words such as ultempe = ulatempe = ul-tempe = ula-tempe, in order to more clearly distinguish the two formative elements of the word.
+
+Comparison
+
+Adjectives and adverbs are compared in Ido by means of the words plu = more, maxim = most, min = less, minim = least.
+
+hosted by Yellow Internet.
+James Chandler 1997. 
+http://interlanguages.net/Grammar.html

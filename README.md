@@ -43,7 +43,24 @@ Crear base de datos e importar diccionario:
 # Importar diccionario Ido-Inglés (crea el esquema automáticamente)
 python scripts/import_idan.py
 
-# Resultado: ~14,400 palabras + 93 categorías
+# Resultado: ~14,100 palabras + 93 categorías
+# - 10,700 palabras principales
+# - 3,400 palabras derivadas
+# - 114 pares de antónimos
+# - Análisis morfológico completo (raíz + afijos + terminación)
+```
+
+Consultar diccionario:
+
+```bash
+# Buscar palabra exacta
+python scripts/query_dict.py abad.o
+
+# Buscar por raíz morfológica
+python scripts/query_dict.py --root abad
+
+# Buscar palabras con afijo específico
+python scripts/query_dict.py --affix in
 ```
 
 Verificar datos:
