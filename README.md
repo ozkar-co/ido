@@ -72,6 +72,24 @@ sqlite3 dictionary.db "SELECT word, translation FROM words LIMIT 10;"
 
 ## Uso
 
+### Analizador Morfológico
+
+```bash
+# Analizar morfología de una palabra
+python scripts/analyze_word.py abad.in.o
+
+# Ver ejemplos y demostraciones
+python scripts/analyze_word.py --examples
+python scripts/analyze_word.py --all-demos
+
+# Derivar palabras
+python scripts/analyze_word.py --derive bela adjective adverb
+```
+
+Ver [documentación completa del analizador morfológico](ido/README.md).
+
+### CLI (próximamente)
+
 ```bash
 ido lookup palabra        # Consultar diccionario
 ido analyze palabra       # Análisis morfológico
@@ -79,7 +97,18 @@ ido parse "frase"        # Análisis sintáctico
 ido translate "texto"    # Traducir
 ```
 
+## Tests
+
+```bash
+# Ejecutar tests
+pytest tests/ -v
+
+# Con cobertura
+pytest tests/ --cov=ido
+```
+
 ## Licencia
 
 MIT
+
 

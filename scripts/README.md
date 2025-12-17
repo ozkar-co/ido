@@ -72,6 +72,45 @@ Muestra:
 - Palabras derivadas (si es palabra principal)
 - Advertencia si es obsoleta
 
+## Análisis Morfológico
+
+**analyze_word.py**: Analizador morfológico para palabras en Ido.
+
+Uso:
+```bash
+# Analizar una palabra
+python scripts/analyze_word.py abad.in.o
+
+# Analizar participio
+python scripts/analyze_word.py vid.ant.a
+
+# Derivar palabra
+python scripts/analyze_word.py --derive bela adjective adverb
+
+# Ver ejemplos
+python scripts/analyze_word.py --examples
+
+# Ver demostraciones
+python scripts/analyze_word.py --demo-verbs
+python scripts/analyze_word.py --demo-participles
+python scripts/analyze_word.py --demo-derivations
+python scripts/analyze_word.py --all-demos
+```
+
+El script:
+- Descompone palabras en raíz + prefijos + sufijos + terminación
+- Identifica 22 prefijos conocidos (ne-, des-, mis-, ri-, etc.)
+- Identifica 32 sufijos conocidos (-in-, -ey-, -ig-, -es-, etc.)
+- Reconoce participios (-ant-, -int-, -ont-, -at-, -it-, -ot-)
+- Determina categoría gramatical (NOUN, VERB, ADJECTIVE, ADVERB, etc.)
+- Genera formas verbales (infinitivos, tiempos, imperativo)
+- Genera formas participiales (adjetivales, adverbiales, nominales)
+- Aplica derivaciones directas (verb→noun, adj→adv, etc.)
+- Muestra significado de cada componente morfológico
+- Incluye ejemplos y demostraciones interactivas
+
+Ver [documentación completa](../ido/README.md) para más detalles.
+
 ## Otros Scripts
 
 (Por agregar según necesidades del proyecto)
