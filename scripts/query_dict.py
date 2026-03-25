@@ -6,6 +6,7 @@ Uso:
     python scripts/query_dict.py palabra
     python scripts/query_dict.py --root raiz
     python scripts/query_dict.py --affix afijo
+    python scripts/query_dict.py --random
 """
 
 import sqlite3
@@ -148,18 +149,40 @@ def search_by_affix(db_path: str, affix: str):
     conn.close()
 
 
+def get_random_word(db_path: str):
+    """Obtener y mostrar una palabra aleatoria del diccionario."""
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT * FROM words ORDER BY RANDOM() LIMIT 1")
+
+    word = cursor.fetchone()
+    if not word:
+        print("El diccionario está vacío.")
+        conn.close()
+        return
+
+    print(format_word(dict(word)))
+
+    conn.close()
+
+
 def main():
     import argparse
-    
+
     parser = argparse.ArgumentParser(description='Consultar diccionario Ido-Inglés')
     parser.add_argument('word', nargs='?', help='Palabra a buscar')
     parser.add_argument('--db', default='dictionary.db', help='Base de datos')
     parser.add_argument('--root', help='Buscar por raíz')
     parser.add_argument('--affix', help='Buscar por afijo')
-    
+    parser.add_argument('--random', action='store_true', help='Mostrar una palabra aleatoria')
+
     args = parser.parse_args()
-    
-    if args.root:
+
+    if args.random:
+        get_random_word(args.db)
+    elif args.root:
         search_by_root(args.db, args.root)
     elif args.affix:
         search_by_affix(args.db, args.affix)
