@@ -51,13 +51,15 @@ def analyze(word):
     
     if not analysis:
         click.echo(f"Análisis no disponible para: {word}")
-        return    
+        return
+    
     click.echo(f"\n{'='*60}")
     click.echo(f"Analizando: {analysis.original}")
     click.echo('='*60)
-        click.echo(f"\nPalabra original: {analysis.original}")
+    click.echo(f"\nPalabra original: {analysis.original}")
     click.echo(f"Raíz: {analysis.root}")
-        if analysis.prefixes:
+    
+    if analysis.prefixes:
         click.echo(f"Prefijos: {' + '.join(analysis.prefixes)}")
         for prefix in analysis.prefixes:
             meaning = analyzer.PREFIXES.get(prefix, 'desconocido')
