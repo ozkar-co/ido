@@ -1,0 +1,34 @@
+"""Gramática EBNF para el idioma Ido."""
+
+start: sentence+
+
+sentence: noun_phrase verb_phrase "."
+        | noun_phrase verb_phrase "?"
+
+noun_phrase: [ARTICLE] [adjective] noun
+           | [ARTICLE] [adjective] noun prepositional_phrase
+
+verb_phrase: verb
+           | verb noun_phrase
+           | verb prepositional_phrase
+           | verb noun_phrase prepositional_phrase
+
+prepositional_phrase: PREPOSITION noun_phrase
+
+noun: WORD "o"
+    | WORD "i"
+
+adjective: WORD "a"
+
+adverb: WORD "e"
+
+verb: WORD ("ar" | "ir" | "or" | "as" | "is" | "os" | "us" | "ez")
+
+ARTICLE: "la" | "un"
+PREPOSITION: "de" | "al" | "en" | "kun" | "por"
+CONJUNCTION: "kaj" | "aŭ" | "sed"
+PRONOUN: "mi" | "vi" | "li" | "ŝi" | "ĝi" | "ni" | "ili"
+WORD: /[a-z]+/
+
+%import common.WS
+%ignore WS
