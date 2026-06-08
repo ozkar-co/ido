@@ -25,14 +25,14 @@ def lookup(word):
     
     if result:
         click.echo(f"\n{result['word']}")
-        if result['root']:
+        if result.get('root'):
             click.echo(f"  Morfología: raíz={result['root']}")
-            if result['affixes']:
+            if result.get('affixes'):
                 click.echo(f"              afijos={result['affixes']}")
-            if result['ending']:
+            if result.get('ending'):
                 click.echo(f"              terminación={result['ending']}")
         click.echo(f"  Categoría: {result['category']}")
-        if result['word_type']:
+        if result.get('word_type'):
             click.echo(f"  Tipo: {result['word_type']}")
         click.echo(f"  Traducción: {result['translation']}")
     else:
@@ -49,23 +49,24 @@ def analyze(word):
     analyzer = MorphologyAnalyzer()
     analysis = analyzer.analyze(word)
     
+    if not analysis:
+        click.echo(f"Análisis no disponible para: {word}")
+        return    
     click.echo(f"\n{'='*60}")
     click.echo(f"Analizando: {analysis.original}")
     click.echo('='*60)
-    
-    click.echo(f"\nPalabra original: {analysis.original}")
+        click.echo(f"\nPalabra original: {analysis.original}")
     click.echo(f"Raíz: {analysis.root}")
-    
-    if analysis.prefixes:
+        if analysis.prefixes:
         click.echo(f"Prefijos: {' + '.join(analysis.prefixes)}")
         for prefix in analysis.prefixes:
-            meaning = analyzer.PREFIXES.get(prefix, 'unknown')
+            meaning = analyzer.PREFIXES.get(prefix, 'desconocido')
             click.echo(f"  - {prefix}: {meaning}")
     
     if analysis.suffixes:
         click.echo(f"Sufijos: {' + '.join(analysis.suffixes)}")
         for suffix in analysis.suffixes:
-            meaning = analyzer.SUFFIXES.get(suffix) or analyzer.PARTICIPLES.get(suffix, 'unknown')
+            meaning = analyzer.SUFFIXES.get(suffix) or analyzer.PARTICIPLES.get(suffix, 'desconocido')
             click.echo(f"  - {suffix}: {meaning}")
     
     if analysis.ending:
@@ -98,17 +99,19 @@ def parse(phrase):
 @main.command()
 @click.argument('text')
 def translate(text):
-    """Traducir texto del Ido al español.
+    """Traducir texto del inglés al Ido.
     
-    TEXT: Texto a traducir
+    TEXT: Texto en inglés a traducir
     """
     translator = Translator()
     try:
+        # La lógica interna de Translator debe estar adaptada para
+        # recibir inglés y devolver la traducción al Ido.
         result = translator.translate(text)
         click.echo(f"\n{'='*60}")
         click.echo(f"Traduciendo: {text}")
         click.echo('='*60)
-        click.echo(f"\nTraducción: {result}")
+        click.echo(f"\nTraducción (Inglés → Ido): {result}")
     except Exception as e:
         click.echo(f"Error al traducir: {e}")
 
