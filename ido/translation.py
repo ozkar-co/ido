@@ -13,7 +13,7 @@ from ido.morphology import MorphologyAnalyzer
 
 
 class Translator:
-    """Motor de traducción Ido ↔ Español."""
+    """Motor de traducción Inglés → Ido."""
 
     def __init__(self, db_path: str = "dictionary.db"):
         """Inicializa el traductor con acceso al diccionario y al analizador morfológico."""
@@ -36,20 +36,16 @@ class Translator:
         translated: List[str] = []
 
         for word in words:
-            # Intentar búsqueda directa en el diccionario
-            translation = self.dictionary.get_translation(word)
-            if translation:
-                translated.append(translation)
+            # Buscar la palabra inglesa en la columna translation del diccionario
+            # para encontrar la palabra Ido correspondiente
+            ido_word = self.dictionary.get_ido_word(word)
+            if ido_word:
+                translated.append(ido_word)
                 continue
 
-            # Si no hay traducción directa, intentar análisis morfológico
-            analysis = self.analyzer.analyze(word)
-            if analysis and analysis.root:
-                # Usar la raíz como pista de traducción (entre corchetes)
-                translated.append(f"[{analysis.root}]")
-            else:
-                # Fallback: devolver la palabra original entre corchetes
-                translated.append(f"[{word}]")
+            # Si no se encuentra, intentar análisis morfológico inverso
+            # (buscar raíces inglesas conocidas - funcionalidad futura)
+            translated.append(f"[{word}]")
 
         return " ".join(translated)
 
@@ -61,17 +57,18 @@ class Translator:
 
         El resultado tiene la siguiente estructura:
         {
-            "original": "<texto original>",
+            "original": "<texto original en inglés>",
             "words": [
                 {
-                    "word": "<palabra original>",
-                    "root": "<raíz morfológica o None>",
-                    "category": "<categoría o None>",
-                    "translation": "<traducción encontrada o pista>"
+                    "english": "<palabra en inglés>",
+                    "ido": "<palabra en Ido o None>",
+                    "root": "<raíz morfológica Ido o None>",
+                    "category": "<categoría Ido o None>",
+                    "translation": "<traducción Ido encontrada o pista>"
                 },
                 ...
             ],
-            "translation": "<texto traducido>"
+            "translation": "<texto traducido al Ido>"
         }
 
         Args:
@@ -91,25 +88,26 @@ class Translator:
         translated_parts: List[str] = []
 
         for word in words:
-            # Búsqueda directa en el diccionario
-            translation = self.dictionary.get_translation(word)
+            # Buscar palabra Ido correspondiente al inglés
+            ido_word = self.dictionary.get_ido_word(word)
 
-            # Análisis morfológico (si es necesario)
-            analysis = self.analyzer.analyze(word)
-
-            # Determinar la traducción a usar
-            if translation:
-                chosen = translation
-            elif analysis and analysis.root:
-                chosen = f"[{analysis.root}]"
+            # Si se encuentra, obtener información completa
+            if ido_word:
+                full_info = self.dictionary.search_word(ido_word)
+                chosen = ido_word
+                root = full_info.get('root') if full_info else None
+                category = full_info.get('category') if full_info else None
             else:
                 chosen = f"[{word}]"
+                root = None
+                category = None
 
             # Guardar información de la palabra
             result["words"].append({
-                "word": word,
-                "root": analysis.root if analysis else None,
-                "category": analysis.category if analysis else None,
+                "english": word,
+                "ido": ido_word,
+                "root": root,
+                "category": category,
                 "translation": chosen
             })
 

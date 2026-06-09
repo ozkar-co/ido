@@ -22,10 +22,10 @@ class Dictionary:
         return conn
     
     def search_word(self, word: str) -> Optional[Dict]:
-        """Buscar una palabra exacta.
+        """Buscar una palabra exacta (en Ido).
         
         Args:
-            word: Palabra a buscar
+            word: Palabra Ido a buscar
             
         Returns:
             Diccionario con información de la palabra o None
@@ -43,6 +43,31 @@ class Dictionary:
         
         if row:
             return dict(row)
+        return None
+    
+    def get_ido_word(self, english: str) -> Optional[str]:
+        """Buscar la palabra Ido correspondiente a un término en inglés.
+        
+        Args:
+            english: Palabra en inglés a buscar
+            
+        Returns:
+            Palabra Ido o None si no se encuentra
+        """
+        conn = self._get_connection()
+        cursor = conn.cursor()
+        
+        cursor.execute("""
+            SELECT word FROM words 
+            WHERE translation = ?
+            LIMIT 1
+        """, (english,))
+        
+        row = cursor.fetchone()
+        conn.close()
+        
+        if row:
+            return row['word']
         return None
     
     def search_by_root(self, root: str) -> List[Dict]:
@@ -93,13 +118,13 @@ class Dictionary:
         return [dict(row) for row in rows]
     
     def get_translation(self, word: str) -> Optional[str]:
-        """Obtener traducción de una palabra.
+        """Obtener traducción al inglés de una palabra Ido.
         
         Args:
-            word: Palabra a traducir
+            word: Palabra Ido a traducir
             
         Returns:
-            Traducción o None si no se encuentra
+            Traducción al inglés o None si no se encuentra
         """
         result = self.search_word(word)
         if result:
@@ -107,13 +132,13 @@ class Dictionary:
         return None
     
     def get_all_translations(self, words: List[str]) -> Dict[str, str]:
-        """Obtener traducciones para múltiples palabras.
+        """Obtener traducciones para múltiples palabras Ido.
         
         Args:
-            words: Lista de palabras
+            words: Lista de palabras Ido
             
         Returns:
-            Diccionario palabra -> traducción
+            Diccionario palabra Ido -> traducción inglés
         """
         translations = {}
         for word in words:
