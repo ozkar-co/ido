@@ -116,7 +116,9 @@ def translate(text):
 
         # Mostrar detalle por palabra (similar a ``lookup``)
         for w in result["words"]:
-            click.echo(f"\nPalabra: {w['word']}")
+            # La clave en el diccionario devuelto por translate_with_analysis es
+            # 'english', no 'word', por lo que usamos w['english'].
+            click.echo(f"\nPalabra: {w['english']}")
             if w["root"]:
                 click.echo(f"  Raíz: {w['root']}")
             if w["category"]:
