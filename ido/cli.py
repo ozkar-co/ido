@@ -1,135 +1,132 @@
-"""Interfaz de línea de comandos para el traductor y diccionario Ido."""
+"""Command-line interface for the Ido study tool."""
 
 import click
+
+from ido.db import DatabaseError
 from ido.dictionary import Dictionary
-from ido.morphology import MorphologyAnalyzer
-from ido.parser import IdoParser
-from ido.translation import Translator
+from ido.phrases import PhraseStore
 
 
 @click.group()
 def main():
-    """Traductor y diccionario interactivo para el idioma artificial Ido."""
+    """Ido language study and practice tools."""
     pass
 
 
-@main.command()
-@click.argument('word')
-def lookup(word):
-    """Consultar palabra en el diccionario.
-
-    WORD: Palabra a buscar
-    """
-    db = Dictionary()
-    result = db.search_word(word)
-
-    if result:
-        click.echo(f"\n{result['word']}")
-        if result.get('root'):
-            click.echo(f"  Morfología: raíz={result['root']}")
-            if result.get('affixes'):
-                click.echo(f"              afijos={result['affixes']}")
-            if result.get('ending'):
-                click.echo(f"              terminación={result['ending']}")
-        click.echo(f"  Categoría: {result['category']}")
-        if result.get('word_type'):
-            click.echo(f"  Tipo: {result['word_type']}")
-        click.echo(f"  Traducción: {result['translation']}")
-    else:
-        click.echo(f"No se encontró la palabra: {word}")
-
-
-@main.command()
-@click.argument('word')
-def analyze(word):
-    """Analizar morfología de una palabra.
-
-    WORD: Palabra a analizar
-    """
-    analyzer = MorphologyAnalyzer()
-    analysis = analyzer.analyze(word)
-
-    if not analysis:
-        click.echo(f"Análisis no disponible para: {word}")
-        return
-
-    click.echo(f"\n{'=' * 60}")
-    click.echo(f"Analizando: {analysis.original}")
-    click.echo('=' * 60)
-    click.echo(f"\nPalabra original: {analysis.original}")
-    click.echo(f"Raíz: {analysis.root}")
-
-    if analysis.prefixes:
-        click.echo(f"Prefijos: {' + '.join(analysis.prefixes)}")
-        for prefix in analysis.prefixes:
-            meaning = analyzer.PREFIXES.get(prefix, 'desconocido')
-            click.echo(f"  - {prefix}: {meaning}")
-
-    if analysis.suffixes:
-        click.echo(f"Sufijos: {' + '.join(analysis.suffixes)}")
-        for suffix in analysis.suffixes:
-            meaning = analyzer.SUFFIXES.get(suffix) or analyzer.PARTICIPLES.get(suffix, 'desconocido')
-            click.echo(f"  - {suffix}: {meaning}")
-
-    if analysis.ending:
-        click.echo(f"Terminación: {analysis.ending}")
-
-    click.echo(f"\nCategoría: {analysis.category}")
-
-    if analysis.subcategories:
-        click.echo(f"Subcategorías: {', '.join(analysis.subcategories)}")
-
-
-@main.command()
-@click.argument('phrase')
-def parse(phrase):
-    """Analizar sintácticamente una frase.
-
-    PHRASE: Frase a analizar
-    """
-    parser = IdoParser()
+@main.command("lookup")
+@click.argument("word")
+def lookup_cmd(word):
+    """Look up an Ido word."""
     try:
-        tree = parser.parse(phrase)
-        click.echo(f"\n{'=' * 60}")
-        click.echo(f"Analizando: {phrase}")
-        click.echo('=' * 60)
-        click.echo(f"\nÁrbol sintáctico:\n{tree.pretty()}")
-    except Exception as e:
-        click.echo(f"Error al analizar la frase: {e}")
-
-
-@main.command()
-@click.argument('text')
-def translate(text):
-    """Traducir texto del inglés al Ido.
-
-    TEXT: Texto en inglés a traducir
-    """
-    translator = Translator()
+        db = Dictionary()
+    except DatabaseError as exc:
+        raise click.ClickException(str(exc)) from exc
     try:
-        # Obtener traducción con información detallada
-        result = translator.translate_with_analysis(text)
-
-        click.echo(f"\n{'=' * 60}")
-        click.echo(f"Traduciendo: {text}")
-        click.echo('=' * 60)
-
-        # Mostrar detalle por palabra (similar a ``lookup``)
-        for w in result["words"]:
-            # La clave en el diccionario devuelto por translate_with_analysis es
-            # 'english', no 'word', por lo que usamos w['english'].
-            click.echo(f"\nPalabra: {w['english']}")
-            if w["root"]:
-                click.echo(f"  Raíz: {w['root']}")
-            if w["category"]:
-                click.echo(f"  Categoría: {w['category']}")
-            click.echo(f"  Traducción: {w['translation']}")
-
-        click.echo(f"\n{'=' * 60}")
-        click.echo(f"Traducción completa: {result['translation']}")
-    except Exception as e:
-        click.echo(f"Error al traducir: {e}")
+        entry = db.lookup_ido(word)
+        if not entry:
+            raise click.ClickException(f"Not found: {word}")
+        derived = db.list_derived(entry.word)
+        click.echo(db.format_entry(entry, derived=derived or None))
+    finally:
+        db.close()
 
 
-if __name__ == '__main__':
+@main.command("en")
+@click.argument("term")
+@click.option("-n", "--limit", default=20, show_default=True)
+def en_cmd(term, limit):
+    """Look up Ido words by English gloss."""
+    try:
+        db = Dictionary()
+    except DatabaseError as exc:
+        raise click.ClickException(str(exc)) from exc
+    try:
+        entries = db.lookup_en(term, limit=limit)
+        if not entries:
+            raise click.ClickException(f"No matches for: {term}")
+        for entry in entries:
+            root = entry.root or "?"
+            click.echo(f"{entry.word}  (root: {root})")
+            click.echo(f"  {entry.translation}\n")
+    finally:
+        db.close()
+
+
+@main.command("add-word")
+@click.argument("word")
+@click.argument("root")
+@click.argument("translation")
+@click.option("--notes", default=None)
+def add_word_cmd(word, root, translation, notes):
+    """Add or update a dictionary entry."""
+    try:
+        db = Dictionary()
+    except DatabaseError as exc:
+        raise click.ClickException(str(exc)) from exc
+    try:
+        entry = db.add_word(word, root or None, translation, notes=notes)
+        click.echo(db.format_entry(entry))
+    finally:
+        db.close()
+
+
+@main.command("phrase-add")
+@click.argument("ido")
+@click.argument("english")
+def phrase_add_cmd(ido, english):
+    """Add an Ido-English phrase pair."""
+    try:
+        store = PhraseStore()
+    except DatabaseError as exc:
+        raise click.ClickException(str(exc)) from exc
+    try:
+        phrase = store.add(ido, english)
+        click.echo(store.format_phrase(phrase))
+        click.echo(f"Total: {store.count()}")
+    finally:
+        store.close()
+
+
+@main.command("phrase-count")
+def phrase_count_cmd():
+    """Show phrase count."""
+    try:
+        store = PhraseStore()
+    except DatabaseError as exc:
+        raise click.ClickException(str(exc)) from exc
+    try:
+        click.echo(store.count())
+    finally:
+        store.close()
+
+
+@main.command("phrase-search")
+@click.argument("query", default="")
+@click.option("--ido", "field_ido", is_flag=True)
+@click.option("--en", "field_en", is_flag=True)
+@click.option("-n", "--limit", default=20, show_default=True)
+def phrase_search_cmd(query, field_ido, field_en, limit):
+    """Search stored phrases."""
+    field = "both"
+    if field_ido:
+        field = "ido"
+    elif field_en:
+        field = "en"
+
+    try:
+        store = PhraseStore()
+    except DatabaseError as exc:
+        raise click.ClickException(str(exc)) from exc
+    try:
+        phrases = store.search(query, field=field, limit=limit) if query else store.list_recent(limit=limit)
+        if not phrases:
+            raise click.ClickException("No phrases found.")
+        for phrase in phrases:
+            click.echo(store.format_phrase(phrase))
+            click.echo()
+    finally:
+        store.close()
+
+
+if __name__ == "__main__":
     main()

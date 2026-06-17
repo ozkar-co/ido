@@ -1,84 +1,59 @@
 # Roadmap
 
-Plan de desarrollo del proyecto.
+Personal study tool for Ido. Each phase adds CLI scripts; no web interface.
 
-## v0.1.0 - Fundamentos
+## Phase 0 — Resources
 
-- Documentación del proyecto
-- Arquitectura definida
-- Configuración inicial
-- Esquema de base de datos
-- CLI básico (lookup)
-- Diccionario con 200 palabras básicas
+- [x] `data/idan.txt` — full Ido–English dictionary
+- [x] `data/quick_gramm.txt` — grammar notes
+- [x] Text resources as reference for future AI work
 
-## v0.2.0 - Morfología
+## Phase 1 — Ido word lookup
 
-- Analizador morfológico completo
-- Identificación de raíces
-- Sistema de derivación
-- Comando `ido analyze`
-- 500 palabras en diccionario
+- [x] Look up an Ido word → root + English gloss
+- [x] List words by root
+- [x] Show derived forms (`parent_id` links)
+- [x] `scripts/dict_ido.py`, `scripts/dict_add.py`
 
-## v0.3.0 - Sintaxis
+## Phase 2 — English → Ido lookup
 
-- Parser gramatical con Lark
-- Gramática EBNF básica
-- Generación de AST
-- Comando `ido parse`
-- Validación sintáctica
+- [x] FTS search on English glosses
+- [x] `scripts/dict_en.py`
 
-## v0.4.0 - Traducción Básica
+## Phase 3 — Derivator
 
-- Motor de traducción basado en reglas
-- Comando `ido translate`
-- Traducción de oraciones simples
-- 1000 palabras en diccionario
+- [ ] `scripts/derive.py` — generate inflected/derived forms from a root
+- [x] `ido/morphology.py` exists (rule-based analyzer); needs a thin script
 
-**MVP Funcional**
+## Phase 4 — Phrase database
 
-## v0.5.0 - Corpus
+- [x] Add Ido–English phrase pairs
+- [x] Count and search stored phrases
+- [x] `scripts/phrase_add.py`, `phrase_count.py`, `phrase_search.py`
 
-- Procesamiento de textos completos
-- Análisis de frecuencias
-- Detección de palabras desconocidas
-- Exportación de estadísticas
-- Modo batch
+## Phase 5 — Syntax checker
 
-## v1.0.0 - Release Estable
+- [ ] Deterministic EBNF parser (Lark)
+- [ ] `scripts/grammar_check.py` — validate a sentence
+- [ ] Audit collected phrases and translations for syntactic validity
+- [ ] Fix `ido/grammar.lark` (Ido pronouns, not Esperanto)
 
-- Traducción robusta
-- 2000+ palabras en diccionario
-- Gramática completa (casos principales)
-- Tests exhaustivos (>80% cobertura)
-- Modo interactivo (REPL)
-- Manejo de excepciones
-- Precisión >90%
+## Phase 6 — Corpus generator
 
-## Futuro
+- [ ] Export dictionary + phrases as training corpus
+- [ ] Frequency and coverage stats
 
-**v1.1**: Traducción bidireccional (español → idioma artificial)
+## Phase 7 — IDO-only language model
 
-**v1.2**: Web interface (FastAPI + frontend)
+- [ ] Small LLM for Ido ↔ English translation
+- [ ] Or conversational agent that thinks/speaks only Ido
 
-**v1.3**: Análisis semántico avanzado, desambiguación
+## Explicitly out of scope
 
-**v1.4**: Integración con modelos de IA (traducción híbrida)
+- Web UI / API
+- Multi-language conlang framework
+- Spanish translation layer
 
-**v2.0**: Plataforma multiidioma (framework genérico para conlangs)
+## Principles
 
-## Expansiones Posibles
-
-- Módulo educativo (ejercicios, flashcards)
-- Generación de contenido (conjugador, sintetizador)
-- Herramientas de investigación (análisis estadístico, visualización)
-- Aplicaciones móviles
-
-## Stack Futuro
-
-| Tecnología | Propósito | Versión |
-|------------|-----------|---------|
-| FastAPI | API web | v1.2 |
-| React | Frontend | v1.2 |
-| spaCy | NLP avanzado | v1.3 |
-| Transformers | Modelos IA | v1.4 |
-| Docker | Deployment | v1.0 |
+Keep the codebase small and maintainable: **KISS**, **YAGNI**, **DRY**, fail fast on missing data, one responsibility per script.

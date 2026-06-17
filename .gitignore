@@ -52,6 +52,7 @@ htmlcov/
 
 # Database
 *.db
+!data/ido.db
 *.sqlite
 *.sqlite3
 *.db-journal
@@ -66,8 +67,6 @@ docs/_build/
 docs/.doctrees/
 
 # Project specific
-dictionary.db
-dictionary_backup.db
 corpus/
 exports/
 temp/

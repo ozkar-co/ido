@@ -1,15 +1,14 @@
 [project]
 name = "ido"
-version = "0.1.0"
-description = "Traductor y Diccionario Interactivo para un Idioma Artificial"
+version = "0.2.0"
+description = "CLI study tools for the Ido constructed language"
 authors = [{name = "Tu Nombre", email = "tu@email.com"}]
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
-keywords = ["translation", "dictionary", "language", "nlp", "conlang"]
+keywords = ["ido", "dictionary", "language", "study", "cli"]
 classifiers = [
-    "Development Status :: 2 - Pre-Alpha",
-    "Intended Audience :: Developers",
+    "Development Status :: 3 - Alpha",
     "Intended Audience :: Education",
     "Topic :: Text Processing :: Linguistic",
     "Programming Language :: Python :: 3",
@@ -18,10 +17,8 @@ classifiers = [
 ]
 
 dependencies = [
-    "lark>=1.1.0",
     "click>=8.1.0",
-    "rich>=13.0.0",
-    "sqlalchemy>=2.0.0",
+    "lark>=1.1.0",
 ]
 
 [project.optional-dependencies]
