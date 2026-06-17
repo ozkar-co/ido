@@ -1,0 +1,278 @@
+# Tatoeba Ido–English sentences (raw data)
+# source: https://api.tatoeba.org/v1/sentences?sort=created&lang=ido&showtrans:lang=eng
+# format: ido sentence followed by eng translations
+
+=== 13940722 ===
+license: CC BY 2.0 FR
+ido: Me futuis tua mama.
+eng: I fucked your mom. [direct]
+eng: I fucked your dad.
+eng: I had sex with your mother.
+eng: I had sex with your father.
+=== 13936469 ===
+license: CC BY 2.0 FR
+ido: Il sempre malodoras.
+eng: He always stinks. [direct]
+=== 13934333 ===
+license: CC BY 2.0 FR
+ido: Ni kaptis la povo.
+eng: We've taken over. [direct]
+=== 13934332 ===
+license: CC BY 2.0 FR
+ido: Ni ja kaptis la povo.
+eng: We've taken over. [direct]
+=== 13934198 ===
+license: CC BY 2.0 FR
+ido: Ton Tom dicis a me, ma Mary dicis, ke John ne esos ibe kun Alice lundie.
+eng: That's what Tom told me, but Mary said John wasn't going to be there with Alice on Monday. [direct]
+=== 13934149 ===
+license: CC BY 2.0 FR
+ido: Mea matro kreskis tre povra.
+eng: My mother grew up very poor. [direct]
+=== 13933972 ===
+license: CC BY 2.0 FR
+ido: Tom esas la chefo dil movemento Anonimo.
+eng: Tom is the leader of Anonymous. [direct]
+=== 13933971 ===
+license: CC BY 2.0 FR
+ido: Tom esas la chefo dil grupo Anonimo.
+eng: Tom is the leader of Anonymous. [direct]
+=== 13932562 ===
+license: CC BY 2.0 FR
+ido: To ne semblas a me kome logikoza ekspliko.
+eng: That doesn't seem like a logical explanation to me. [direct]
+=== 13932231 ===
+license: CC BY 2.0 FR
+ido: Tu esas furtisto, Tom.
+eng: You're a thief, Tom. [direct]
+=== 13932230 ===
+license: CC BY 2.0 FR
+ido: Tu esas furtero, Tom.
+eng: You're a thief, Tom. [direct]
+=== 13931915 ===
+license: CC BY 2.0 FR
+ido: Tom esas eskombristo.
+eng: Tom is a garbage man. [direct]
+=== 13931309 ===
+license: CC BY 2.0 FR
+ido: L'automobilo esas mikra.
+eng: The car is small. [direct]
+=== 13930808 ===
+license: CC BY 2.0 FR
+ido: Sempre esez kandida.
+eng: Always be frank. [direct]
+=== 13930713 ===
+license: CC BY 2.0 FR
+ido: Quanta pedofili esas en la guvernerio?
+eng: How many pedophiles are there in the government? [direct]
+=== 13930390 ===
+license: CC BY 2.0 FR
+ido: Tom esas nomo.
+eng: Tom is a name. [direct]
+=== 13929788 ===
+license: CC BY 2.0 FR
+ido: Porkokarno esas interdiktita en islamo.
+eng: Pork is forbidden in Islam. [direct]
+=== 13928832 ===
+license: CC BY 2.0 FR
+ido: Pro quo omna viri devas ameskar me? Me ne volas to.
+eng: Why must all men fall in love with me? I don't want that. [direct]
+=== 13928028 ===
+license: CC BY 2.0 FR
+ido: Li nomadesas.
+eng: They're nomads. [direct]
+=== 13928027 ===
+license: CC BY 2.0 FR
+ido: Li esas nomadi.
+eng: They're nomads. [direct]
+=== 13927648 ===
+license: CC BY 2.0 FR
+ido: El preparis salado kun lensi.
+eng: She made a lentil salad. [direct]
+=== 13927647 ===
+license: CC BY 2.0 FR
+ido: El preparis salado ek lensi.
+eng: She made a lentil salad. [direct]
+=== 13925122 ===
+license: CC BY 2.0 FR
+ido: Multa vespi esas polenizeri.
+eng: Many wasps are pollinators. [direct]
+=== 13924756 ===
+license: CC BY 2.0 FR
+ido: Saturdio esas la sepesma dio di la semano.
+eng: Saturday is the seventh day of the week. [direct]
+=== 13924279 ===
+license: CC BY 2.0 FR
+ido: Ka co esas poemo? Me ne sat bone savas la Franca por dicernar to.
+eng: Is this a poem? My French isn't good enough to tell. [direct]
+=== 13923559 ===
+license: CC BY 2.0 FR
+ido: Sekureso-reguli esas skribita per sango.
+eng: Safety regulations are written in blood. [direct]
+=== 13922521 ===
+license: CC BY 2.0 FR
+ido: Tacez, fashisto.
+eng: Shut up, fascist. [direct]
+=== 13922248 ===
+license: CC BY 2.0 FR
+ido: La Malayala esas parolata precipue en Kerala.
+eng: Malayalam is mainly spoken in Kerala. [direct]
+=== 13921513 ===
+license: CC BY 2.0 FR
+ido: La muliero ne laboras.
+eng: The woman doesn't work. [direct]
+=== 13921508 ===
+license: CC BY 2.0 FR
+ido: La vetero ne esas bona.
+eng: The weather is not good. [direct]
+=== 13921502 ===
+license: CC BY 2.0 FR
+ido: Me bezonis pekunio.
+eng: I needed money.
+=== 13921496 ===
+license: CC BY 2.0 FR
+ido: La infanto mustis urinifar.
+eng: The child had to urinate.
+=== 13921494 ===
+license: CC BY 2.0 FR
+ido: Nulu, qua lojas hike, esas richa.
+eng: Nobody who lives here is rich.
+=== 13921492 ===
+license: CC BY 2.0 FR
+ido: Me esas plu forta kam hiere.
+eng: I'm stronger than yesterday.
+=== 13921276 ===
+license: CC BY 2.0 FR
+ido: Il esis pafita e mortigita en la strado.
+eng: He was shot dead in the street. [direct]
+=== 13920851 ===
+license: CC BY 2.0 FR
+ido: Tom fakte esas tre bona patro.
+eng: Tom is actually a really good father. [direct]
+=== 13920252 ===
+license: CC BY 2.0 FR
+ido: Vu esas heroo segun mea opiniono.
+eng: You're a hero in my eyes. [direct]
+=== 13920250 ===
+license: CC BY 2.0 FR
+ido: Tu esas heroo segun mea opiniono.
+eng: You're a hero in my eyes. [direct]
+=== 13920067 ===
+license: CC BY 2.0 FR
+ido: Me bezonas ekprenar pekunio ek la bankautomato.
+eng: I need to withdraw money from the ATM. [direct]
+eng: I need to get money out from the cash machine.
+=== 13920066 ===
+license: CC BY 2.0 FR
+ido: Me bezonas ekprenar pekunio ek la bankomato.
+eng: I need to withdraw money from the ATM. [direct]
+eng: I need to get money out from the cash machine.
+=== 13919301 ===
+license: CC BY 2.0 FR
+ido: Skriptez to quon vi savas.
+eng: Write what you know. [direct]
+=== 13919279 ===
+license: CC BY 2.0 FR
+ido: Skriptez to quon vu savas.
+eng: Write what you know. [direct]
+=== 13919278 ===
+license: CC BY 2.0 FR
+ido: Skriptez to quon tu savas.
+eng: Write what you know. [direct]
+=== 13918116 ===
+license: CC BY 2.0 FR
+ido: Sami esas Islamisto.
+eng: Sami is a Muslim. [direct]
+=== 13918115 ===
+license: CC BY 2.0 FR
+ido: Sami esas Islamano.
+eng: Sami is a Muslim. [direct]
+=== 13918033 ===
+license: CC BY 2.0 FR
+ido: Me esforcas lernar la Hispana.
+eng: I'm trying to learn Spanish. [direct]
+=== 13917749 ===
+license: CC BY 2.0 FR
+ido: Tamen me esas suspektema.
+eng: I'm still paranoid. [direct]
+=== 13917748 ===
+license: CC BY 2.0 FR
+ido: Me ankore esas suspektema.
+eng: I'm still paranoid. [direct]
+=== 13917746 ===
+license: CC BY 2.0 FR
+ido: Tamen me esas paranoyika.
+eng: I'm still paranoid. [direct]
+=== 13917745 ===
+license: CC BY 2.0 FR
+ido: Me ankore esas paranoyika.
+eng: I'm still paranoid. [direct]
+=== 13916953 ===
+license: CC BY 2.0 FR
+ido: Ed il dicis: Tu ne povos vidar mea vizajo, nam nulu povas vidar me e restar viva.
+eng: And He said, "You may not see My face, for no one may see Me and live." [direct]
+=== 13916931 ===
+license: CC BY 2.0 FR
+ido: Abasez la kolonialismo!
+eng: Down with colonialism! [direct]
+=== 13916737 ===
+license: CC BY 2.0 FR
+ido: Me esas Usana Judo.
+eng: I'm an American Jew. [direct]
+=== 13916396 ===
+license: CC BY 2.0 FR
+ido: La mar-homino divenis spumo.
+eng: The mermaid turned to foam. [direct]
+=== 13916100 ===
+license: CC BY 2.0 FR
+ido: Me trovis kelka champinioni.
+eng: I found some mushrooms. [direct]
+=== 13915512 ===
+license: CC BY 2.0 FR
+ido: Li esas la defensanti dil urbo.
+eng: They're the defenders of the city. [direct]
+=== 13915346 ===
+license: CC BY 2.0 FR
+ido: Qua esas la stupido, qua facis to?
+eng: Who's the idiot who did that? [direct]
+=== 13915142 ===
+license: CC BY 2.0 FR
+ido: Co ne esas prediko.
+eng: This isn't a sermon. [direct]
+=== 13914464 ===
+license: CC BY 2.0 FR
+ido: Ni esas homi e ni esas de Tero.
+eng: We are humans and we are from Earth. [direct]
+=== 13914097 ===
+license: CC BY 2.0 FR
+ido: Me kredas, ke Tom kredas, ke me kredas to.
+eng: I think that Tom thinks that I think that. [direct]
+eng: I think Tom thinks I think that.
+eng: I think Tom thinks that I think that.
+eng: I think that Tom thinks I think that.
+=== 13914076 ===
+license: CC BY 2.0 FR
+ido: La morto ne solvas la problemo.
+eng: Death is not the answer.
+eng: Death is no solution.
+eng: Death does not solve the problem. [direct]
+=== 13914074 ===
+license: CC BY 2.0 FR
+ido: Ol esas bona recepto.
+eng: It's a good recipe. [direct]
+=== 13914070 ===
+license: CC BY 2.0 FR
+ido: El esas tre yuna.
+eng: She is very young. [direct]
+=== 13914068 ===
+license: CC BY 2.0 FR
+ido: La milito venos.
+eng: War is coming. [direct]
+=== 13914065 ===
+license: CC BY 2.0 FR
+ido: El serchas sua krayono.
+eng: She's looking for her pencil.
+=== 13914063 ===
+license: CC BY 2.0 FR
+ido: Qua kompris tua domo?
+eng: Who bought your house?

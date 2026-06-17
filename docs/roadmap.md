@@ -38,10 +38,11 @@ Personal study tool for Ido. Each phase adds CLI scripts; no web interface.
 - [ ] Audit collected phrases and translations for syntactic validity
 - [ ] Fix `ido/grammar.lark` (Ido pronouns, not Esperanto)
 
-## Phase 6 — Corpus generator
+## Phase 6 — Corpus (later)
 
-- [ ] Export dictionary + phrases as training corpus
-- [ ] Frequency and coverage stats
+- [x] `scripts/fetch_tatoeba.py` — snapshot Tatoeba pairs into `data/tatoeba_ido_eng.txt`
+- [ ] Define `corpus/` structure and scripts to build it from `data/`
+- [ ] Export dictionary + phrases into unified training format
 
 ## Phase 7 — IDO-only language model
 

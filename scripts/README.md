@@ -17,3 +17,4 @@ See the main [README](../README.md) for the full command reference.
 | `phrase_add.py` | Add a phrase pair |
 | `phrase_count.py` | Count stored phrases |
 | `phrase_search.py` | Search phrases |
+| `fetch_tatoeba.py` | Download Tatoeba pairs to `data/tatoeba_ido_eng.txt` |

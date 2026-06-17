@@ -40,6 +40,7 @@ Each script is standalone and can be run directly.
 | `scripts/phrase_count.py` | Show how many phrases are stored |
 | `scripts/phrase_search.py` | Search stored phrases |
 | `scripts/import_idan.py` | Import `idan.txt` into the database (idempotent) |
+| `scripts/fetch_tatoeba.py` | Download Tatoeba Ido–English pairs to `data/tatoeba_ido_eng.txt` |
 
 ### Examples
 
@@ -59,6 +60,10 @@ python scripts/dict_add.py testo test "witness"
 python scripts/phrase_add.py "Ku vu amas min?" "Do you love me?"
 python scripts/phrase_count.py
 python scripts/phrase_search.py love
+
+# Tatoeba sentence pairs (raw data, not in phrase DB)
+python scripts/fetch_tatoeba.py -n 100
+python scripts/fetch_tatoeba.py
 ```
 
 ## Optional CLI
@@ -79,9 +84,13 @@ ido phrase-search love
 | File | Role |
 |------|------|
 | `data/idan.txt` | Source dictionary (~14k Ido–English entries) |
+| `data/dyer_dict.txt` | English–Ido dictionary (Brian E. Drake, CC BY-NC 4.0) |
+| `data/tatoeba_ido_eng.txt` | Ido–English sentences from Tatoeba |
 | `data/ido.db` | Working SQLite database (dictionary + phrases) |
 | `data/schema.sql` | Database schema |
 | `data/quick_gramm.txt` | Quick Ido grammar reference (James Chandler, 1997) |
+
+See [data/README.md](data/README.md) for sources and licenses.
 
 ### Re-importing from idan.txt
 
