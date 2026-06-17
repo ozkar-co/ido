@@ -4,6 +4,7 @@ import click
 
 from ido.db import DatabaseError
 from ido.dictionary import Dictionary
+from ido.lexer import format_word_display
 from ido.phrases import PhraseStore
 
 
@@ -46,7 +47,7 @@ def en_cmd(term, limit):
             raise click.ClickException(f"No matches for: {term}")
         for entry in entries:
             root = entry.root or "?"
-            click.echo(f"{entry.word}  (root: {root})")
+            click.echo(f"{format_word_display(entry.word)}  (root: {root})")
             click.echo(f"  {entry.translation}\n")
     finally:
         db.close()

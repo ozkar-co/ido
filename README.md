@@ -13,9 +13,19 @@ pip install -e .
 The dictionary works immediately: `data/ido.db` is committed with ~14k entries imported from `data/idan.txt`.
 
 ```bash
+python scripts/dict_ido.py homo
 python scripts/dict_ido.py abad.o
 python scripts/dict_en.py abbot
 ```
+
+## Word forms
+
+The dictionary stores words in **dotted** morphological notation (`hom.o`, `abad.ey.o`) as in `idan.txt`. You can look up and add words in **solid** everyday form (`homo`, `abadeyo`); the lexer converts between the two.
+
+- **Lookup**: `dict_ido homo` finds `hom.o` and shows `homo  (hom.o)`
+- **Add**: `dict_add.py testo test "witness"` stores `test.o` with root `test`
+
+Rules are in `ido/lexer.py` (grammatical endings from `data/quick_gramm.txt`, conservative suffix splitting).
 
 ## Scripts
 
@@ -35,17 +45,18 @@ Each script is standalone and can be run directly.
 
 ```bash
 # Ido → English
+python scripts/dict_ido.py homo
 python scripts/dict_ido.py abad.o
 python scripts/dict_ido.py --root abad
 
 # English → Ido
 python scripts/dict_en.py abandon
 
-# Add a word you looked up elsewhere
-python scripts/dict_add.py hom.o hom "man"
+# Add a word (solid or dotted)
+python scripts/dict_add.py testo test "witness"
 
 # Phrase collection (for future training data)
-python scripts/phrase_add.py "Me amas?" "Do you love me?"
+python scripts/phrase_add.py "Ku vu amas min?" "Do you love me?"
 python scripts/phrase_count.py
 python scripts/phrase_search.py love
 ```
@@ -58,7 +69,7 @@ After `pip install -e .`, the same operations are available via Click:
 ido lookup abad.o
 ido en abbot
 ido add-word hom.o hom "man"
-ido phrase-add "Me amas?" "Do you love me?"
+ido phrase-add "Ku vu amas min?" "Do you love me?"
 ido phrase-count
 ido phrase-search love
 ```

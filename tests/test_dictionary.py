@@ -48,6 +48,10 @@ def test_lookup_ido(db_path: Path):
         assert entry is not None
         assert entry.root == "abad"
         assert "abbot" in entry.translation
+
+        # Solid form resolves to the same entry.
+        assert db.lookup_ido("abado") is not None
+        assert db.lookup_ido("abado").word == "abad.o"
     finally:
         db.close()
 

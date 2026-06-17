@@ -15,7 +15,7 @@ from ido.dictionary import Dictionary
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Add or update an Ido dictionary entry")
-    parser.add_argument("word", nargs="?", help="Ido word (e.g. hom.o)")
+    parser.add_argument("word", nargs="?", help="Ido word (homo or hom.o)")
     parser.add_argument("root", nargs="?", help="Morphological root")
     parser.add_argument("translation", nargs="?", help="English gloss")
     parser.add_argument("--notes", help="Optional notes")

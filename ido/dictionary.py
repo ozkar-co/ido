@@ -6,6 +6,7 @@ import sqlite3
 from dataclasses import dataclass
 
 from ido.db import connect
+from ido.lexer import dotted_to_solid, format_word_display, lex, query_variants
 from ido.paths import DB_PATH
 
 
@@ -43,15 +44,28 @@ class Dictionary:
         self._conn.close()
 
     def lookup_ido(self, word: str) -> WordEntry | None:
-        """Look up an Ido word (exact, then case-insensitive)."""
-        row = self._conn.execute(
-            "SELECT * FROM words WHERE word = ?", (word,)
-        ).fetchone()
-        if row:
-            return WordEntry.from_row(row)
+        """Look up an Ido word (dotted, solid, or inferred form)."""
+        for variant in query_variants(word):
+            row = self._conn.execute(
+                "SELECT * FROM words WHERE word = ?", (variant,)
+            ).fetchone()
+            if row:
+                return WordEntry.from_row(row)
 
+            row = self._conn.execute(
+                "SELECT * FROM words WHERE word = ? COLLATE NOCASE", (variant,)
+            ).fetchone()
+            if row:
+                return WordEntry.from_row(row)
+
+        solid = dotted_to_solid(word) if "." in word else word.strip().lower()
         row = self._conn.execute(
-            "SELECT * FROM words WHERE word = ? COLLATE NOCASE", (word,)
+            """
+            SELECT * FROM words
+            WHERE replace(word, '.', '') = ? COLLATE NOCASE
+            LIMIT 1
+            """,
+            (solid,),
         ).fetchone()
         return WordEntry.from_row(row) if row else None
 
@@ -120,8 +134,10 @@ class Dictionary:
         parent_id: int | None = None,
     ) -> WordEntry:
         """Add or update a user-sourced dictionary entry."""
+        parsed = lex(word)
+        canonical = parsed.dotted
         if root is None:
-            root = word.split(".", 1)[0] if "." in word else word
+            root = parsed.root
 
         self._conn.execute(
             """
@@ -133,16 +149,16 @@ class Dictionary:
                 notes = COALESCE(excluded.notes, words.notes),
                 source = 'user'
             """,
-            (word, root, translation, parent_id, notes),
+            (canonical, root, translation, parent_id, notes),
         )
         self._conn.commit()
-        entry = self.lookup_ido(word)
+        entry = self.lookup_ido(canonical)
         if entry is None:
-            raise RuntimeError(f"Failed to save word: {word}")
+            raise RuntimeError(f"Failed to save word: {canonical}")
         return entry
 
     def format_entry(self, entry: WordEntry, *, derived: list[WordEntry] | None = None) -> str:
-        lines = [entry.word]
+        lines = [format_word_display(entry.word)]
         if entry.root:
             lines.append(f"  Root: {entry.root}")
         lines.append(f"  English: {entry.translation}")
@@ -153,5 +169,6 @@ class Dictionary:
         if derived:
             lines.append("  Derived:")
             for child in derived:
-                lines.append(f"    {child.word}  {child.translation}")
+                child_display = format_word_display(child.word)
+                lines.append(f"    {child_display}  {child.translation}")
         return "\n".join(lines)

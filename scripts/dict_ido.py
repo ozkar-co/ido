@@ -15,7 +15,7 @@ from ido.dictionary import Dictionary
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Look up an Ido word")
-    parser.add_argument("word", nargs="?", help="Ido word (e.g. abad.o)")
+    parser.add_argument("word", nargs="?", help="Ido word (homo or hom.o)")
     parser.add_argument("--root", help="List all words with this root")
     args = parser.parse_args()
 
