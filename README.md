@@ -1,114 +1,122 @@
-# ido
+# Ido Study Tool
 
-Traductor y diccionario interactivo para un idioma artificial con morfología altamente regular.
+A personal command-line toolkit for studying and practicing [Ido](https://en.wikipedia.org/wiki/Ido). Look up words, collect phrase pairs, and build toward grammar checking and translation tools.
 
-## Descripción
+No web UI — just small, independent scripts and an optional `ido` CLI wrapper.
 
-Sistema de análisis lingüístico y traducción automática basado en reglas para idiomas artificiales. Combina un diccionario estructurado (SQLite), análisis morfológico mediante expresiones regulares, parser sintáctico (EBNF + Lark) y motor de traducción basado en reglas.
-
-## Componentes
-
-**Base de datos léxica (SQLite)**: Vocabulario, raíces, derivaciones y metadatos gramaticales.
-
-**Analizador morfológico**: Descomposición de palabras en raíces y afijos mediante patrones regulares.
-
-**Parser sintáctico (Lark)**: Análisis gramatical usando gramática EBNF formal con generación de AST.
-
-**Motor de traducción**: Traducción composicional basada en reglas morfológicas y sintácticas.
-
-**CLI**: Interfaz de línea de comandos para consultas, análisis y traducción.
-
-## Documentación
-
-
-- [Arquitectura del sistema](docs/arquitectura.md) - Diseño de componentes y flujo de datos
-- [Gramática EBNF](docs/gramatica.md) - Especificación formal del idioma
-- [Esquema del diccionario](docs/diccionario.md) - Estructura de base de datos
-- [Metodología](docs/metodologia.md) - Proceso de desarrollo
-- [Roadmap](docs/roadmap.md) - Plan de versiones futuras
-
-## Instalación
+## Quick start
 
 ```bash
-python -m venv venv
-source venv/bin/activate
-pip install -e ".[dev]"
+pip install -e .
 ```
 
-## Configuración Inicial
-
-Crear base de datos e importar diccionario:
+The dictionary works immediately: `data/ido.db` is committed with ~14k entries imported from `data/idan.txt`.
 
 ```bash
-# Importar diccionario Ido-Inglés (crea el esquema automáticamente)
+python scripts/dict_ido.py homo
+python scripts/dict_ido.py abad.o
+python scripts/dict_en.py abbot
+```
+
+## Word forms
+
+The dictionary stores words in **dotted** morphological notation (`hom.o`, `abad.ey.o`) as in `idan.txt`. You can look up and add words in **solid** everyday form (`homo`, `abadeyo`); the lexer converts between the two.
+
+- **Lookup**: `dict_ido homo` finds `hom.o` and shows `homo  (hom.o)`
+- **Add**: `dict_add.py testo test "witness"` stores `test.o` with root `test`
+
+Rules are in `ido/lexer.py` (grammatical endings from `data/quick_gramm.txt`, conservative suffix splitting).
+
+## Scripts
+
+Each script is standalone and can be run directly.
+
+| Script | Purpose |
+|--------|---------|
+| `scripts/dict_ido.py` | Look up an Ido word (root + English gloss, derived forms) |
+| `scripts/dict_en.py` | Find Ido words from an English term |
+| `scripts/dict_add.py` | Add or update a dictionary entry |
+| `scripts/phrase_add.py` | Save an Ido–English phrase pair |
+| `scripts/phrase_count.py` | Show how many phrases are stored |
+| `scripts/phrase_search.py` | Search stored phrases |
+| `scripts/import_idan.py` | Import `idan.txt` into the database (idempotent) |
+| `scripts/fetch_tatoeba.py` | Download Tatoeba Ido–English pairs to `data/tatoeba_ido_eng.txt` |
+
+### Examples
+
+```bash
+# Ido → English
+python scripts/dict_ido.py homo
+python scripts/dict_ido.py abad.o
+python scripts/dict_ido.py --root abad
+
+# English → Ido
+python scripts/dict_en.py abandon
+
+# Add a word (solid or dotted)
+python scripts/dict_add.py testo test "witness"
+
+# Phrase collection (for future training data)
+python scripts/phrase_add.py "Ku vu amas min?" "Do you love me?"
+python scripts/phrase_count.py
+python scripts/phrase_search.py love
+
+# Tatoeba sentence pairs (raw data, not in phrase DB)
+python scripts/fetch_tatoeba.py -n 100
+python scripts/fetch_tatoeba.py
+```
+
+## Optional CLI
+
+After `pip install -e .`, the same operations are available via Click:
+
+```bash
+ido lookup abad.o
+ido en abbot
+ido add-word hom.o hom "man"
+ido phrase-add "Ku vu amas min?" "Do you love me?"
+ido phrase-count
+ido phrase-search love
+```
+
+## Data files
+
+| File | Role |
+|------|------|
+| `data/idan.txt` | Source dictionary (~14k Ido–English entries) |
+| `data/dyer_dict.txt` | English–Ido dictionary (Brian E. Drake, CC BY-NC 4.0) |
+| `data/tatoeba_ido_eng.txt` | Ido–English sentences from Tatoeba |
+| `data/ido.db` | Working SQLite database (dictionary + phrases) |
+| `data/schema.sql` | Database schema |
+| `data/quick_gramm.txt` | Quick Ido grammar reference (James Chandler, 1997) |
+
+See [data/README.md](data/README.md) for sources and licenses.
+
+### Re-importing from idan.txt
+
+Safe to re-run; existing entries are skipped and **user-added words are preserved**:
+
+```bash
 python scripts/import_idan.py
-
-# Resultado: ~14,100 palabras + 93 categorías
-# - 10,700 palabras principales
-# - 3,400 palabras derivadas
-# - 114 pares de antónimos
-# - Análisis morfológico completo (raíz + afijos + terminación)
 ```
 
-Consultar diccionario:
+To rebuild from scratch (destroys all data):
 
 ```bash
-# Buscar palabra exacta
-python scripts/query_dict.py abad.o
-
-# Buscar por raíz morfológica
-python scripts/query_dict.py --root abad
-
-# Buscar palabras con afijo específico
-python scripts/query_dict.py --affix in
+python scripts/import_idan.py --force
 ```
 
-Verificar datos:
+## Development
 
 ```bash
-sqlite3 dictionary.db "SELECT COUNT(*) FROM words;"
-sqlite3 dictionary.db "SELECT word, translation FROM words LIMIT 10;"
+pip install -e ".[dev]"
+pytest
 ```
 
-## Uso
+## Roadmap
 
-### Analizador Morfológico
+See [docs/roadmap.md](docs/roadmap.md).
 
-```bash
-# Analizar morfología de una palabra
-python scripts/analyze_word.py abad.in.o
-
-# Ver ejemplos y demostraciones
-python scripts/analyze_word.py --examples
-python scripts/analyze_word.py --all-demos
-
-# Derivar palabras
-python scripts/analyze_word.py --derive bela adjective adverb
-```
-
-Ver [documentación completa del analizador morfológico](ido/README.md).
-
-### CLI (próximamente)
-
-```bash
-ido lookup palabra        # Consultar diccionario
-ido analyze palabra       # Análisis morfológico
-ido parse "frase"        # Análisis sintáctico
-ido translate "texto"    # Traducir
-```
-
-## Tests
-
-```bash
-# Ejecutar tests
-pytest tests/ -v
-
-# Con cobertura
-pytest tests/ --cov=ido
-```
-
-## Licencia
+## License
 
 MIT
-
-
