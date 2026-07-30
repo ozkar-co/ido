@@ -1,52 +1,34 @@
 # Data
 
-Raw reference files for study and future tooling. Formats vary by source; nothing here is loaded into `ido.db` automatically except via explicit import scripts.
+Reference files for dictionary and syntax tooling.
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `idan.txt` | Ido–English dictionary (~14,700 entries). Imported into `ido.db` via `import_idan.py`. |
-| `dyer_dict.txt` | English–Ido dictionary by Brian E. Drake (updated 2024). See [license](#dyer-dictionary) below. |
-| `tatoeba_ido_eng.txt` | Ido–English sentence pairs from [Tatoeba](https://tatoeba.org). Fetched with `fetch_tatoeba.py`. |
-| `quick_gramm.txt` | Quick Ido grammar guide (James Chandler, 1997). |
-| `ido.db` | Working SQLite database (dictionary + user phrases). |
-| `schema.sql` | Database schema. |
+| `idan.txt` | Ido–English dictionary (~14,700 entries) → `ido.db` via `import_idan.py` |
+| `ido.db` | SQLite dictionary |
+| `tatoeba_ido_eng.txt` | ~13k Ido–English sentences from Tatoeba |
+| `quick_gramm.txt` | Ido grammar reference (James Chandler, 1997) — source for parser rules |
+| `grammar.txt` | Grammar cheatsheet (Spanish summary) |
+| `audit_failures.txt` | Parser failures from `corpus_audit.py` (generated, optional) |
+| `gramm_book.txt` | Full Ido grammar manual (Spanish, reserved) |
+| `kurso_book.txt` | Literary corpus — The Time Machine in Ido (reserved) |
+| `vorti_book.txt` | Spanish–Ido dictionary (reserved) |
+| `dyer_dict.txt` | English–Ido dictionary (Brian E. Drake, CC BY-NC 4.0) |
+| `schema.sql` | Database schema |
 
-## Dyer dictionary
-
-**Author:** Brian E. Drake  
-**License:** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) (Attribution-NonCommercial 4.0 International)
-
-Based on the dictionaries by L.H. Dyer, updated and expanded 2024. English headwords with Ido equivalents; proposed words marked with `*`. Not imported into `ido.db` yet.
-
-## Tatoeba sentences
-
-Fetched from the Tatoeba API (`lang=ido`, English translations). Each entry includes sentence id, license, and one or more English glosses.
+## Tatoeba
 
 ```bash
-python scripts/fetch_tatoeba.py              # full dump (~15k sentences)
-python scripts/fetch_tatoeba.py -n 100       # first 100 only
-python scripts/fetch_tatoeba.py --direct-only
+python scripts/fetch_tatoeba.py
+python scripts/corpus_audit.py --failures -o data/audit_failures.txt
 ```
 
-Output: `data/tatoeba_ido_eng.txt`
+## Database
 
-```
-=== 13936469 ===
-license: CC BY 2.0 FR
-ido: Il sempre malodoras.
-eng: He always stinks. [direct]
-```
-
-## Database (`ido.db`)
-
-- Words from `idan.txt` have `source = 'idan'`.
-- User additions via `dict_add.py` have `source = 'user'` and are not overwritten on re-import.
-- Phrases are user-added only (`source = 'user'`).
-
-Rebuild from scratch:
+User word additions via `dict_add.py` have `source = 'user'` and survive re-import.
 
 ```bash
-python scripts/import_idan.py --force
+python scripts/import_idan.py --force   # rebuild dictionary only
 ```

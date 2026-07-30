@@ -1,32 +1,65 @@
-start: sentence+
-
-sentence: noun_phrase verb_phrase "."
-        | noun_phrase verb_phrase "?"
-
-noun_phrase: [ARTICLE] [adjective] noun
-           | [ARTICLE] [adjective] noun prepositional_phrase
-
-verb_phrase: verb
-           | verb noun_phrase
-           | verb prepositional_phrase
-           | verb noun_phrase prepositional_phrase
-
-prepositional_phrase: PREPOSITION noun_phrase
-
-noun: WORD "o"
-    | WORD "i"
-
-adjective: WORD "a"
-
-adverb: WORD "e"
-
-verb: WORD ("ar" | "ir" | "or" | "as" | "is" | "os" | "us" | "ez")
-
-ARTICLE: "la" | "un"
-PREPOSITION: "de" | "al" | "en" | "kun" | "por"
-CONJUNCTION: "kaj" | "aŭ" | "sed"
-PRONOUN: "mi" | "vi" | "li" | "ŝi" | "ĝi" | "ni" | "ili"
-WORD: /[a-z]+/
-
 %import common.WS
 %ignore WS
+
+PRON: "PRON"
+POSS: "POSS"
+DET: "DET"
+NOUN: "NOUN"
+ADJ: "ADJ"
+ADV: "ADV"
+VERB: "VERB"
+COPULA: "COPULA"
+PREP: "PREP"
+CONJ: "CONJ"
+KE: "KE"
+QU: "QU"
+KAD: "KAD"
+NEG: "NEG"
+PART: "PART"
+NAME: "NAME"
+OTHER: "OTHER"
+PUNCT_DOT: "PUNCT_DOT"
+PUNCT_Q: "PUNCT_Q"
+PUNCT_COMMA: "PUNCT_COMMA"
+PUNCT_SEMI: "PUNCT_SEMI"
+PUNCT_COLON: "PUNCT_COLON"
+QUOTE: "QUOTE"
+
+start: sentence
+
+?sentence: declarative | interrogative
+
+declarative: clause PUNCT_DOT
+interrogative: clause PUNCT_Q
+
+clause: simple sub_clause* coord_clause*
+
+sub_clause: PUNCT_COMMA KE simple
+coord_clause: PUNCT_COMMA CONJ simple
+
+?simple: question | statement
+
+question: QU statement
+        | KAD statement
+
+statement: np predicate
+          | predicate
+          | np copula_adj
+          | np copula_np
+
+copula_adj: COPULA ADJ
+copula_np: COPULA np
+
+np: (DET | POSS)* (ADJ)* core_np (pp)*
+
+core_np: NOUN | PRON | NAME | OTHER
+
+predicate: modifier* head modifier* complement*
+
+modifier: ADV | NEG | PART
+
+head: VERB | COPULA
+
+complement: np | pp
+
+pp: PREP np

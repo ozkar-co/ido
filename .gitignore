@@ -71,6 +71,7 @@ corpus/
 exports/
 temp/
 scratch/
+data/audit_failures.txt
 
 # Logs
 *.log

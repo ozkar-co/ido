@@ -2,50 +2,37 @@
 
 Personal study tool for Ido. Standalone CLI scripts; no web interface.
 
-## Phase 1 — Consultation tool (current focus)
+## Phase 1 — Word consultation tool
 
-- [x] Ido word → English translation
-- [x] English → Ido lookup (FTS)
-- [x] Grammar analysis in lookup output (category, suffixes, endings)
-- [x] Derived forms and same-root family
-- [x] Solid-form display (dotted notation stays internal only)
-- [x] `scripts/dict_ido.py`, `scripts/dict_en.py`, `scripts/dict_add.py`
+- [x] Ido ↔ English dictionary lookup with morphology
+- [x] `scripts/dict_ido.py`, `dict_en.py`, `dict_add.py`
 
-## Phase 2 — Derivator
+## Phase 2 — Sentence analyzer (current focus)
 
-- [ ] `scripts/derive.py` — generate inflected/derived forms from a root
-- [x] `ido/morphology.py` exists (rule-based analyzer); needs a thin script
+- [x] Lark grammar from `quick_gramm.txt` + `grammar.txt`
+- [x] Tokenizer with Ido pronouns, particles, verb/noun endings
+- [x] `scripts/grammar_check.py` — validate + show structure
+- [x] `scripts/corpus_audit.py` — audit Tatoeba, report failures for manual review
+- [ ] Expand grammar coverage (coordination, complex subordinates, literary forms)
+- [ ] Tune against `data/audit_failures.txt`
 
-## Phase 3 — Phrase database
+## Phase 3 — Phrase generator
 
-- [x] Add Ido–English phrase pairs
-- [x] Count and search stored phrases
-- [x] `scripts/phrase_add.py`, `phrase_count.py`, `phrase_search.py`
+- [ ] Generate syntactically valid Ido from grammar templates + lexicon
+- [ ] User supplies meaning; tool ensures valid structure
 
-## Phase 4 — Syntax checker
+## Phase 4 — Phrase translation (optional)
 
-- [ ] Deterministic EBNF parser (Lark)
-- [ ] `scripts/grammar_check.py` — validate a sentence
-- [ ] Audit collected phrases and translations for syntactic validity
-- [ ] Fix `ido/grammar.lark` (Ido pronouns, not Esperanto)
+- [ ] English → Ido sentence translation (dictionary + generator)
+- [ ] Requires Phase 3
 
-## Phase 5 — Corpus
+## Phase 5 — Corpus and language model
 
-- [x] `scripts/fetch_tatoeba.py` — snapshot Tatoeba pairs into `data/tatoeba_ido_eng.txt`
-- [ ] Define `corpus/` structure and scripts to build it from `data/`
-- [ ] Export dictionary + phrases into unified training format
+- [ ] Unified corpus export from dictionary + Tatoeba
+- [ ] Small Ido ↔ English language model
 
-## Phase 6 — IDO-only language model
-
-- [ ] Small LLM for Ido ↔ English translation
-- [ ] Or conversational agent that thinks/speaks only Ido
-
-## Explicitly out of scope
-
-- Web UI / API
-- Multi-language conlang framework
-- Spanish translation layer
+Reference books (`gramm_book.txt`, `kurso_book.txt`, `vorti_book.txt`) reserved for future grammar/corpus work.
 
 ## Principles
 
-Keep the codebase small: **KISS**, **YAGNI**, **DRY**. Dotted word notation (`hom.o`) is an internal representation for morphology and derivations; users always see solid forms (`homo`).
+**KISS**, **YAGNI**, **DRY**. Dotted word notation (`hom.o`) stays internal. Tatoeba failures may be parser gaps or source errors — review manually.

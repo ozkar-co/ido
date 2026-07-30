@@ -1,0 +1,9 @@
+# Golden sentences for syntax tests (valid)
+Il sempre malodoras.
+Ni kaptis la povo.
+Ni ja kaptis la povo.
+Ka ilu vivas?
+Me kredas, ke Tom kredas to.
+Me vidabas ol.
+La homo esas bona.
+Qua venas ibe?

@@ -32,7 +32,7 @@ def connect(db_path: Path | str | None = None) -> sqlite3.Connection:
 
 
 def _verify_schema(conn: sqlite3.Connection) -> None:
-    required = {"words", "words_fts", "phrases", "phrases_fts"}
+    required = {"words", "words_fts"}
     rows = conn.execute(
         "SELECT name FROM sqlite_master WHERE type IN ('table', 'virtual table')"
     ).fetchall()
@@ -70,7 +70,6 @@ def init_db(db_path: Path | str | None = None, *, force: bool = False) -> Path:
 def rebuild_fts(conn: sqlite3.Connection) -> None:
     """Rebuild FTS indexes from content tables."""
     conn.execute("INSERT INTO words_fts(words_fts) VALUES ('rebuild')")
-    conn.execute("INSERT INTO phrases_fts(phrases_fts) VALUES ('rebuild')")
     conn.commit()
 
 
