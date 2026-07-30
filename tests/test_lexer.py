@@ -2,7 +2,6 @@
 
 from ido.lexer import (
     dotted_to_solid,
-    format_word_display,
     lex,
     query_variants,
     solid_to_dotted,
@@ -35,11 +34,6 @@ def test_solid_passthrough_dotted():
 def test_query_variants():
     assert "hom.o" in query_variants("homo")
     assert "homo" in query_variants("hom.o")
-
-
-def test_format_word_display():
-    assert format_word_display("abad.o") == "abado  (abad.o)"
-    assert format_word_display("x") == "x"
 
 
 def test_lex_solid():

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Look up an Ido word (root + English gloss)."""
+"""Look up an Ido word (translation, grammar, derivations)."""
 
 from __future__ import annotations
 
@@ -11,11 +11,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from ido.db import DatabaseError, die_on_db_error
 from ido.dictionary import Dictionary
+from ido.display import format_entry
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Look up an Ido word")
-    parser.add_argument("word", nargs="?", help="Ido word (homo or hom.o)")
+    parser.add_argument("word", nargs="?", help="Ido word (e.g. homo, abado)")
     parser.add_argument("--root", help="List all words with this root")
     args = parser.parse_args()
 
@@ -34,7 +35,7 @@ def main() -> None:
                 print(f"No words found for root: {args.root}")
                 sys.exit(1)
             for entry in entries:
-                print(db.format_entry(entry))
+                print(format_entry(db, entry))
                 print()
             return
 
@@ -43,8 +44,7 @@ def main() -> None:
             print(f"Not found: {args.word}")
             sys.exit(1)
 
-        derived = db.list_derived(entry.word)
-        print(db.format_entry(entry, derived=derived or None))
+        print(format_entry(db, entry))
     finally:
         db.close()
 

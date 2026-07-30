@@ -1,0 +1,4 @@
+Usage: ido parse [OPTIONS] PHRASE
+Try 'ido parse --help' for help.
+
+Error: Got unexpected extra argument (2)

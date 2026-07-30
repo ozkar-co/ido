@@ -6,7 +6,7 @@ import sqlite3
 from dataclasses import dataclass
 
 from ido.db import connect
-from ido.lexer import dotted_to_solid, format_word_display, lex, query_variants
+from ido.lexer import dotted_to_solid, lex, query_variants
 from ido.paths import DB_PATH
 
 
@@ -156,19 +156,3 @@ class Dictionary:
         if entry is None:
             raise RuntimeError(f"Failed to save word: {canonical}")
         return entry
-
-    def format_entry(self, entry: WordEntry, *, derived: list[WordEntry] | None = None) -> str:
-        lines = [format_word_display(entry.word)]
-        if entry.root:
-            lines.append(f"  Root: {entry.root}")
-        lines.append(f"  English: {entry.translation}")
-        if entry.source != "idan":
-            lines.append(f"  Source: {entry.source}")
-        if entry.notes:
-            lines.append(f"  Notes: {entry.notes}")
-        if derived:
-            lines.append("  Derived:")
-            for child in derived:
-                child_display = format_word_display(child.word)
-                lines.append(f"    {child_display}  {child.translation}")
-        return "\n".join(lines)

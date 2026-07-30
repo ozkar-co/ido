@@ -136,11 +136,3 @@ def query_variants(query: str) -> list[str]:
             variants.append(dotted)
 
     return variants
-
-
-def format_word_display(dotted: str) -> str:
-    """Primary display: solid form, with dotted notation for study."""
-    solid = dotted_to_solid(dotted)
-    if solid == dotted:
-        return dotted
-    return f"{solid}  ({dotted})"

@@ -1,0 +1,55 @@
+Esta es una **guía rápida (cheatsheet)** con las reglas fundamentales del idioma Ido, extraídas de la gramática proporcionada.
+
+### 1. Pronunciación y Acentuación
+*   **Pronunciación:** Casi todas las letras suenan como en español, con estas excepciones:
+    *   **C:** suena como *ts* (ej: *lecióno* se pronuncia *letsióno*).
+    *   **G:** siempre suave (ga, ge, gi, go, gu).
+    *   **H:** aspirada suavemente.
+    *   **J:** como la *j* francesa o catalana.
+    *   **SH:** como la *x* catalana o *ch* francesa.
+    *   **W:** suena como la vocal *u*.
+    *   **X:** suena como *ks*.
+    *   **Z:** como la *z* francesa o catalana (sonora).
+*   **Acentuación:** La fuerza de voz recae en la **última sílaba en los infinitivos** y en la **penúltima sílaba** en todos los demás casos.
+
+### 2. Partes de la Oración (Terminaciones)
+El Ido utiliza terminaciones fijas para identificar la función de cada palabra:
+*   **Sustantivo:** Termina en **-o** para el singular y en **-i** para el plural.
+*   **Adjetivo:** Termina en **-a** y es invariable en género y número.
+*   **Adverbio derivado:** Termina en **-e**.
+*   **Artículo definido:** Es **la** para ambos géneros y números. Se puede usar **l'** ante vocal.
+*   **Artículo de plural:** Se usa **le** solo si no hay otro signo de plural en la frase.
+
+### 3. Pronombres Personales
+*   **Singular:** **me** (yo), **tu** (tú), **vu** (usted), **lu** (él/ella/ello).
+*   **Específicos:** **ilu** (él), **elu** (ella), **olu** (objeto/neutro).
+*   **Plural:** **ni** (nosotros), **vi** (vosotros/ustedes), **li** (ellos/ellas/neutros).
+*   **Indefinido:** **onu** o **on** (se, uno).
+*   **Reflexivo:** **su** (se, sí mismo) para terceras personas.
+
+### 4. Conjugación Verbal
+No existen verbos irregulares; todos siguen este esquema:
+*   **Infinitivo:** **-ar** (presente), **-ir** (pasado), **-or** (futuro).
+*   **Indicativo:** **-as** (presente), **-is** (pasado), **-os** (futuro).
+*   **Otros:** **-us** (condicional), **-ez** (imperativo).
+*   **Tiempos compuestos:** Se usa el sufijo **-ab-** entre la raíz y la terminación (ej: *me facabas* - yo hacía).
+
+### 5. Formación de Palabras (Afijos)
+*   **Géneros:** **-ul-** para masculino y **-in-** para femenino (ej: *fratulo* - hermano, *fratino* - hermana).
+*   **Parentesco por matrimonio:** Prefijo **bo-** (ej: *bopatro* - suegro).
+*   **Idea contraria:** Prefijo **des-** (ej: *desfacila* - difícil).
+*   **Repetición:** Prefijo **ri-** (ej: *rifacar* - rehacer).
+*   **Profesión:** Sufijo **-ist-** (ej: *pianisto*).
+*   **Lugar destinado a:** Sufijo **-ey-** (ej: *koqueyo* - cocina).
+
+### 6. Comparaciones y Preguntas
+*   **Grados:** **tam... kam** (tan... como), **plu... kam** (más... que), **min... kam** (menos... que).
+*   **Superlativos:** **maxim** (lo más), **minim** (lo menos).
+*   **Interrogativos:** **qua** (quién/qué), **ube** (dónde), **kande** (cuándo), **pro quo** (por qué).
+*   **Pregunta sí/no:** Se inicia con la partícula **kad** o **ka**.
+
+### 7. Numerales Cardinales
+*   1: **un**, 2: **du**, 3: **tri**, 4: **quar**, 5: **kin**, 6: **sis**, 7: **sep**, 8: **ok**, 9: **non**, 10: **dek**.
+*   **Decenas:** Se añade **-a-** (ej: *duadek* - 20).
+*   **Centenas/Millares:** *cent*, *mil*.
+*   **Ordinales:** Se añade **-esm-** (ej: *unesma* - primero).

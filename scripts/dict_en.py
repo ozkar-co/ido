@@ -11,7 +11,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from ido.db import DatabaseError, die_on_db_error
 from ido.dictionary import Dictionary
-from ido.lexer import format_word_display
+from ido.display import format_search_results
 
 
 def main() -> None:
@@ -31,11 +31,7 @@ def main() -> None:
             print(f"No matches for: {args.term}")
             sys.exit(1)
 
-        for entry in entries:
-            root = entry.root or "?"
-            print(f"{format_word_display(entry.word)}  (root: {root})")
-            print(f"  {entry.translation}")
-            print()
+        print(format_search_results(db, entries))
     finally:
         db.close()
 

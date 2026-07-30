@@ -11,11 +11,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from ido.db import DatabaseError, die_on_db_error
 from ido.dictionary import Dictionary
+from ido.display import format_entry
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Add or update an Ido dictionary entry")
-    parser.add_argument("word", nargs="?", help="Ido word (homo or hom.o)")
+    parser.add_argument("word", nargs="?", help="Ido word (e.g. homo)")
     parser.add_argument("root", nargs="?", help="Morphological root")
     parser.add_argument("translation", nargs="?", help="English gloss")
     parser.add_argument("--notes", help="Optional notes")
@@ -44,7 +45,7 @@ def main() -> None:
     try:
         entry = db.add_word(word, root, translation, notes=args.notes)
         print("Saved:")
-        print(db.format_entry(entry))
+        print(format_entry(db, entry))
     finally:
         db.close()
 
