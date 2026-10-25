@@ -276,7 +276,10 @@ class MorphologyAnalyzer:
         while found_suffix and len(remaining) > 2:
             found_suffix = False
             for suffix in sorted(self.SUFFIXES.keys(), key=len, reverse=True):
-                if remaining.endswith(suffix) and len(remaining) > len(suffix):
+                if (
+                    remaining.endswith(suffix)
+                    and len(remaining) - len(suffix) >= 2
+                ):
                     suffixes.insert(0, suffix)
                     remaining = remaining[:-len(suffix)]
                     found_suffix = True

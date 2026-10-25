@@ -1,2 +1,5 @@
-lark>=1.1.0
-pytest>=7.4.0
+# Runtime: parser de gramática libre de contexto
+lark>=1.1
+
+# Desarrollo: tests del analizador y del diccionario
+pytest>=8.0

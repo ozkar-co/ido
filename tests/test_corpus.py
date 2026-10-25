@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from ido.corpus import iter_tatoeba, load_tatoeba_sentences
+from corpus import iter_tatoeba, load_tatoeba_sentences
 
 
 SAMPLE = """\

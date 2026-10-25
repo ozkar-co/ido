@@ -3,7 +3,7 @@ Tests para el analizador morfológico.
 """
 
 import pytest
-from ido.morphology import MorphologyAnalyzer, MorphologicalAnalysis
+from morphology import MorphologyAnalyzer, MorphologicalAnalysis
 
 
 class TestMorphologyAnalyzer:

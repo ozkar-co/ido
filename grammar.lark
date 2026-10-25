@@ -1,0 +1,114 @@
+%import common.WS
+%ignore WS
+%ignore QUOTE
+
+PRON: "PRON"
+POSS: "POSS"
+DET: "DET"
+NOUN: "NOUN"
+ADJ: "ADJ"
+ADV: "ADV"
+VFIN: "VFIN"
+VINF: "VINF"
+VPART: "VPART"
+VIMP: "VIMP"
+COP: "COP"
+PREP: "PREP"
+CONJ: "CONJ"
+KE: "KE"
+SE: "SE"
+QU: "QU"
+KAD: "KAD"
+NEG: "NEG"
+PART: "PART"
+NAME: "NAME"
+NUM: "NUM"
+OTHER: "OTHER"
+QUOTE: "QUOTE"
+PUNCT_DOT: "PUNCT_DOT"
+PUNCT_Q: "PUNCT_Q"
+PUNCT_EX: "PUNCT_EX"
+PUNCT_COMMA: "PUNCT_COMMA"
+PUNCT_SEMI: "PUNCT_SEMI"
+PUNCT_COLON: "PUNCT_COLON"
+
+start: sentence
+
+sentence: question PUNCT_Q
+        | clause PUNCT_Q
+        | clause PUNCT_DOT
+        | clause PUNCT_EX
+        | clause
+        | interjection PUNCT_EX
+        | interjection
+
+interjection: NEG | PART | OTHER
+
+question: KAD clause
+        | QU clause
+
+clause: CONJ? unit (PUNCT_COMMA CONJ? unit | CONJ unit | PUNCT_SEMI unit | PUNCT_COLON unit)*
+
+unit: segment
+    | sub_clause
+    | np
+    | modifier
+    | interjection
+    | question
+    | KAD NEG
+    | pp
+
+segment: core back* sub_clause*
+       | front+ core? back* sub_clause*
+
+front: modifier | pp | NEG
+back: modifier | pp
+
+core: np predicate
+    | predicate
+    | np
+
+sub_clause: ke_clause | se_clause | qu_clause
+ke_clause: KE clause
+se_clause: SE clause
+qu_clause: QU clause
+rel_clause: QU clause
+
+np: specifier* (PART? (ADJ | VPART | NAME))* (PART? nominal) (PART? (ADJ | VPART | ADV))* (NAME | OTHER)* (pp | rel_clause)* (NUM)* (CONJ np)?
+  | VINF (np | pp | ADV)*
+
+specifier: (DET | POSS | PRON | NUM | QU)+ (CONJ (DET | POSS | NUM | PRON | QU)+)?
+
+nominal: NOUN | PRON | POSS | NAME | NUM | ADJ | ADV | VPART | OTHER | QU
+       | PART? (ADJ | VPART)
+
+predicate: NEG? modifier* verb_group modifier* complement*
+
+verb_group: VFIN (VINF | COP)? VPART?
+          | VIMP VINF?
+          | COP modifier* ADJ
+          | COP modifier* np
+          | COP modifier* VPART
+          | COP modifier* VINF
+          | COP
+          | VPART
+          | VINF
+
+complement: np
+          | pp
+          | COP
+          | ADJ
+          | VPART
+          | VINF
+          | comparative
+          | ke_clause
+          | se_clause
+          | qu_clause
+          | rel_clause
+
+pp: PREP (np | ADJ | ADV | VINF | VIMP | qu_clause | ke_clause | clause | QU) (CONJ pp)?
+  | QU np
+
+comparative: (PART | ADV)* CONJ (np | ADJ | ADV | NUM | clause)
+
+modifier: ADV | PART | NEG

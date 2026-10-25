@@ -1,34 +1,28 @@
-# Data
+# Datos
 
-Reference files for dictionary and syntax tooling.
+| Archivo | Descripción |
+|---------|-------------|
+| `idan.txt` | Diccionario Ido–Inglés de origen (14k entradas, notación punteada) |
+| `ido.db` | Diccionario SQLite con lemas sólidos, raíz, categoría y segmentación |
+| `words.tsv` | Exportación de `ido.db` para `grep` y revisión manual |
+| `tatoeba_ido_eng.txt` | ~13k pares Ido–Inglés de Tatoeba |
+| `quick_gramm.txt` | Referencia gramatical de James Chandler |
+| `grammar.txt` | Resumen gramatical en español |
+| `gramm_book.txt` | Gramática extensa en español |
+| `kurso_book.txt` | Corpus literario de apoyo |
+| `dyer_dict.txt` | Diccionario Inglés–Ido de Dyer (reserva) |
+| `vorti_book.txt` | Diccionario Español–Ido (no usado: alcance actual Ido–Inglés) |
+| `schema.sql` | Esquema de `ido.db` |
 
-## Files
+## Base de datos
 
-| File | Description |
-|------|-------------|
-| `idan.txt` | Ido–English dictionary (~14,700 entries) → `ido.db` via `import_idan.py` |
-| `ido.db` | SQLite dictionary |
-| `tatoeba_ido_eng.txt` | ~13k Ido–English sentences from Tatoeba |
-| `quick_gramm.txt` | Ido grammar reference (James Chandler, 1997) — source for parser rules |
-| `grammar.txt` | Grammar cheatsheet (Spanish summary) |
-| `audit_failures.txt` | Parser failures from `corpus_audit.py` (generated, optional) |
-| `gramm_book.txt` | Full Ido grammar manual (Spanish, reserved) |
-| `kurso_book.txt` | Literary corpus — The Time Machine in Ido (reserved) |
-| `vorti_book.txt` | Spanish–Ido dictionary (reserved) |
-| `dyer_dict.txt` | English–Ido dictionary (Brian E. Drake, CC BY-NC 4.0) |
-| `schema.sql` | Database schema |
-
-## Tatoeba
+`ido.db` se reconstruye desde `idan.txt`:
 
 ```bash
-python scripts/fetch_tatoeba.py
-python scripts/corpus_audit.py --failures -o data/audit_failures.txt
+.venv/bin/python main.py import --force
 ```
 
-## Database
-
-User word additions via `dict_add.py` have `source = 'user'` and survive re-import.
-
-```bash
-python scripts/import_idan.py --force   # rebuild dictionary only
-```
+La forma canónica es el lema sólido (`manjar`); `segments` conserva la segmentación
+de estudio (`manj.ar`) y `root` se calcula con la morfología, no con el primer punto.
+`words.tsv` se regenera en la misma importación. Las entradas añadidas con
+`main.py add` (`source='user'`) se conservan al reimportar con `--force`.

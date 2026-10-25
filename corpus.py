@@ -7,7 +7,7 @@ from collections.abc import Iterator
 from dataclasses import dataclass
 from pathlib import Path
 
-from ido.paths import TATOEBA_PATH
+from paths import TATOEBA_PATH
 
 _ENTRY_RE = re.compile(r"^=== (\d+) ===$")
 _IDO_RE = re.compile(r"^ido: (.+)$")
