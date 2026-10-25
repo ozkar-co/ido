@@ -26,4 +26,5 @@ clean:
 # Los datos se copian junto al ejecutable para que la app siga siendo offline.
 dist:
 	.venv/bin/python -m nuitka --mode=standalone --output-dir=dist \
-		--follow-imports --include-data-dir=data=data main.py
+		--follow-imports --include-data-dir=data=data \
+		--include-data-files=grammar.lark=grammar.lark main.py
