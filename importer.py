@@ -17,6 +17,27 @@ WORD_RE = re.compile(r"^[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ' .-]*$")
 TAG_RE = re.compile(r"\s*[\[{(][^\]})]*[\]})]")
 TRANSITIVITY_RE = re.compile(r"\{(tr/intr|tr|intr|imp)\}")
 ANALYZER = MorphologyAnalyzer()
+POS_TAGS = {
+    "interj": "interj",
+    "adv": "adv",
+    "prep": "prep",
+    "conj": "conj",
+    "pron": "pron",
+    "num": "num",
+    "adj": "adj",
+    "noun": "noun",
+    "verb": "verb",
+}
+
+
+def _pos_from_annotations(line: str) -> str | None:
+    """Lee etiquetas como {interj.}, {adv.}, {prep.} de la fuente."""
+    for tag in re.findall(r"[\[{]([^\]}]*)[\]}]", line):
+        normalized = tag.lower().strip().strip(".")
+        for key, pos in POS_TAGS.items():
+            if normalized == key or normalized.startswith(key + "."):
+                return pos
+    return None
 
 
 def _clean_word_field(value: str) -> str:
@@ -103,7 +124,8 @@ def _parse_entry(line: str) -> dict | None:
     if not lemma:
         return None
 
-    pos = "phrase" if " " in word_field else _pos_for(segments)
+    annotated_pos = _pos_from_annotations(line)
+    pos = annotated_pos or ("phrase" if " " in word_field else _pos_for(segments))
     proper = int(word_field[0].isupper())
     transitivity_match = TRANSITIVITY_RE.search(line)
     transitivity = transitivity_match.group(1) if transitivity_match else None

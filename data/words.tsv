@@ -1,4 +1,4 @@
-a	a	adj		to (indicating that to which there is movement, tendency or position, with or without arrival) am-ab-is = esis aminta; am-ab-os = esos aminta; am-ab-us = esus aminta)		idan
+a	a	prep		to (indicating that to which there is movement, tendency or position, with or without arrival) am-ab-is = esis aminta; am-ab-os = esos aminta; am-ab-us = esus aminta)		idan
 abadeyo	abad.ey.o	noun		abbey	abad	idan
 abadino	abad.in.o	noun		abbess	abad	idan
 abado	abad.o	noun		abbot; abbess	abad	idan
@@ -129,7 +129,7 @@ aciono	acion.o	noun		share	acion	idan
 acipitro	acipitr.o	noun		goshawk	acipitr	idan
 acizo	aciz.o	noun		octroi	aciz	idan
 acori	acor.i	noun		Azores	acor	idan
-ad	ad	other		to	ad	idan
+ad	ad	prep		to	ad	idan
 ad-este	ad-est.e	adv		eastward, eastwards, toward the east	ad-est	idan
 ad-extere	ad-exter.e	adv		outside	ad-exter	idan
 ad-sur	ad-sur	other		onto	ad-s	idan
@@ -468,7 +468,7 @@ algo	alg.o	noun		alga	alg	idan
 algologio	algologi.o	noun		algology, phycology	algologi	idan
 algoritmo	algoritm.o	noun		algorithm	algoritm	idan
 aliancar	alianc.ar	verb	tr	to ally, unite	alianc	idan
-alias	alias	verb		alias	al	idan
+alias	alias	adv		alias	al	idan
 alibio	alibi.o	noun		alibi	alibi	idan
 alidado	alidad.o	noun		alidad, alidade	alidad	idan
 alienacar	alienac.ar	verb	intr	to be in a state of alienation	alienac	idan
@@ -508,7 +508,7 @@ alo-forma	al.o-form.a	adj		wing-shaped, aliform	al	idan
 alo-stroko	al.o-strok.o	noun		wing beat, flap of the wings	al	idan
 alodio	alodi.o	noun		allodium, alodium, freehold estate, fee-simple estate	alodi	idan
 along-irar	along-ir.ar	verb	tr	to go along, skirt, coast	along-ir	idan
-alonge	along.e	adv		along, at the side of	along	idan
+alonge	along.e	prep		along, at the side of	along	idan
 alonjo	alonj.o	noun		extension; leaf; allonge	alonj	idan
 alonjo-trato	alonj.o-trat.o	noun		allonge: rider to a bill of exchange	alonj	idan
 aloo	alo.o	noun		aloe	alo	idan
@@ -670,7 +670,7 @@ amuleto	amulet.o	noun		amulet	amulet	idan
 amuzanta	amuz.ant.a	adj		amusing	amuz	idan
 amuzar	amuz.ar	verb	tr	to amuse, entertain; distract, divert	amuz	idan
 amuzero	amuz.er.o	noun		entertainer	amuz	idan
-an	an	other		at, on	an	idan
+an	an	prep		at, on	an	idan
 anabaptismo	anabaptism.o	noun		anabaptism	anabaptism	idan
 anabaptisto	anabaptist.o	noun		anabaptist	anabaptist	idan
 anabioso	anabios.o	noun		anabiosis	anabios	idan
@@ -810,7 +810,7 @@ anso	ans.o	noun		arc-shaped handle	ans	idan
 antagonismo	antagonism.o	noun		antagonism	antagonism	idan
 antagonisto	antagonist.o	noun		antagonist	antagonist	idan
 antarktika	antarktik.a	adj		Antarctic	antarktik	idan
-ante	ante	adv		before, earlier than. Ant: pos	ant	idan
+ante	ante	prep		before, earlier than. Ant: pos	ant	idan
 ante ke	ante ke	phrase		before	ante k	idan
 antea	ante.a	adj		former, previous, preceding, prior	ante	idan
 antecedento	antecedent.o	noun		antecedent	antecedent	idan
@@ -964,7 +964,7 @@ aprocho	aproch.o	noun		sap, approaches	aproch	idan
 aproximar	aproxim.ar	verb	tr	to estimate, evaluate approximately	aproxim	idan
 apsido	apsid.o	noun		apse, apsis	apsid	idan
 apta	apt.a	adj		apt, suitable, fit, good, appropriate	apt	idan
-apud	apud	other		next to, beside	apud	idan
+apud	apud	prep		next to, beside	apud	idan
 apuda	apud.a	adj		adjacent	apud	idan
 apude	apud.e	adv		adjacently	apud	idan
 apudpozar	apud.poz.ar	verb		to juxtapose	apud	idan
@@ -1454,7 +1454,7 @@ avalanchar	avalanch.ar	verb	intr	to fall as an avalanche	avalanch	idan
 avalancho	avalanch.o	noun		avalanche	avalanch	idan
 avalizar	aval.iz.ar	verb		to guarantee by endorsement	aval	idan
 avalo	aval.o	noun		assurance of payment, surety	aval	idan
-avan	avan	other		in front of, ahead of, before. Ant: dop	av	idan
+avan	avan	prep		in front of, ahead of, before. Ant: dop	av	idan
 avan-azia	avan-azi.a	adj		Asia Minor	avan-azi	idan
 avana	avan.a	adj		forward, advance, front	avan	idan
 avanajo	avan.aj.o	noun		forepart, front part; forequarters	avan	idan
@@ -1515,7 +1515,7 @@ axoido	axoid.o	noun		axis	axoid	idan
 axolotlo	axolotl.o	noun		axolotl	axolotl	idan
 axono	axon.o	noun		axon	axon	idan
 axonometrio	axonometri.o	noun		axonometry	axonometri	idan
-aye	aye	adv		ow!, ouch!	ay	idan
+aye	aye	interj		ow!, ouch!	ay	idan
 azaleo	azale.o	noun		azalea	azale	idan
 azerbaijan	azerbaijan	other		Azerbaijan	azerbaij	idan
 azia	azi.a	adj		Asia	azi	idan
@@ -1531,7 +1531,7 @@ azoto	azot.o	noun		nitrogen, azote	azot	idan
 azurea	azur.e.a	adj		azure, sky-blue	azur	idan
 azuro	azur.o	noun		azure, sky blue; smalt	azur	idan
 b	b	other		te, ti		idan
-ba	ba	adj		bah!, pshaw!		idan
+ba	ba	interj		bah!, pshaw!		idan
 baba	baba	adj		baba	bab	idan
 babel	babel	other		Babel	babel	idan
 babel-turmo	babel-turm.o	noun		tower of Babel	babel-turm	idan
@@ -2544,7 +2544,7 @@ chasar	chas.ar	verb	tr/intr	to chase; hunt	chas	idan
 chasta	chast.a	adj		chaste; pure	chast	idan
 chasteso	chast.es.o	noun		chastity	chast	idan
 chazublo	chazubl.o	noun		chasuble	chazubl	idan
-che	che	adv		at, in, to, with (a people, in respect of their customs)	ch	idan
+che	che	prep		at, in, to, with (a people, in respect of their customs)	ch	idan
 chef-injenioro	chef-injenior.o	noun		chief engineer	chef-injenior	idan
 chef-kontrolisto	chef-kontrol.ist.o	noun		superintendent, comptroller, overseer	chef-kontrol	idan
 chef-ministro	chef-ministr.o	noun		prime minister	chef-ministr	idan
@@ -2701,7 +2701,7 @@ cirkuito	cirkuit.o	noun		circuit (perimeter, compass, circumference; path of an 
 cirkular	cirkul.ar	verb	intr	to circulate, move around, flow in a circuitous way; (of money, etc.) pass from hand to hand	cirkul	idan
 cirkulero	cirkuler.o	noun		circular	cirkuler	idan
 cirkuligar	cirkul.ig.ar	verb		to circulate, put into circulation	cirkul	idan
-cirkum	cirkum	other		about, around, roundabout	cirk	idan
+cirkum	cirkum	prep		about, around, roundabout	cirk	idan
 cirkumajo	cirkum.aj.o	noun		surroundings, setting	cirkum	idan
 cirkume	cirkum.e	adv		around, round, roundabout; roughly	cirkum	idan
 cirkumirar	cirkum.ir.ar	verb	tr/intr	to go or wind around	cirkum	idan
@@ -2712,7 +2712,7 @@ cirkumpola	cirkum.pol.a	adj		circumpolar	cirkum	idan
 cirkumskribar	cirkum.skrib.ar	verb	tr	to circumscribe	cirkum	idan
 ciruso	cirus.o	noun		cirrus	cirus	idan
 cis	cis	verb		C sharp		idan
-cis	cis	verb		on this side of. Ant: trans		idan
+cis	cis	prep		on this side of. Ant: trans		idan
 cisa	cis.a	adj		hither	cis	idan
 cisalpa	cis.alp.a	adj		cisalpine	cis	idan
 cise	cis.e	adv		this side	cis	idan
@@ -2763,7 +2763,7 @@ co esas	co es.as	phrase		i.e.	co es	idan
 coenobium	coenobium	other		coenobium, colony of unicellular organisms	coenob	idan
 conquistador	conquistador	verb		conquistador	conqu	idan
 corpus juris	corpus juris	phrase		corpus juris, body of the law	corpus j	idan
-da	da	adj		by (indicates the doer of an action, the agent after a passive verb or the author of a work)		idan
+da	da	prep		by (indicates the doer of an action, the agent after a passive verb or the author of a work)		idan
 dacia	daci.a	adj		Dacia	daci	idan
 dafno	dafn.o	noun		common daphne, spurge-olive, dwarf bay	dafn	idan
 dago	dag.o	noun		dagger, dirk	dag	idan
@@ -2808,7 +2808,7 @@ dato	dat.o	noun		date	dat	idan
 daturo	datur.o	noun		datura; ~thorn-apple, ~jimson-weed, ~jimpson-weed	datur	idan
 daxo	dax.o	noun		badger	dax	idan
 dazlar	dazl.ar	verb	tr	to dazzle, overpower by bright or moving lights; dazzle, excite to admiration by brilliancy, beauty, cleverness etc.	dazl	idan
-de	de	adv		from (indicating starting point, origin or derivation. E.g. "treno de London", "blinda de nasko", "de omna lateri", "komprar de ulu", "malada de febro"); of (where an amount is indicated. E.g. "peco de pano", "glaso de aquo", "un horo de marcho", "tri metri de rubando", "ponto longa de du milii", "barelo plena de vino")		idan
+de	de	prep		from (indicating starting point, origin or derivation. E.g. "treno de London", "blinda de nasko", "de omna lateri", "komprar de ulu", "malada de febro"); of (where an amount is indicated. E.g. "peco de pano", "glaso de aquo", "un horo de marcho", "tri metri de rubando", "ponto longa de du milii", "barelo plena de vino")		idan
 de dop	de dop	phrase		from behind	de dop	idan
 de esto	de est.o	phrase		from the east	de est	idan
 de nun	de nun	phrase		from now	de nun	idan
@@ -3269,7 +3269,7 @@ dezirinda	dezir.ind.a	adj		desirable	dezir	idan
 dezolanta	dezol.ant.a	adj		grievous	dezol	idan
 dezolar	dezol.ar	verb	tr	to make disconsolate, seriously distress, grieve	dezol	idan
 dezoleso	dezol.es.o	noun		desolation	dezol	idan
-di	di	noun		of		idan
+di	di	prep		of		idan
 di qua	di qua	phrase		whose, of which	di qu	idan
 di qui	di qui	phrase		whose, of which	di qu	idan
 di-mezo	di-mez.o	noun		midday, noon	di-mez	idan
@@ -3633,7 +3633,7 @@ donaco	donac.o	noun		donation	donac	idan
 donajo	don.aj.o	noun		thing given	don	idan
 donar	don.ar	verb	tr	to give, bestow, impart	don	idan
 dono	don.o	noun		giving	don	idan
-dop	dop	other		behind, after, back of. Ant: avan	dop	idan
+dop	dop	prep		behind, after, back of. Ant: avan	dop	idan
 dop-lando	dop-land.o	noun		hinterland	dop-land	idan
 dop-remar	dop-rem.ar	verb		to scull	dop-rem	idan
 dop-remilo	dop-rem.il.o	noun		sculling oar	dop-rem	idan
@@ -3745,7 +3745,7 @@ duktila	duktil.a	adj		ductile	duktil	idan
 dukulo	duk.ul.o	noun		duke	duk	idan
 dulkamarino	dulkamarin.o	noun		dulcamarin	dulkamarin	idan
 dulkamaro	dulkamar.o	noun		woody nightshade, bittersweet, dulcamara	dulkamar	idan
-dum	dum	other		during, in	dum	idan
+dum	dum	prep		during, in	dum	idan
 dum ke	dum ke	phrase		while, whilst, during the time when	dum k	idan
 dumanua	du.manu.a	adj		two-handed	du	idan
 dumasta navo	du.mast.a nav.o	phrase		two-masted ship	du	idan
@@ -3893,7 +3893,7 @@ egotismo	egotism.o	noun		egotism	egotism	idan
 egotisto	egotist.o	noun		egotist	egotist	idan
 eis	eis	verb		E sharp		idan
 ejektar	ejekt.ar	verb	tr	to eject, expel, cast out, discharge	ejekt	idan
-ek	ek	other		out of, out from, out (forth from), of (made of)	ek	idan
+ek	ek	prep		out of, out from, out (forth from), of (made of)	ek	idan
 ek-asaltar	ek-asalt.ar	verb		to make a sally, sortie	ek-asalt	idan
 ekarte	ekarte	adv		cart	ekart	idan
 ekfalajo	ek.fal.aj.o	noun		fallout	ek	idan
@@ -3947,7 +3947,7 @@ ekumenika	ekumenik.a	adj		ecumenic, ecumenical	ekumenik	idan
 ekvarsar	ek.vars.ar	verb	tr	to pour off, empty out, spill	ek	idan
 ekvokar	ek.vok.ar	verb	tr	to call out to	ek	idan
 ekzemo	ekzem.o	noun		eczema	ekzem	idan
-el	el	other		she, her	el	idan
+el	el	pron		she, her	el	idan
 el portis ol ek la chambro	el port.is ol ek la chambr.o	phrase		she carried it out of the room	el port	idan
 elaborar	elabor.ar	verb	tr	to elaborate	elabor	idan
 elaioplasto	elaioplast.o	noun		elaioplast	elaioplast	idan
@@ -4024,7 +4024,7 @@ elizionar	elizion.ar	verb	tr	to elide	elizion	idan
 eliziono	elizion.o	noun		elision	elizion	idan
 elongaciono	elongacion.o	noun		elongation	elongacion	idan
 eloquenta	eloquent.a	adj		eloquent; vividly expressive	eloquent	idan
-elu	elu	other		she, her	elu	idan
+elu	elu	pron		she, her	elu	idan
 elua	elu.a	adj		her, hers	elu	idan
 eludar	elud.ar	verb	tr	to elude, evade	elud	idan
 eludema	elud.em.a	adj		elusive, evasive	elud	idan
@@ -4096,7 +4096,7 @@ emulsuro	emuls.ur.o	noun		emulsion	emuls	idan
 emundar	emund.ar	verb	tr	to prune, trim, lop; to remove unattractive, useless or inferior parts from (vegetables, fish, etc.)	emund	idan
 emuntorio	emuntori.o	noun		emunctory	emuntori	idan
 emuo	emu.o	noun		emu	emu	idan
-en	en	other		in	en	idan
+en	en	prep		in	en	idan
 en la urbo	en la urb.o	phrase		in the city	en la urb	idan
 en la vintro	en la vintr.o	phrase		in the winter	en la vintr	idan
 enartroso	enartros.o	noun		enarthrosis, ball-and-socket joint	enartros	idan
@@ -4663,7 +4663,7 @@ extazo	extaz.o	noun		ecstasy	extaz	idan
 extensar	extens.ar	verb	tr	to extend, stretch, spread (carpet, authority, power, domain, etc.), draw out	extens	idan
 extensivo	extens.iv.o	noun		extensor	extens	idan
 extenuar	extenu.ar	verb	tr	to extenuate	extenu	idan
-exter	exter	other		outside, outside of; besides, except	ter	idan
+exter	exter	prep		outside, outside of; besides, except	ter	idan
 extera	exter.a	adj		external, outside	exter	idan
 exterajo	exter.aj.o	noun		exterior, outside	exter	idan
 exterdota	exter.dot.a	adj		paraphernal	exter	idan
@@ -4681,7 +4681,7 @@ externo	extern.o	noun		day pupil, day scholar; day-boy; day-girl	extern	idan
 extingar	exting.ar	verb	tr/intr	to extinguish, put out, quench (a fire, a light; also fig.: quench (thirst), cancel (debt), slack (lime), etc.); go out (of a fire, etc.).  Ant: acendar	exting	idan
 extirpar	extirp.ar	verb	tr	to extirpate, uproot, extract; (fig.) eradicate; (surg.) cut out	extirp	idan
 extorsar	extors.ar	verb	tr	to extort; blackmail	extors	idan
-extra	extra	adj		extra	tr	idan
+extra	extra	adv		extra	tr	idan
 extradar	extrad.ar	verb	tr	to extradite	extrad	idan
 extradoso	extrados.o	noun		extrados. Ant: intradoso	extrados	idan
 extraflorala	extrafloral.a	adj		extrafloral	extrafloral	idan
@@ -4869,7 +4869,7 @@ feto	fet.o	noun		fetus, foetus	fet	idan
 feudala	feud.al.a	adj		feudal	feud	idan
 feudo	feud.o	noun		fief, feud, feod	feud	idan
 fezo	fez.o	noun		fez	fez	idan
-fi	fi	noun		tut-tut!, fie!, shame!, ugh!		idan
+fi	fi	interj		tut-tut!, fie!, shame!, ugh!		idan
 fiakro	fiakr.o	noun		hackney, cab	fiakr	idan
 fialo	fial.o	noun		vial	fial	idan
 fiancar	fianc.ar	verb	tr	to betroth	fianc	idan
@@ -5052,7 +5052,7 @@ fonometrio	fonometri.o	noun		phonometry	fonometri	idan
 fontanelo	fontanel.o	noun		fontanelle, fontanel	fontanel	idan
 fonteno	fonten.o	noun		fountain	fonten	idan
 fonto	font.o	noun		spring, natural source, font	font	idan
-for	for	verb		away from, far from		idan
+for	for	prep		away from, far from		idan
 fora	for.a	adj		remote, distant	for	idan
 forcato	forcat.o	noun		convict; galley slave	forcat	idan
 forcepso	forceps.o	noun		forceps	forceps	idan
@@ -5081,7 +5081,7 @@ formulo	formul.o	noun		formula	formul	idan
 fornikar	fornik.ar	verb	intr	to fornicate	fornik	idan
 forno	forn.o	noun		oven; kiln	forn	idan
 foronomio	foronomi.o	noun		phoronomy	foronomi	idan
-forsan	forsan	other		perhaps, maybe	fors	idan
+forsan	forsan	adv		perhaps, maybe	fors	idan
 forsar	fors.ar	verb	tr	to force	fors	idan
 forta	fort.a	adj		strong. Ant: febla	fort	idan
 forteso	fort.es.o	noun		strength	fort	idan
@@ -5668,7 +5668,7 @@ guvernado	guvern.ad.o	noun		government	guvern	idan
 guvernar	guvern.ar	verb	tr	to govern, rule directly	guvern	idan
 guvernerio	guvern.eri.o	noun		government	guvern	idan
 guyavo	guyav.o	noun		guava	guyav	idan
-ha	ha	adj		ha!, ah!		idan
+ha	ha	interj		ha!, ah!		idan
 habila	habil.a	adj		clever, skilful, adroit	habil	idan
 habilitar	habilit.ar	verb	tr	to habilitate	habilit	idan
 habitaklo	habitakl.o	noun		binnacle, compass-box	habitakl	idan
@@ -5722,7 +5722,7 @@ havayi	havayi	noun		Hawaii	havay	idan
 hazardala	hazard.al.a	adj		accidental, chance	hazard	idan
 hazarde	hazard.e	adv		by chance, accidentally, perchance	hazard	idan
 hazardo	hazard.o	noun		chance occurrence,hazard	hazard	idan
-he	he	adv		hey!		idan
+he	he	interj		hey!		idan
 hebrea	hebre.a	adj		Hebrew	hebre	idan
 hebreo	hebre.o	noun		Hebrew	hebre	idan
 hebridi	hebrid.i	noun		Hebrides	hebrid	idan
@@ -5945,14 +5945,14 @@ historiografio	historiografi.o	noun		historiography	historiografi	idan
 historiografo	historiograf.o	noun		historiographer	historiograf	idan
 histriono	histrion.o	noun		histrion, stage player	histrion	idan
 hivernar	hivern.ar	verb	intr	to winter, spend the winter; go into winter quarters	hivern	idan
-ho	ho	noun		oh!, ho!	ho	idan
+ho	ho	interj		oh!, ho!	ho	idan
 hobio	hobi.o	noun		hobby, pastime	hobi	idan
 hoboyo	hoboy.o	noun		oboe	hoboy	idan
 hodie	ho.di.e	adv		today, this day	di	idan
 hodografo	hodograf.o	noun		hodograph	hodograf	idan
 hoko	hok.o	noun		hook	hok	idan
 hokoido	hok.oid.o	noun		unciform	hok	idan
-hola	hola	adj		hello!		idan
+hola	hola	interj		hello!		idan
 holandano	holand.an.o	noun		Hollander	holand	idan
 holando	holand.o	noun		Holland	holand	idan
 holdo	hold.o	noun		hold	hold	idan
@@ -5988,7 +5988,7 @@ honesta	honest.a	adj		honest	honest	idan
 honorario	honorari.o	noun		fee, emolument	honorari	idan
 honoro	honor.o	noun		honour, honor	honor	idan
 honorumala	honor.um.al.a	adj		honorary	honor	idan
-hop	hop	other		go!, jump!		idan
+hop	hop	interj		go!, jump!		idan
 hoplito	hoplit.o	noun		hoplite	hoplit	idan
 hordeo	horde.o	noun		barley	horde	idan
 hordeo-sukro	horde.o-sukr.o	noun		barley sugar	horde	idan
@@ -6012,11 +6012,11 @@ hospitalo	hospital.o	noun		hospital	hospital	idan
 hostio	hosti.o	noun		Host, consecrated wafer	hosti	idan
 hosto	host.o	noun		host	host	idan
 hotelo	hotel.o	noun		hotel	hotel	idan
-hu	hu	other		ugh!, whew!	hu	idan
+hu	hu	interj		ugh!, whew!	hu	idan
 hueto	hu.et.o	noun		owlet, tawny owl, brown owl	hu	idan
 hufo	huf.o	noun		hoof	huf	idan
 hugenoto	hugenot.o	noun		Huguenot	hugenot	idan
-hum	hum	other		hum!, humph!	hum	idan
+hum	hum	interj		hum!, humph!	hum	idan
 humana	human.a	adj		humane, compassionate	human	idan
 humanismo	human.ism.o	noun		humanism	human	idan
 humanisto	human.ist.o	noun		humanist, student of the humanities	human	idan
@@ -6034,7 +6034,7 @@ hungrar	hungr.ar	verb	tr/intr	to be hungry, hunger; be eager; be hungry for, eag
 huo	hu.o	noun		little owl	hu	idan
 huo nivala	hu.o niv.al.a	phrase		snowy owl	hu	idan
 huo nivea	hu.o niv.e.a	phrase		snowy owl	hu	idan
-hura	hura	adj		hurrah!, hurray!	hur	idan
+hura	hura	interj		hurrah!, hurray!	hur	idan
 hurdo	hurd.o	noun		wattle, hurdle	hurd	idan
 husaro	husar.o	noun		hussar	husar	idan
 hutingo	huting.o	noun		houting person: e.g. duk-i-o: duchy; episkop-i-o: diocese; parok-i-o: parish)	huting	idan
@@ -6299,7 +6299,7 @@ intendanco	intendanc.o	noun		commissariat	intendanc	idan
 intendantio	intendant.i.o	noun		intendancy	intendant	idan
 intendanto	intendant.o	noun		intendant, superintendent	intendant	idan
 intensa	intens.a	adj		intense	intens	idan
-inter	inter	other		between; among	int	idan
+inter	inter	prep		between; among	int	idan
 inter-simpatiar	inter-simpati.ar	verb		to sympathise mutually	inter-simpati	idan
 interceptar	intercept.ar	verb	tr	to intercept	intercept	idan
 intercesar	interces.ar	verb	intr	to intercede	interces	idan
@@ -6551,7 +6551,7 @@ jurio	juri.o	noun		jury	juri	idan
 juriskonsulto	juriskonsult.o	noun		jurisconsult	juriskonsult	idan
 jurisprudenco	jurisprudenc.o	noun		interpretation of laws through the verdicts of judges; legal precedent	jurisprudenc	idan
 jurnalo	jurnal.o	noun		newspaper, gazette, journal	jurnal	idan
-jus	jus	verb		just, just now		idan
+jus	jus	adv		just, just now		idan
 justa	just.a	adj		right, proper, correct	just	idan
 justifar	justif.ar	verb	tr	to justify	justif	idan
 justifikar	justifik.ar	verb	tr	to justify	justifik	idan
@@ -6651,7 +6651,7 @@ kalzego	kalz.eg.o	noun		tights	kalz	idan
 kalzeto	kalz.et.o	noun		sock	kalz	idan
 kalzo	kalz.o	noun		stocking	kalz	idan
 kalzumo	kalz.um.o	noun		socklike shoe	kalz	idan
-kam	kam	other		than, as, to	kam	idan
+kam	kam	adv		than, as, to	kam	idan
 kam-arboro	kam-arbor.o	noun		camshaft	kam-arbor	idan
 kamalio	kamali.o	noun		camail	kamali	idan
 kamarado	kamarad.o	noun		comrade, mate	kamarad	idan
@@ -7229,7 +7229,7 @@ koluteo	kolute.o	noun		bladder-nut tree	kolute	idan
 koluzionar	koluzion.ar	verb	intr	to collude	koluzion	idan
 kolzo	kolz.o	noun		oil-seed rape, cole, colewort, colza	kolz	idan
 kolzoleo	kolz.ole.o	noun		rapeseed oil, rape oil, colza oil	kolz	idan
-kom	kom	other		as, in the capacity of (e.g. 'la arboro komencis kom semino' = the tree began as a seed)	kom	idan
+kom	kom	prep		as, in the capacity of (e.g. 'la arboro komencis kom semino' = the tree began as a seed)	kom	idan
 kom desesperala remedio	kom des.esper.al.a remedi.o	phrase		as a last resource	kom des	idan
 komandar	komand.ar	verb	tr	to command, give an order to	komand	idan
 komanditar	komandit.ar	verb	tr	to finance	komandit	idan
@@ -7474,7 +7474,7 @@ kontrapunto	kontrapunt.o	noun		counterpoint	kontrapunt	idan
 kontrastar	kontrast.ar	verb	intr	to contrast	kontrast	idan
 kontratar	kontrat.ar	verb	intr	to make a contract	kontrat	idan
 kontravencar	kontravenc.ar	verb	tr/intr	to contravene, transgress, infringe (regulations, orders, the law, etc.)	kontravenc	idan
-kontre	kontre	adv		against, contrary to, versus	kontr	idan
+kontre	kontre	prep		against, contrary to, versus	kontr	idan
 kontre-atako	kontre-atak.o	noun		counter-attack	kontre-atak	idan
 kontrea	kontre.a	adj		opposite, contrary, counter	kontre	idan
 kontredicar	kontre.dic.ar	verb	tr	to contradict	kontre	idan
@@ -7526,7 +7526,7 @@ kopulo	kopul.o	noun		copula	kopul	idan
 koquar	koqu.ar	verb	tr/intr	to cook	koqu	idan
 koqueyo	koqu.ey.o	noun		kitchen	koqu	idan
 koralio	korali.o	noun		coral	korali	idan
-koram	koram	other		in the presence of	koram	idan
+koram	koram	prep		in the presence of	koram	idan
 korano	koran.o	noun		Koran	koran	idan
 korbelo	korbel.o	noun		corbel	korbel	idan
 korbo	korb.o	noun		basket	korb	idan
@@ -7631,7 +7631,7 @@ koyoto	koyot.o	noun		coyote, prairie wolf, brush wolf	koyot	idan
 kozako	kozak.o	noun		Cossack	kozak	idan
 kozo	koz.o	noun		thing	koz	idan
 krabo	krab.o	noun		crab	krab	idan
-krak	krak	other		crack!, bang!	krak	idan
+krak	krak	interj		crack!, bang!	krak	idan
 krakar	krak.ar	verb	intr	to crack	krak	idan
 kraknelo	kraknel.o	noun		biscuit	kraknel	idan
 krampo	kramp.o	noun		cramp	kramp	idan
@@ -7803,7 +7803,7 @@ kumis	kumis	verb		kumiss, koumiss	kum	idan
 kumpreso	kumpres.o	noun		compress	kumpres	idan
 kumular	kumul.ar	verb	tr	to hold a plurality of offices	kumul	idan
 kumuluso	kumulus.o	noun		cumulus	kumulus	idan
-kun	kun	other		with	kun	idan
+kun	kun	prep		with	kun	idan
 kun-tara	kun-tar.a	adj		gross	kun-tar	idan
 kune	kun.e	adv		together	kun	idan
 kuneiforma	kuneiform.a	adj		cuneiform, wedge-shaped; cuniform, cuneal, cuneate	kuneiform	idan
@@ -8066,7 +8066,7 @@ lexikografio	lexikografi.o	noun		lexicography	lexikografi	idan
 lexikografo	lexikograf.o	noun		lexicographer	lexikograf	idan
 lexikologio	lexikologi.o	noun		lexicology	lexikologi	idan
 lezar	lez.ar	verb	tr	to injure, damage	lez	idan
-li	li	noun		they, them		idan
+li	li	pron		they, them		idan
 lia	li.a	adj		their, theirs	li	idan
 liano	lian.o	noun		liana, liane	lian	idan
 liaso	lias.o	noun		Lias	lias	idan
@@ -8201,7 +8201,7 @@ livrar	livr.ar	verb	tr	to deliver	livr	idan
 livreo	livre.o	noun		livery	livre	idan
 lizimakio	lizimaki.o	noun		loose-strife	lizimaki	idan
 lizo	liz.o	noun		lees, dregs	liz	idan
-lo	lo	noun		it		idan
+lo	lo	pron		it		idan
 lobelio	lobeli.o	noun		lobelia	lobeli	idan
 lobo	lob.o	noun		lobe	lob	idan
 locho	loch.o	noun		loach	loch	idan
@@ -8237,7 +8237,7 @@ londonano	london.an.o	noun		Londoner	london	idan
 longa	long.a	adj		long, tall. Ant: kurta	long	idan
 longigar	long.ig.ar	verb		to lengthen, elongate, prolong	long	idan
 longitudo	longitud.o	noun		longitude	longitud	idan
-lor	lor	verb		at the time of, at the same time as		idan
+lor	lor	prep		at the time of, at the same time as		idan
 lord	lord	other		Lord	lord	idan
 lore	lor.e	adv		then, at that time	lor	idan
 lore  lore	lor.e ... lor.e	phrase		now ... then	lor	idan
@@ -8252,7 +8252,7 @@ lotringiano	lotringi.an.o	noun		native of Lorraine	lotringi	idan
 lotuso	lotus.o	noun		lotus	lotus	idan
 loxodromo	loxodrom.o	noun		rhumb-line, loxodrome, loxodromic curve (intersecting meridians at a constant angle, as followed by a ship sailing in a fixed direction)	loxodrom	idan
 loyala	loyal.a	adj		loyal	loyal	idan
-lu	lu	other		he, she, it	lu	idan
+lu	lu	prep		he, she, it	lu	idan
 lua	lu.a	adj		his, her, hers, its	lu	idan
 lubrifikar	lubrifik.ar	verb	tr	to lubricate	lubrifik	idan
 lucida	lucid.a	adj		lucid, sane	lucid	idan
@@ -8372,7 +8372,7 @@ malear	male.ar	verb	tr	to cold-forge, hammer into shape; malleable (pr. & fig.)	
 maledikar	maledik.ar	verb	tr	to curse, damn	maledik	idan
 maleebla	male.ebl.a	adj		malleable	male	idan
 maleolo	maleol.o	noun		ankle	maleol	idan
-malgre	malgre	adv		despite, in spite of, notwithstanding	malgr	idan
+malgre	malgre	prep		despite, in spite of, notwithstanding	malgr	idan
 malgre ke	malgre ke	phrase		although, even though	malgre k	idan
 mali	mali	noun		Mali	mal	idan
 malico	malic.o	noun		malice; mischievousness	malic	idan
@@ -8562,7 +8562,7 @@ maurico	mauric.o	noun		Mauritius	mauric	idan
 mauritania	mauritani.a	adj		Mauritania	mauritani	idan
 mauzoleo	mauzole.o	noun		mausoleum	mauzole	idan
 maxilo	maxil.o	noun		upper jaw bone, maxilla	maxil	idan
-maxim	maxim	other		most	maxim	idan
+maxim	maxim	adv		most	maxim	idan
 maxim granda komuna dividanto	maxim grand.a komun.a divid.ant.o	phrase		greatest common divisor	maxim grand	idan
 maxima	maxim.a	adj		greatest, highest, maximum	maxim	idan
 maxime	maxim.e	adv		at most	maxim	idan
@@ -8575,7 +8575,7 @@ mayoro	mayor.o	noun		major	mayor	idan
 mayuskulo	mayuskul.o	noun		capital letter	mayuskul	idan
 mazo	maz.o	noun		mace	maz	idan
 mazurko	mazurk.o	noun		mazurka	mazurk	idan
-me	me	adv		I, me		idan
+me	me	pron		I, me		idan
 mea	me.a	adj		my, mine	me	idan
 mea altra ego	me.a altr.a eg.o	phrase		my other self	me	idan
 mea propra ego	me.a propr.a eg.o	phrase		my own self downpour; grand-eg-a: huge; kold-eg-a: extremely cold)	me	idan
@@ -8628,7 +8628,7 @@ melodramo	melodram.o	noun		melodrama	melodram	idan
 melolonto	melolont.o	noun		cockchafer, May beetle	melolont	idan
 melon-kaktuso	melon-kaktus.o	noun		melon-cactus, -thick, -thistle, melocactus	melon-kaktus	idan
 melono	melon.o	noun		melon	melon	idan
-mem	mem	other		even, still, really	mem	idan
+mem	mem	adv		even, still, really	mem	idan
 membrano	membran.o	noun		membrane	membran	idan
 membro	membr.o	noun		member; limb	membr	idan
 memorando	memorand.o	noun		memorandum	memorand	idan
@@ -8796,7 +8796,7 @@ milito	milit.o	noun		war	milit	idan
 mimar	mim.ar	verb	tr	to mime	mim	idan
 mimetika	mimetik.a	adj		mimetic	mimetik	idan
 mimoso	mimos.o	noun		mimosa	mimos	idan
-min	min	other		less		idan
+min	min	adv		less		idan
 min multa	min multa	phrase		less, fewer	n mult	idan
 minacar	minac.ar	verb	tr	to menace, threaten	minac	idan
 minar	min.ar	verb	tr	to mine; undermine	min	idan
@@ -8807,7 +8807,7 @@ mineralogio	mineralogi.o	noun		mineralogy	mineralogi	idan
 minestrelo	minestrel.o	noun		minstrel	minestrel	idan
 mineyo	min.ey.o	noun		mine	min	idan
 miniaturo	miniatur.o	noun		miniature	miniatur	idan
-minim	minim	other		least	nim	idan
+minim	minim	adv		least	nim	idan
 minima	minim.a	adj		least, lowest, minimum	minim	idan
 minime	minim.e	adv		at least	minim	idan
 minimo	minim.o	noun		minimum	minim	idan
@@ -8824,7 +8824,7 @@ minotauro	minotaur.o	noun		Minotaur	minotaur	idan
 minto	mint.o	noun		mint	mint	idan
 minto krispa	mint.o krisp.a	phrase		curly mint	mint	idan
 minucio	minuci.o	noun		minor detail, minutia	minuci	idan
-minus	minus	verb		minus		idan
+minus	minus	prep		minus		idan
 minuskulo	minuskul.o	noun		small letter	minuskul	idan
 minuto	minut.o	noun		minute	minut	idan
 mioceno	miocen.o	noun		Miocene	miocen	idan
@@ -9242,7 +9242,7 @@ nevroso	nevros.o	noun		neurosis	nevros	idan
 nevulo	nev.ul.o	noun		nephew	nev	idan
 nevuso	nevus.o	noun		birthmark, naevus	nevus	idan
 nevuso flamea	nevus.o flam.e.a	phrase		burn mark	nevus	idan
-ni	ni	noun		we, us		idan
+ni	ni	pron		we, us		idan
 nia	ni.a	adj		our, ours	ni	idan
 nicho	nich.o	noun		niche, recess in wall	nich	idan
 nielo	niel.o	noun		niello	niel	idan
@@ -9327,7 +9327,7 @@ nova skotia	nov.a skoti.a	phrase		Nova Scotia	nov	idan
 novelo	novel.o	noun		short story	novel	idan
 novembro	novembr.o	noun		November	novembr	idan
 novico	novic.o	noun		novice, tyro	novic	idan
-nu	nu	other		well!, now then!	nu	idan
+nu	nu	interj		well!, now then!	nu	idan
 nuanco	nuanc.o	noun		nuance	nuanc	idan
 nubia	nubi.a	adj		Nubia	nubi	idan
 nubiano	nubi.an.o	noun		Nubian	nubi	idan
@@ -9354,11 +9354,11 @@ numero	numer.o	noun		number; e.g. the number of a house or room)	numer	idan
 numismatiko	numismatik.o	noun		numismatics	numismatik	idan
 numulario	numulari.o	noun		moneywort	numulari	idan
 numulito	numulit.o	noun		nummulite	numulit	idan
-nun	nun	other		now	nun	idan
+nun	nun	adv		now	nun	idan
 nuna	nun.a	adj		current, present, of this time	nun	idan
 nuncio	nunci.o	noun		nuncio	nunci	idan
 nupciala	nupcial.a	adj		nuptial	nupcial	idan
-nur	nur	other		only	nur	idan
+nur	nur	adv		only	nur	idan
 nura	nur.a	adj		sole	nur	idan
 nutacar	nutac.ar	verb	intr	to nutate	nutac	idan
 nutaco	nutac.o	noun		nutation	nutac	idan
@@ -9463,22 +9463,22 @@ okultacar	okultac.ar	verb	tr	to occult	okultac	idan
 okultaco	okultac.o	noun		occultation	okultac	idan
 okupar	okup.ar	verb	tr	to occupy	okup	idan
 okupar su	okup.ar su	phrase		to occupy oneself, be busy	okup	idan
-ol	ol	other		it	ol	idan
+ol	ol	pron		it	ol	idan
 olda	old.a	adj		old	old	idan
 oleo	ole.o	noun		oil	ole	idan
 olfaktar	olfakt.ar	verb	tr	to perceive by sense of smell	olfakt	idan
-oli	oli	noun		they	ol	idan
+oli	oli	pron		they	ol	idan
 olia	oli.a	adj		their	oli	idan
 olibano	oliban.o	noun		frankincense, olibanum	oliban	idan
 oligarkio	oligarki.o	noun		oligarchy	oligarki	idan
 oligarko	oligark.o	noun		oligarch	oligark	idan
 oligoceno	oligocen.o	noun		oligocene	oligocen	idan
-olim	olim	other		in former times, once	olim	idan
+olim	olim	adv		in former times, once	olim	idan
 olimpiado	olimpiad.o	noun		Olympiad	olimpiad	idan
 olimpo	olimp.o	noun		Olympus	olimp	idan
 oliviero	oliv.ier.o	noun		olive tree	oliv	idan
 olivo	oliv.o	noun		olive	oliv	idan
-olu	olu	other		it	olu	idan
+olu	olu	pron		it	olu	idan
 olua	olu.a	adj		its	olu	idan
 oman	oman	other		Oman	om	idan
 ombro	ombr.o	noun		shadow; shade	ombr	idan
@@ -9493,7 +9493,7 @@ omnibuso	omnibus.o	noun		omnibus	omnibus	idan
 omnivora	omnivor.a	adj		omnivorous	omnivor	idan
 omno	omn.o	noun		everything	omn	idan
 omnu	omn.u	other		everyone	omn	idan
-on	on	other		one, they	on	idan
+on	on	pron		one, they	on	idan
 onagro	onagr.o	noun		onager, Asian wild ass; onager	onagr	idan
 onaniar	onani.ar	verb	intr	to practise onanism	onani	idan
 ondo	ond.o	noun		wave, swell	ond	idan
@@ -9503,7 +9503,7 @@ onklo	onkl.o	noun		uncle or aunt	onkl	idan
 onklulo	onkl.ul.o	noun		uncle	onkl	idan
 onomatopeo	onomatope.o	noun		onomatopoeia	onomatope	idan
 ontologio	ontologi.o	noun		ontology	ontologi	idan
-onu	onu	other		one	onu	idan
+onu	onu	pron		one	onu	idan
 onua	onu.a	adj		one's	onu	idan
 onyono	onyon.o	noun		onion	onyon	idan
 oocito	oocit.o	noun		oocyte	oocit	idan
@@ -10010,7 +10010,7 @@ pepito	pepit.o	noun		nugget	pepit	idan
 pepsino	pepsin.o	noun		pepsin	pepsin	idan
 peptido	peptid.o	noun		peptide	peptid	idan
 peptono	pepton.o	noun		peptone	pepton	idan
-per	per	other		by means of, by, with; multiplied by	per	idan
+per	per	prep		by means of, by, with; multiplied by	per	idan
 per audo	per aud.o	phrase		by hearsay	per aud	idan
 per ke	per ke	phrase		through the fact that	per k	idan
 per la diablo	per la diabl.o	phrase		what the devil	per la diabl	idan
@@ -10330,7 +10330,7 @@ plisar	plis.ar	verb	tr	to pleat	plis	idan
 plombo	plomb.o	noun		lead	plomb	idan
 plorar	plor.ar	verb	intr	to cry, weep	plor	idan
 ploviero	plovier.o	noun		plover	plovier	idan
-plu	plu	other		more	plu	idan
+plu	plu	adv		more	plu	idan
 plue	plu.e	adv		moreover, besides	plu	idan
 plugar	plug.ar	verb	tr	to plough	plug	idan
 plum-stroko	plum-strok.o	noun		stroke of a pen	plum-strok	idan
@@ -10357,7 +10357,7 @@ pluvialo	pluvial.o	noun		pluvial	pluvial	idan
 pluviometro	pluviometr.o	noun		pluviometer, rain-gauge	pluviometr	idan
 pneumatika	pneumatik.a	adj		pneumatic	pneumatik	idan
 pneumokoko	pneumokok.o	noun		pneumococcus	pneumokok	idan
-po	po	noun		for, at the price of, in exchange for; per		idan
+po	po	prep		for, at the price of, in exchange for; per		idan
 po cento	po cent.o	phrase		per cent	po cent	idan
 pociono	pocion.o	noun		medical draught or potion	pocion	idan
 podagro	podagr.o	noun		podagra	podagr	idan
@@ -10459,7 +10459,7 @@ popo	pop.o	noun		Russian or Greek priest	pop	idan
 populara	popular.a	adj		popular	popular	idan
 populo	popul.o	noun		people, population	popul	idan
 popurito	popurit.o	noun		medley, miscellany	popurit	idan
-por	por	verb		for, on behalf of		idan
+por	por	prep		for, on behalf of		idan
 por ke	por ke	phrase		so that, in order that	por k	idan
 porcelano	porcelan.o	noun		porcelain	porcelan	idan
 porciono	porcion.o	noun		share, portion, ration	porcion	idan
@@ -10488,7 +10488,7 @@ portugal	portugal	other		Portugal	portug	idan
 portugalano	portugal.an.o	noun		Portuguese	portugal	idan
 portulako	portulak.o	noun		portulaca, purslane, pussley, pigweed	portulak	idan
 portuo	portu.o	noun		port, harbour, harbor	portu	idan
-pos	pos	verb		after. Ant: ante		idan
+pos	pos	prep		after. Ant: ante		idan
 pos ke	pos ke	phrase		after	pos k	idan
 pos-nepoto	pos-nepot.o	noun		great-grandchild	pos-nepot	idan
 pos-nevo	pos-nev.o	noun		greatnephew, grandnephew; greatniece, grandniece	pos-nev	idan
@@ -10606,7 +10606,7 @@ prestaciono	prestacion.o	noun		prestation	prestacion	idan
 prestar	prest.ar	verb	tr	to lend, loan. Ant: pruntar	prest	idan
 prestijo	prestij.o	noun		prestige	prestij	idan
 pretendar	pretend.ar	verb	tr	to claim	pretend	idan
-preter	preter	other		past, beyond	ter	idan
+preter	preter	prep		past, beyond	ter	idan
 preterito	preterit.o	noun		preterite, preterit	preterit	idan
 pretextar	pretext.ar	verb	tr	to allege or pretend	pretext	idan
 pretoro	pretor.o	noun		praetor, pretor	pretor	idan
@@ -10622,7 +10622,7 @@ prezervar	prezerv.ar	verb	tr	to preserve, save	prezerv	idan
 prezidanto	prezid.ant.o	noun		president, chairman	prezid	idan
 prezidar	prezid.ar	verb	tr/intr	to preside over, be chairman, preside	prezid	idan
 prezuntar	prezunt.ar	verb	intr	to be presumptious	prezunt	idan
-pri	pri	noun		about, concerning, re	pr	idan
+pri	pri	prep		about, concerning, re	pr	idan
 priklar	prikl.ar	verb	tr/intr	to prickle, tingle	prikl	idan
 prima	prim.a	adj		primary		idan
 primadono	primadon.o	noun		primadonna	primadon	idan
@@ -10649,7 +10649,7 @@ privilejo	privilej.o	noun		privilege	privilej	idan
 prizar	priz.ar	verb	tr	to appreciate, prize, value	priz	idan
 prizentar	prizent.ar	verb	tr	to present, set or place before	prizent	idan
 prizentar la bayoneto	prizent.ar la bayonet.o	phrase		to bring the bayonet to a charge	prizent	idan
-pro	pro	noun		because of, owing to, out of, on account of	pr	idan
+pro	pro	prep		because of, owing to, out of, on account of	pr	idan
 pro ke	pro ke	phrase		because	pro k	idan
 pro quo	pro quo	phrase		why	pro qu	idan
 probabla	probabl.a	adj		likely, probable	probabl	idan
@@ -10784,7 +10784,7 @@ provizar	proviz.ar	verb	tr	to provide, supply	proviz	idan
 provizora	provizor.a	adj		provisional, temporary	provizor	idan
 provokar	provok.ar	verb	tr	to provoke, incite	provok	idan
 proxeneto	proxenet.o	noun		pander, pimp	proxenet	idan
-proxim	proxim	other		near, near to, close to	proxim	idan
+proxim	proxim	prep		near, near to, close to	proxim	idan
 proxima	proxim.a	adj		nearby, close	proxim	idan
 proxime	proxim.e	adv		nearby	proxim	idan
 prozelito	prozelit.o	noun		proselyte	prozelit	idan
@@ -10961,10 +10961,10 @@ questar	quest.ar	verb	tr	to collect	quest	idan
 questionar	question.ar	verb	tr/intr	to question	question	idan
 questiono embarasanta	question.o embaras.ant.a	phrase		embarrassing question	question	idan
 questoro	questor.o	noun		quaestor, questor	questor	idan
-qui	qui	noun		who, which	qu	idan
+qui	qui	pron		who, which	qu	idan
 quieta	quiet.a	adj		tranquil, calm	quiet	idan
 quietismo	quiet.ism.o	noun		quietism	quiet	idan
-quik	quik	other		immediately. at once	qu	idan
+quik	quik	adv		immediately. at once	qu	idan
 quika	quik.a	adj		immediate, instantaneous	quik	idan
 quilayo	quilay.o	noun		soapbark, quillai	quilay	idan
 quinara	quinar.a	adj		quinary, consisting of five	quinar	idan
@@ -10987,7 +10987,7 @@ quiproquo	quiproqu.o	noun		mistaken identity	quiproqu	idan
 quirito	quirit.o	noun		Quirites, citizens of ancient Rome in their civil capacity	quirit	idan
 quirlar	quirl.ar	verb	tr	to whisk, whip	quirl	idan
 quita	quit.a	adj		quit, rid, free	quit	idan
-quo	quo	noun		what, which (sing.; interrog. & rel.; used as an interrogative refers to something indefinite, e.g. "quo eventis?" = what happened?)	qu	idan
+quo	quo	pron		what, which (sing.; interrog. & rel.; used as an interrogative refers to something indefinite, e.g. "quo eventis?" = what happened?)	qu	idan
 quociento	quocient.o	noun		quotient	quocient	idan
 quodlibeto	quodlibet.o	noun		pun, jest, sorry joke, quibble,	quodlibet	idan
 quorumo	quorum.o	noun		quorum	quorum	idan
@@ -11659,7 +11659,7 @@ sarmato	sarmat.o	noun		Sarmatian	sarmat	idan
 sarmento	sarment.o	noun		sarmentum, runner	sarment	idan
 sarsaparelo	sarsaparel.o	noun		sarsaparilla	sarsaparel	idan
 sasafraso	sasafras.o	noun		sassafras	sasafras	idan
-sat	sat	participle		enough, sufficiently (used before an adj. or adv.; e.g. sat rapide = quickly enough)	sat	idan
+sat	sat	adv		enough, sufficiently (used before an adj. or adv.; e.g. sat rapide = quickly enough)	sat	idan
 sata	sat.a	adj		enough, adequate	sat	idan
 satano	satan.o	noun		Satan	satan	idan
 sate	sat.e	adv		enough	sat	idan
@@ -11705,7 +11705,7 @@ seglo	segl.o	noun		sail	segl	idan
 seglo-batelo	segl.o-batel.o	noun		sailing-boat	segl	idan
 segmento	segment.o	noun		segment, section	segment	idan
 segregacar	segregac.ar	verb	tr	to segregate. Ant: agregar	segregac	idan
-segun	segun	other		according to	segun	idan
+segun	segun	prep		according to	segun	idan
 segun ke	segun ke	phrase		according to whether	segun k	idan
 segun la arbitrio di	segun la arbitri.o di	phrase		at the discretion of	segun la arbitri	idan
 seido	seid.o	noun		zealot, fanatical partisan	seid	idan
@@ -11750,7 +11750,7 @@ semolo	semol.o	noun		semolina	semol	idan
 sempervivo	semperviv.o	noun		stonecrop	semperviv	idan
 sempervivo tektala	semperviv.o tekt.al.a	phrase		houseleek	semperviv	idan
 sempre	sempr.e	adv		always	sempr	idan
-sen	sen	other		without	sen	idan
+sen	sen	prep		without	sen	idan
 sen ke	sen ke	phrase		unless		idan
 sen-barba	sen-barb.a	adj		beardless	sen-barb	idan
 sen-baza	sen-baz.a	adj		baseless	sen-baz	idan
@@ -12538,13 +12538,13 @@ sturmar	sturm.ar	verb	imp	to storm	sturm	idan
 sturmo	sturm.o	noun		storm	sturm	idan
 sturno	sturn.o	noun		starling	sturn	idan
 stuvo	stuv.o	noun		hot room; steam room; drying room	stuv	idan
-su	su	other		herself, himself, itself, oneself, themselves	su	idan
+su	su	pron		herself, himself, itself, oneself, themselves	su	idan
 su-dicanta	su-dic.ant.a	adj		so-called, self-styled	su-dic	idan
 su-teno	su-ten.o	noun		bearing, carriage	su-ten	idan
 sua	su.a	adj		her own, his own, its own, one's own, their own	su	idan
 suabia	suabi.a	adj		Swabia	suabi	idan
 suabiano	suabi.an.o	noun		Swabian	suabi	idan
-sub	sub	other		under, beneath, below	sub	idan
+sub	sub	prep		under, beneath, below	sub	idan
 sub-arbusto	sub-arbust.o	noun		underbrush	sub-arbust	idan
 sub-exkavar	sub-exkav.ar	verb		to undermine	sub-exkav	idan
 subalterna	subaltern.a	adj		subaltern	subaltern	idan
@@ -12636,7 +12636,7 @@ suno	sun.o	noun		sun	sun	idan
 sunroso	sunros.o	noun		sun-dew	sunros	idan
 suocidar	su.ocid.ar	verb		to commit suicide, intentionally kill oneself	su	idan
 suolo	suol.o	noun		sole	suol	idan
-super	super	other		over, above	sup	idan
+super	super	prep		over, above	sup	idan
 super la bordo	super la bord.o	phrase		over the edge	super la bord	idan
 super-charjar	super-charj.ar	verb		to overload	super-charj	idan
 super-esar	super-es.ar	verb		to be over, be above, surpass	super-es	idan
@@ -12664,7 +12664,7 @@ supra	supr.a	adj		top. Ant: infra	supr	idan
 supre	supr.e	adv		on top, on high, aloft; upstairs. Ant: infre	supr	idan
 supresar	supres.ar	verb	tr	to suppress	supres	idan
 supro	supr.o	noun		top	supr	idan
-sur	sur	other		on, upon, on top of; divided by	sur	idan
+sur	sur	prep		on, upon, on top of; divided by	sur	idan
 sur-dento	sur-dent.o	noun		tooth grown over another, projecting tooth	sur-dent	idan
 sur-kalzo	sur-kalz.o	noun		overstocking, overhose	sur-kalz	idan
 sur-kreskajo	sur-kresk.aj.o	noun		outgrowth, excrescence	sur-kresk	idan
@@ -12770,7 +12770,7 @@ tamtamo	tamtam.o	noun		gong, tam-tam	tamtam	idan
 tanaceto	tanacet.o	noun		tansy	tanacet	idan
 tanagar	tan.ag.ar	verb	tr	to tan	tan	idan
 tanagerio	tan.ag.eri.o	noun		tannery	tan	idan
-tandem	tandem	other		at last, eventually	tand	idan
+tandem	tandem	adv		at last, eventually	tand	idan
 tandem-biciklo	tandem-bicikl.o	noun		tandem bicycle	tandem-bicikl	idan
 tandem-veturo	tandem-vetur.o	noun		carriage with horses in tandem	tandem-vetur	idan
 tandeme	tandem.e	adv		tandem, in tandem	tandem	idan
@@ -13019,7 +13019,7 @@ tikar	tik.ar	verb	intr	to have a tic or twitch	tik	idan
 tiktakado	tiktak.ad.o	noun		ticking	tiktak	idan
 tiktakar	tiktak.ar	verb	intr	to go tic-tac, tick	tiktak	idan
 tiktako	tiktak.o	noun		tick	tiktak	idan
-til	til	other		until, till; to, up to, as far as	til	idan
+til	til	prep		until, till; to, up to, as far as	til	idan
 til ke	til ke	phrase		until	til k	idan
 til rivido	til ri.vid.o	phrase		until we meet again, goodbye for now, 'au revoir'	til ri	idan
 tilburi	tilburi	noun		tilbury	tilb	idan
@@ -13138,7 +13138,7 @@ totem	totem	other		totem	tot	idan
 toxiko	toxik.o	noun		poison	toxik	idan
 toxikologio	toxikologi.o	noun		toxicology	toxikologi	idan
 toxino	toxin.o	noun		toxin	toxin	idan
-tra	tra	adj		through	tr	idan
+tra	tra	prep		through	tr	idan
 trabekulo	trabekul.o	noun		trabecula	trabekul	idan
 trabo	trab.o	noun		beam, girder	trab	idan
 traciono	tracion.o	noun		traction, locomotive power	tracion	idan
@@ -13181,7 +13181,7 @@ tranchar	tranch.ar	verb	tr	to cut through, cut off; carve, cut up	tranch	idan
 trancheo	tranche.o	noun		trench	tranche	idan
 tranco	tranc.o	noun		trance	tranc	idan
 tranquila	tranquil.a	adj		still, tranquil, quiet	tranquil	idan
-trans	trans	other		on the other side of, beyond, across. Ant: cis	trans	idan
+trans	trans	prep		on the other side of, beyond, across. Ant: cis	trans	idan
 trans-atlantika	trans-atlantik.a	adj		transatlantic	trans-atlantik	idan
 trans-irar etapo	trans-ir.ar etap.o	phrase		to pass through without stopping	trans-ir	idan
 transajo	trans.aj.o	noun		object on the other side; hereafter	trans	idan
@@ -13329,7 +13329,7 @@ triumviro	triumvir.o	noun		triumvir	triumvir	idan
 triuno	tri.un.o	noun		trinity, triune	tri	idan
 triviala	trivial.a	adj		commonplace, trite, trivial	trivial	idan
 triyara	tri.yar.a	adj		triennial	tri	idan
-tro	tro	noun		too, over, overly	tr	idan
+tro	tro	adv		too, over, overly	tr	idan
 tro multa	tro mult.a	phrase		too much, too many	tro mult	idan
 tro multe	tro mult.e	phrase		too much	tro mult	idan
 troa	tro.a	adj		overmuch, excessive	tro	idan
@@ -13379,7 +13379,7 @@ trusegilo	tru.seg.il.o	noun		keyhole saw	tru	idan
 trusto	trust.o	noun		trust, cartel	trust	idan
 truto	trut.o	noun		trout	trut	idan
 truvero	truver.o	noun		trouvre, trouveur	truver	idan
-tu	tu	other		thou, you	tu	idan
+tu	tu	pron		thou, you	tu	idan
 tua	tu.a	adj		thy, thine, your	tu	idan
 tualetar	tualet.ar	verb	intr	to wash & dress	tualet	idan
 tualeto	tualet.o	noun		toilet [tualet-tuk.o (obs.) > toalo]	tualet	idan
@@ -13451,7 +13451,7 @@ tuyo	tuy.o	noun		thuja, thuya	tuy	idan
 ube	ube	adv		where	ub	idan
 ubiqua	ubiqu.a	adj		ubiquitous	ubiqu	idan
 ucelo	ucel.o	noun		bird	ucel	idan
-uf	uf	other		oh!	uf	idan
+uf	uf	interj		oh!	uf	idan
 uganda	ugand.a	adj		Uganda	ugand	idan
 ukazo	ukaz.o	noun		ukase, edict	ukaz	idan
 ula	ul.a	adj		any, some	ul	idan
@@ -13719,7 +13719,7 @@ vermuto	vermut.o	noun		vermouth	vermut	idan
 verniero	vernier.o	noun		vernier	vernier	idan
 verniso	vernis.o	noun		varnish	vernis	idan
 veroniko	veronik.o	noun		veronica, speedwell	veronik	idan
-vers	vers	other		toward, in the direction of	vers	idan
+vers	vers	prep		toward, in the direction of	vers	idan
 versiono	version.o	noun		version	version	idan
 verso	vers.o	noun		verse	vers	idan
 versoro	versor.o	noun		versor	versor	idan
@@ -13760,14 +13760,14 @@ vexetar	vex.et.ar	verb		to tease	vex	idan
 vezikatorio	vezikatori.o	noun		vesicatory, vesicant	vezikatori	idan
 veziketo	vezik.et.o	noun		vesicle	vezik	idan
 veziko	vezik.o	noun		bladder, vesica	vezik	idan
-vi	vi	noun		you		idan
+vi	vi	pron		you		idan
 via	vi.a	adj		your	vi	idan
 viadukto	viadukt.o	noun		viaduct	viadukt	idan
 viatiko	viatik.o	noun		viaticum	viatik	idan
 vibrar	vibr.ar	verb	intr	to vibrate	vibr	idan
 vibriono	vibrion.o	noun		vibrio	vibrion	idan
 viburno	viburn.o	noun		viburnum	viburn	idan
-vice	vice	adv		instead of	vic	idan
+vice	vice	prep		instead of	vic	idan
 vice-parolanto	vice-parol.ant.o	noun		spokesman	vice-parol	idan
 vice-prezidanto	vice-prezid.ant.o	noun		vice-president	vice-prezid	idan
 vice-rejo	vice-rej.o	noun		viceroy	vice-rej	idan
@@ -13900,7 +13900,7 @@ vovar	vov.ar	verb	tr	to vow, make a vow, dedicate	vov	idan
 voyajar	voyaj.ar	verb	intr	to travel, voyage	voyaj	idan
 voyajo	voyaj.o	noun		travel, voyage	voyaj	idan
 voyo	voy.o	noun		way, road, track, route	voy	idan
-vu	vu	other		you	vu	idan
+vu	vu	pron		you	vu	idan
 vua	vu.a	adj		your	vu	idan
 vulgara	vulgar.a	adj		common, vulgar	vulgar	idan
 vulgato	vulgat.o	noun		Vulgate	vulgat	idan
@@ -13936,7 +13936,7 @@ xilofaga	xilofag.a	adj		xylophagous	xilofag	idan
 xilofago	xilofag.o	noun		xylophage	xilofag	idan
 xilofono	xilofon.o	noun		xylophone	xilofon	idan
 xilografar	xilograf.ar	verb	tr/intr	to engrave on wood; print from wood engravings	xilograf	idan
-ya	ya	adj		indeed, truly		idan
+ya	ya	adv		indeed, truly		idan
 yako	yak.o	noun		yak	yak	idan
 yakto	yakt.o	noun		yacht	yakt	idan
 yarala	yar.al.a	adj		annual, yearly	yar	idan
@@ -13945,12 +13945,12 @@ yardeko	yar.dek.o	noun		decade	yar	idan
 yardo	yard.o	noun		yard, yardarm	yard	idan
 yaro	yar.o	noun		year	yar	idan
 yatagano	yatagan.o	noun		yataghan	yatagan	idan
-ye	ye	adv		at, by		idan
+ye	ye	prep		at, by		idan
 yemen	yemen	other		Yemen	yemen	idan
-yen	yen	other		here is/are, there is/are	yen	idan
+yen	yen	prep		here is/are, there is/are	yen	idan
 yena	yen.a	adj		following	yen	idan
 yene	yen.e	adv		as follows, in the following manner	yen	idan
-yes	yes	other		yes	yes	idan
+yes	yes	adv		yes	yes	idan
 yodlar	yodl.ar	verb	tr/intr	to yodel	yodl	idan
 yogo	yog.o	noun		yoga	yog	idan
 yogurto	yogurt.o	noun		yoghurt, yogurt, yoghourt	yogurt	idan
@@ -14007,4 +14007,3 @@ zodiako	zodiak.o	noun		zodiac	zodiak	idan
 zono	zon.o	noun		zone; girdle, belt, sash	zon	idan
 zoocecidio	zoocecidi.o	noun		zoocecidia	zoocecidi	idan
 zoofito	zoofit.o	noun		zoophyte	zoofit	idan
-zzztesto	zzztest.o	noun		test entry	zzztest	user

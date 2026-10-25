@@ -193,6 +193,8 @@ def _tag_lexicon_word(lower: str, raw: str, position: int) -> ClassifiedToken | 
         return ClassifiedToken("ADV", raw, "ADVERBIO", lemma=lower, known=True, position=position)
     if pos == "participle":
         return ClassifiedToken("VPART", raw, "PARTICIPIO", lemma=lower, form="participle", known=True, position=position)
+    if pos == "interj":
+        return ClassifiedToken("PART", raw, "INTERJECCIÓN", lemma=lower, known=True, position=position)
     return ClassifiedToken("OTHER", raw, "OTRO", lemma=lower, known=True, position=position)
 
 

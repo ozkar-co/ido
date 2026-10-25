@@ -18,6 +18,11 @@ def _pos_label(entry: WordEntry) -> str:
         "participle": "participio",
         "affix": "afijo",
         "phrase": "expresión",
+        "interj": "interjección",
+        "prep": "preposición",
+        "conj": "conjunción",
+        "pron": "pronombre",
+        "num": "número",
         "other": "otro",
     }
     label = labels.get(entry.pos, entry.pos)
@@ -60,6 +65,8 @@ def format_morphology(entry: WordEntry, *, show_segments: bool = False) -> list[
     """Líneas de morfología y, opcionalmente, segmentación punteada."""
     if entry.pos == "phrase":
         return ["  Categoría: expresión multi-palabra"]
+    if entry.pos == "interj":
+        return ["  Categoría: interjección"]
     analysis = _analysis_for(entry)
     lines = [f"  Categoría: {_category_es(analysis)}"]
 
@@ -84,6 +91,8 @@ def format_morphology(entry: WordEntry, *, show_segments: bool = False) -> list[
 def _related_line(entry: WordEntry) -> str:
     if entry.pos == "phrase":
         return f"    {entry.lemma} — {entry.translation} (expresión)"
+    if entry.pos == "interj":
+        return f"    {entry.lemma} — {entry.translation} (interjección)"
     analysis = _analysis_for(entry)
     note = _category_es(analysis)
     if entry.pos == "verb" and entry.transitivity:
